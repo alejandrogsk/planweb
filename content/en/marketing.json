@@ -1,0 +1,60 @@
+{
+    "hero": {
+        "title":"",
+        "subtitle":"",
+        "content": [
+            "",""
+        ]
+    },
+    "description": {
+        "top_title":"",
+        "title":"",
+        "content": [],
+        "cta":{
+            "title":"",
+            "url": ""
+        }
+    },
+    "google_ads": {
+        "img": {
+            "url":"",
+            "alt":""
+        },
+        "title":"",
+        "content": [],
+        "list": [
+            {"title":"", "description":""}
+        ]
+    },
+    "google_analitycs":{
+        "img": {
+            "url":"",
+            "alt":""
+        },
+        "title":"",
+        "content": []
+    },
+    "social_ads": {
+        "img": {
+            "url":"",
+            "alt":""
+        },
+        "title":"",
+        "content": [],
+        "list": [
+            {"title":"", "description":""}
+        ]
+    },
+    "email_marketing": {
+        "img": {
+            "url":"",
+            "alt":""
+        },
+        "title":"",
+        "content": [],
+        "list": [
+            {"title":"", "description":""}
+        ]
+    }
+   
+}

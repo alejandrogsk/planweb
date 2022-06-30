@@ -1,0 +1,78 @@
+{
+    "hero": {
+        "title":"Desarrollo Web",
+        "subtitle":"Un sitio web es la mejor herramienta de marketing que una empresa pueda tener.",
+        "content": [
+            "Tener un sitio web es como tener un agente comercial trabajando para tu negocio las 24hs.",
+            "Existen diferentes tipos de sitios web, cada uno con unos fines específicos, unos orientados a comunicación corporativa, otros a ventas o campañas de marketing.",
+            "Nosotros diseñamos sitios web de principio a fin, partiendo de las necesidades específicas de tu negocio, proyecto o campaña."
+        ]
+    },
+    "description": {
+        "img":{
+            "src":"/web/codigo.jpg",
+            "alt":"agencia especializada en diseño de sitios web"
+        },
+        "top_title": "Especialistas en desarrollo de sitios web",
+        "title": "Hacemos desarrollo de sitios web a la medida de tu negocio.",
+        "content": [
+            "Desde el sector agrícola hasta el tecnológico, pasando por el sector industrial y de servicios, tus potenciales clientes buscan información en internet sobre como solucionar el problema que tu empresa soluciona.",
+            "Esto abre una ventana de oportunidad para su negocio, ya que contar con un sitio web que comunique cómo tu empresa soluciona su problema, hará que las personas interesadas en tu solución se acerquen a tu negocio.",
+            "Si necesitas un sitio web profesional, con la calidad que tu negocio se merece, ponte en contacto con nosotros para charlar sobre tu proyecto."
+        ],
+        "cta":{
+            "title":"Contanos sobre tu proyecto",
+            "url": "/contact"
+        }
+    },
+    "services": {
+        "title":"Servicios Web",
+        "content": [
+            {
+                "title":"Diseño UX/UI",
+                "description":"Combinamos un atractivo diseño visual, con una fluida experiencia de usuario para facilitar su navegación."
+            },
+            {
+                "title":"Desarrollo Web Completo",
+                "description":"Nos ocupamos tanto del diseño como de los aspectos de desarrollo y mantenimiento de tu sitio."
+            },
+            {
+                "title":"Optimización Móvil",
+                "description":"Tu sitio será accesible en diferentes dispositivos como computadoras, tablets y smartphones."
+            }
+        ]
+    
+    },
+    "websites": {
+        "title":"Soluciones Web.",
+        "content": [
+            {
+                "title":"Sitios Corporativos",
+                "description":"Sitios web pensados principalmente para empresas medianas o grandes, tambíen para empresas B2B."
+            },
+            {
+                "title":"CMS Website",
+                "description":"Si manejas contenido dinámico, trabajamos con el CMS que mejor se ajuste a tu proyecto."
+            },
+            {
+                "title":"Webs SPA",
+                "description":"Si necesitas funcionalidades muy específicas, tal vez una Aplicación Web sea lo que necesitas."
+            },
+            {
+                "title":"Landing Pages",
+                "description":"Es lo que estás buscando si lo que necesitas es promocionar un producto o servicio específico."
+            },
+            {
+                "title":"Sitios multi-idioma",
+                "description":"Para compañías que cuentan con relaciones comerciales internacionales."
+            },
+            {
+                "title":"Portfolios Profesionales",
+                "description":"Todo profesional autónomo necesita un portfolio para mostrar sus servicios y comunicar sus experiencias profesionales."
+            }
+
+        ]
+    
+    }
+   
+}

@@ -1,0 +1,29 @@
+{
+    "hero": {
+        "title":"",
+        "subtitle":"",
+        "content": [
+            "",""
+        ]
+    },
+    "description": {
+        "top_title":"",
+        "title":"",
+        "content": [],
+        "cta":{
+            "title":"",
+            "url": ""
+        }
+    },
+    "services": {
+        "title":"",
+        "content": [
+            {
+                "title":"",
+                "description":""
+            }
+        ]
+    
+    }
+   
+}

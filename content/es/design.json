@@ -1,0 +1,60 @@
+{
+    "hero": {
+        "title":"Identidad Visual",
+        "subtitle":"Somos la agencia de diseño que te ayudará a conceptualizar tu marca y hacerla realidad.",
+        "content": [
+            "Somos una agencia que se dedica al diseño de la imagen visual corporativa de tu empresa.",
+            "Con el fin de reflejar con solidez la identidad de tu marca, utilizamos un enfoque global para confeccionar las distintas piezas gráficas buscando crear una uniformidad entre estas.",
+            "Logotipo, tipografía, etiquetas, tarjetas, empaques entre otros elementos, son la cara más visible de tu marca, es por esto que ponemos especial empeño en su diseño."
+        ]
+    },
+    "description": {
+        "img": {
+            "src": "/design/design.jpg",
+            "alt": "Agencia especialista en branding"
+        },
+        "top_title":"Una agencia especialista en diseño de imagen de marca",
+        "title":"Porque es importante invertir en el diseño visual de tu marca.",
+        "content": [
+            "Cuando hablamos de la imagen visual de tu marca nos referimos a las distintas piezas gráficas que conforman tu marca, puede ser el logo de esta, pero también puede ser la etiqueta de un producto o un anuncio en redes sociales.",
+            "Contar con un diseño profesional y global, mejora la percepción de tus clientes ya que las piezas visuales suelen ser la primera impresión que se llevan. También un diseño visual bien logrado facilita la diferenciación lo cual te ayudará a destacarte frente a la competencia.",
+            "Si lo que estás buscando es una agencia que te ayude con el diseño visual de tu marca, estás en el sitio correcto, ponete en contacto con nosotros para que podamos saber más sobre tu proyecto."
+        ],
+        "cta":{
+            "title": "Contanos sobre tu proyecto",
+            "url": "/contact"
+        }
+    },
+    "services": {
+        
+        "title":"Servicios de diseño para tu marca",
+        "content": [
+            {
+                "title":"Diseño de logotipos",
+                "description":"Es la marca gráfica de tu negocio, el elemento distintivo que no le puede faltar a ninguna marca"
+            },
+            {
+                "title": "Diseño de etiquetas",
+                "description": "Nos ocupamos de diseñar una etiqueta que resalte las bondades de tu producto"
+            },
+            {
+                "title": "Diseño de packaging",
+                "description": "El packaging es determinante para las ventas sobre todo en productos, que están expuestos en góndola"
+            },
+            {
+                "title": "Diseño de banners",
+                "description": "Creamos banners para redes sociales, ecommerce, cartelería y demás espacios"
+            },
+            {
+                "title": "Paleta de colores",
+                "description": "Al igual que el logo, es un requisito en cualquier empresa seria contar con colores adecuados"
+            },
+            {
+                "title": "Y mucho más...",
+                "description":"Existe infinidad de casos donde el diseño gráfico puede ser aplicado, contactanos para más información"
+            }
+        ]
+    
+    }
+   
+}

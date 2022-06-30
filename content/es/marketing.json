@@ -1,0 +1,120 @@
+{
+    "hero": {
+        "title":"Marketing digital",
+        "subtitle":"El marketing digital es en 2022 la mejor opción para estar donde están tu clientes.",
+        "content": [
+            "Las personas pasan cada vez más tiempo navegando por internet, particularmente en las distintas redes sociales, esto abre un amplio abanico de posibilidades para que tu empresa pueda comunicar su valor a tus clientes.",
+            "Nosotros sabemos como poner estos canales a disposición de tu empresa, a través de diferentes estrategias de marketing digital, para alcanzar así a más clientes."
+        ]
+    },
+    "description": {
+        "img": {
+            "src": "/marketing/marketing.jpg",
+            "alt": "Agencia especialista en diseño y desarrollo de estrategias de marketing digital"
+        },
+        "top_title":"Especialistas en marketing digital",
+        "title":"Te ayudamos a llevar adelante una estrategia de marketing digital para tu negocio.",
+        "content": [
+            "El marketing tradicional sigue siendo importante, pero al no tener una estrategía de marketing digital adecuada,  estas privando a tu negocio de importantes canales de comunicación y ventas.",
+            "El marketing digital nos permite segmentar mejor a nuestra audiencia, establecer una comunicación más personalizada y enfocada en las necesidades de los clientes o futuros clientes.",
+            "Tener una estrategia de marketing digital no es solo publicar en redes sociales o poner uno que otro anuncio, es establecer unos objetivos claros y medibles y utilizar los distintos canales a nuestra disposición que mejor se adapten a esos objetivos.",
+            "Publicidad en Instagram, publicidad en Google, email marketing, marketing de contenidos, influencer marketing, son muchas las opciones, pero saber cual es la que mejor se adapta a tu negocio es lo más importante.",
+            "Si necesitas ayuda con el marketing digital de tu empresa, puedes contactarnos ya mismo."
+        ],
+        "cta":{
+            "title": "Contanos sobre tu proyecto",
+            "url": "/contacto"
+        }
+    },
+    "google_ads": {
+        "img": {
+            "src":"/marketing/google-ads-banner-es.png",
+            "alt":"Agencia especialista en PPC"
+        },
+        "title":"Hacemos crecer sus ventas con publicidad digital en Google",
+        "content": [
+            "Google ads es la plataforma de servicios de publicidad digital que provee google. La misma nos permite mostrar anuncios en el buscador de Google, Youtube, sitios web y dispositivos Android.",
+            "Es una herramienta fundamental en cualquier campaña de marketing y publicidad digital ya que nos permite alcanzar con nuestros anuncios a clientes o usuarios que estén interesados en nuestro producto o servicio en tiempo real."
+        ],
+        "list": [
+            {
+                "title": "Search Ads",
+                "description": "Puedes mostrar anuncios basados en términos de búsqueda a tus clientes en el momento exacto en el que están considerando tu producto o servicio."
+            },
+            {
+                "title": "Shopping Ads",
+                "description": "Esta es una excelente opción para tiendas online, ya que te permitirá mostrar tus productos en los resultados de google, mostrando nombre, precio y foto."
+            },
+            {
+                "title": "Display Ads",
+                "description": "Utilizando la red de anunciantes de google podemos captar clientes mostrando anuncios gráficos. Este formato también sirve para acciones de remarketing o retargeting."
+            },
+            {
+                "title": "Andorid Ads",
+                "description": "Google es la empresa detrás de android, esto hace que mediante google ads podamos mostrar anuncios en las aplicaciones que muestran publicidad, esto es ideal para empresas que promocionan una app."
+            }
+        ]
+    },
+    "google_analitycs":{
+        "img": {
+            "src":"/marketing/data.jpg",
+            "alt":"Agencia especialista en google analitycs"
+        },
+        "title":"Utilizamos herramientas de análisis de datos, para medir los resultados de nuestras campañas",
+        "content": [
+            "Para que una estrategia de marketing digital sea exitosa es necesario definir unos objetivos claros para poder medir los resultados y llevar a cabo las mejoras necesarias. Nosotros utilizamos Google Analytics, la herramienta de analítica digital más utilizada a nivel mundial, tanto para medir los resultados en cuanto a conversión, como para sacar insights de nuestros usuarios o clientes, lo que nos permite mejorar la comunicación en otros canales como las redes sociales."
+        ]
+    },
+    "social_ads": {
+        "img": {
+            "src":"/marketing/facebook-ads-banner.png",
+            "alt":"Agencia de marketing especializada en google ads"
+        },
+        "title":"4000 millones de personas utilizan redes sociales",
+        "content": [
+            "El negocio de las redes sociales se basa en recolectar datos de los usuarios y ponerlos al servicio de empresas como la tuya para que promociones tus productos o servicios.",
+            "En Smooth Design desarrollamos campañas de publicidad en redes sociales para que llegues a personas que están interesadas en tu marca pero aún no te conocen.",
+            "Aplicamos distintos enfoques para distintos objetivos. No son iguales los anuncios que se enfocan en el branding  y los que se enfocan en las ventas directas."
+        ],
+        "list": [
+            {
+                "title":"Publicidad en Instagram, facebook, Linkedin, Pinterest y más",
+                "description":"Utilizando las plataformas publicitarias que estas compañías proveen, tu negocio puede llegar a una audiencia muy específica, ya que nos permiten segmentar a los usuario por datos demográficos, intereses y más."
+            },
+            {
+                "title":"El marketing de influencers es uno de los formatos que más está creciendo",
+                "description":"Mediante el marketing de influencer tu marca se puede apalancar de la confianza existente entre la persona y su audiencia. Muchos “influencers” compran seguidores para estafar a las marcas, así que es necesario analizar primero las cuentas de estos, para no tirar el dinero a la basura."
+            }
+        ]
+    },
+    "email_marketing": {
+        "img": {
+            "src": "/marketing/email-marketing.jpg",
+            "alt": "Agencia especializada en email marketing"
+        },
+        "title":"Campañas de email marketing",
+        "content": [
+            "El email es una de las formas más efectivas de contactar con nuestros clientes y una de las más rentables, ya que podemos comunicarnos de una forma segmentada, personalizada y a escala.",
+            "Pensemos en un ecommerce que vende cientos de productos, y se ve en la necesidad de rotar su stock. Con una herramienta de email marketing podemos segmentar a nuestros clientes que han comprado este producto en el pasado y enviarles una oferta especial solo a esos clientes, con nombre y apellido."
+        ],
+        "list": [
+            {
+                "title":"Promociones personalizadas",
+                "description":"Con una herramienta de email marketing podemos enviar ofertas personalizadas a nuestra lista de cientos de clientes de forma personalizada."
+            },
+            {
+                "title":"Automatización de ventas",
+                "description":"Cuando un cliente compra en nuestra tienda online, podemos enviarle la factura y un bono de descuento en un producto complementario al que acaba de comprar."
+            },
+            {
+                "title":"Remarketing",
+                "description":"Un caso muy común de remarketing es cuando un cliente deja el carrito con productos en tu tienda online y la envías un email de “Juan, olvidaste tu carrito”, con un link a tu tienda."
+            },
+            {
+                "title":"Newsletters",
+                "description":"Una táctica muy utilizada en marketing de contenidos y una excelente manera de trabajar la relación a largo plazo con tus clientes compartiendo contenido que les es de utilidad directamente por email."
+            }
+        ]
+    }
+   
+}

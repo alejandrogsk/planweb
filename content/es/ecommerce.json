@@ -1,0 +1,125 @@
+{
+    "hero": {
+        "title":"Ecommerce",
+        "subtitle":"Dejamos todo listo para que tu tienda tenga la habilidad de vender 24/7.",
+        "content": [
+            "Tener tu propia plataforma de ventas online le permite a tus clientes comprar en el momento y desde el lugar que ellos elijan.",
+            "Ya sea que te dediques al comercio minorista o mayorista, o si cuenta con un punto de venta físico, tener un canal de ventas online te ayudará a mejorar la experiencia de compra de tus clientes, y conseguir nuevos."
+        ]
+    },
+    "description": {
+        "img": {
+            "src": "/ecommerce/ecommerce-black.jpg",
+            "alt": "Agencia especialista en diseño y desarrollo de proyectos de ecommerce"
+        },
+        "top_title":"Especialistas en desarrollo de ecommerce",
+        "title":"Te ayudamos a poner en marcha tu proyecto de ecommerce.",
+        "content": [
+            "El comercio electrónico no ha parado de crecer desde su aparición, pero en la última década su crecimiento se ha disparado y a raíz de la pandemia muchos clientes que antes eran reticentes a comprar por internet ahora prefieren comprar desde la comodidad de su hogar.",
+            "Sabemos lo abrumador que puede llegar a ser afrontar un proyecto de ecommerce.",
+            "Si lo que estás buscando es tener una tienda online que cuente con las funcionalidades necesarias para tu emprendimiento, con un diseño atractivo y fácil de utilizar para tus clientes, estás en el sitio correcto, ponete en contacto con nosotros para charlar sobre tu proyecto."
+        ],
+        "cta":{
+            "title":"Contactanos Ahora",
+            "url": "/contacto"
+        }
+    },
+    "services": {
+        "title":"Servicios de Ecommerce",
+        "content": [
+            {
+                "title":"Diseño visual de tu tienda",
+                "description":"Combinamos un atractivo diseño visual, con una fluida experiencia de usuario para facilitar los procesos de compra de sus clientes"
+            },
+            {
+                "title":"Desarrollo integral",
+                "description":"Nos ocupamos del desarrollo de tu tienda, utilizando la tecnología que mejor se adapte a las necesidades de tu proyecto"
+            },
+            {
+                "title":"Configuración y mantenimiento",
+                "description":"Dominio, hosting, certificados SSL, y demás configuraciones están incluidas"
+            },
+            {
+                "title":"Panel de gestión",
+                "description":"Mediante un panel de control podrás llevar a cabo un correcto control del inventario de tu tienda"
+            },
+            {
+                "title":"Integración con marketplaces",
+                "description":"Integra tu tienda online con marketplaces para que puedas vender tus productos en plataformas de terceros"
+            },
+            {
+                "title":"Sincronización con redes sociales",
+                "description": " SIncronizamos los productos de tu tienda con redes sociales como instagram y facebook"
+            }
+
+        ]
+    
+    },
+    "mobile": {
+        "img":{ "src":"/ecommerce/ecommerce-mockup-es.png", "alt":"Diseño responsive"},
+        "title": "Diseño Móvil",
+        "subtitle":"En todos nuestros diseños hacemos especial énfasis en el diseño para tablets y smartphones.",
+        "title_two":"Más de un 60% de las compras por internet se realizan desde un smartphone",
+        "subtitle_two":"De ahí la importancia del diseño móvil en todo proyecto de Ecommerce."
+    },
+    "payment": {
+        "title": "Integración con plataformas de pagos",
+        "sistems": [
+            {
+                "src": "/ecommerce/payment/Paypal.png", 
+                "alt": "PayPal"
+            },
+            {
+                "src": "/ecommerce/payment/GooglePay.png", 
+                "alt": "GooglePay"
+            },
+            {
+                "src": "/ecommerce/payment/Stripe.png", 
+                "alt": "Stripe"
+            },
+            {
+                "src": "/ecommerce/payment/MercadoPago.png", 
+                "alt": "MercadoPago"
+            },
+            
+            {
+                "src": "/ecommerce/payment/ApplePay.png", 
+                "alt": "ApplePay"
+            },
+            {
+                "src": "/ecommerce/payment/ShopPay.png", 
+                "alt": "ShopPay"
+            },
+            {
+                "src": "/ecommerce/payment/PayU.png", 
+                "alt": "PayU"
+            }
+        ]
+    },
+    "platforms": {
+        "title":"Trabajamos con las plataformas más utilizadas en la industria",
+        "list": [
+            {
+                "img": {
+                    "src":"/ecommerce/tiendanube.png",
+                    "alt":"Agencia especializada en tienda nube"
+                },
+                "content": "Tienda nube es nuestra opción más rápida y  accesible. Se enfoca principalmente en clientes que están dando sus primeros pasos en ecommerce."
+            },
+            {
+                "img": {
+                    "src":"/ecommerce/woocommerce.png",
+                    "alt":"Agencia especializada en woocommerce"
+                },
+                "content": "Woocommerce es una alternativa un poco más compleja, permite un diseño más avanzado y a diferencia de tienda nube, no cobra comisiones por ventas."
+            },
+            {
+                "img": {
+                    "src":"/ecommerce/bigcommerce.png",
+                    "alt":"Agencia especializada en bigcommerce"
+                },
+                "content": "Bigcommerce es nuestra opción más avanzada y es tu mejor opción para  proyectos de aplicaciones web SPA y aplicaciones móviles."
+            }
+        ]
+    }
+}

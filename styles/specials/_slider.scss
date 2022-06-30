@@ -1,0 +1,32 @@
+.slider {
+    height: 150px;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+    &__slide-track {
+        display: flex;
+        width: calc(230px * 21);
+        animation: scroll 40s linear infinite;
+    }
+
+    &__slide {
+        height: 100px;
+        width: 230px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+    
+        & > img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@keyframes scroll {
+    0% { transform: translate(0); }
+    100% { transform: translate(-230px * 11); }
+}

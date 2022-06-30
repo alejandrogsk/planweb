@@ -1,0 +1,24 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    line-height: 115% !important;
+    letter-spacing: .05rem !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    color: $cb-l;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: $cb-l;
+}

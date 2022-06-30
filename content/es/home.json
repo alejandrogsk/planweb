@@ -1,0 +1,116 @@
+{
+    "hero": {
+        "img": {
+            "src":"/home/home-hero-photo.png",
+            "alt": "Diseño de tiendas online"
+        },
+        "title":"Diseño y desarrollo de soluciones digitales",
+        "sutitle":"Brindamos nuestros conocimientos y recursos para que tu empresa esté al alcance de las expectativas y nuevas necesidades de sus clientes.",
+        "cta":{
+            "title":"Ecommerce",
+            "url": "/"
+        },
+        
+        "card":"Fué lo que creció el ecommerce la última década."
+    },
+    "services": {
+        "top_title": "CÓMO TE PODEMOS AYUDAR",
+        "title":"Nuestros Servicios",
+        "list": [
+            {
+                "top_title":"La imagen de tu marca",
+                "title":"Diseño de identidad visual",
+                "content": "Te ayudamos a tener una imagen de visual bien definida, lo que hará que tu marca se destaque en el sector en que compite.",
+                "img": {
+                    "src":"/home/brand-design.jpg",
+                    "alt": "Diseño de identidad de marca"
+                },
+                "cta": {
+                    "url":"",
+                    "title":"Ver más"
+                }
+            },
+            {
+                "top_title":"Tu plataforma de ventas online",
+                "title":"Diseño y desarrollo de ecommerce",
+                "content": "Hacemos que tu negocio llegue a más clientes las 24hs los 7 días de la semana con tu propia plataforma de ventas online.",
+                "img": {
+                    "src":"/home/ecommerce.jpg",
+                    "alt": "Diseño de ecommerce"
+                },
+                "cta": {
+                    "url":"",
+                    "title":"Ver más"
+                }
+            },
+            {
+                "top_title":"Tu presencia online",
+                "title":"Diseño y desarrollo web",
+                "content": "Estudiamos las necesidades de tu empresa y desarrollamos tu sitio web que las satisfaga.",
+                "img": {
+                    "src":"/home/web-development.jpg",
+                    "alt": "Diseño de sitios web a medida"
+                },
+                "cta": {
+                    "url":"",
+                    "title":"Ver más"
+                }
+            },
+            {
+                "top_title":"Llegá a más y mejores clientes",
+                "title":"Marketing Digital",
+                "content": "Ponemos múltiples servicios de marketing digital al alcance de tu negocio para ayudarte a alcanzar tus objetivos.",
+                "img": {
+                    "src":"/home/marketing.jpg",
+                    "alt": "Servicios de marketing digital"
+                },
+                "cta": {
+                    "url":"",
+                    "title":"Ver más"
+                }
+            }
+        ]
+    },
+    "blog": {
+        "top_title":"Noticias",
+        "title":"Tal vez te interese ver algunas de nuestras últimas publicaciones",
+        "list": [
+            {
+                "title":"¿Qué dicen los expertos del ecommerce en 2022?",
+                "date": "05/07/22",
+                "img": {
+                    "src":"/home/blog-1.jpg",
+                    "alt":""
+                },
+                "cta": {
+                    "url":"",
+                    "title":"Ver más"
+                }
+            },
+            {
+                "title":"Tendencias de ecommerce para 2022",
+                "date": "15/07/22",
+                "img": {
+                    "src":"/home/blog-2.jpg",
+                    "alt":""
+                },
+                "cta": {
+                    "url":"",
+                    "title":"Ver más"
+                }
+            },
+            {
+                "title":"10 Tips de marketing digital para implementar ya mismo",
+                "date": "30/07/22",
+                "img": {
+                    "src":"/home/blog-3.jpg",
+                    "alt":""
+                },
+                "cta": {
+                    "url":"",
+                    "title":"Ver más"
+                }
+            }
+        ]
+    }
+}

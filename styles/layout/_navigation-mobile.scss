@@ -1,0 +1,183 @@
+
+.logo-mobile {
+    display: none;
+    @include respond(tab-big){
+        position: absolute;
+        top: 1rem;
+        left: 4rem;
+        display:block;
+    }
+
+    @include respond(phone-tab) {
+        left: 2rem;
+    }
+}
+
+.navbar__responsive {
+
+    &--checkbox {
+        display: none;
+    }
+
+    &--button {
+        background-color: $cw-m;
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.14);
+        cursor: pointer;
+        height: 5rem;
+        position: fixed;
+        right: 1rem;
+        text-align: center;
+        top: 1rem;
+        width: 5rem;
+        z-index: 200;
+    }
+
+    &--background {
+        background-image: radial-gradient($co-m, $co-l);
+        border-radius: 50%;
+        height: 2rem;
+        position: fixed;
+        right: 2.25rem;
+        top: 2.25rem;
+        transition: transform .8s cubic-bezier(.36,-0.08,0,1.4);
+        width: 2rem;
+        z-index: 100;
+
+        transform: scale(0);
+    }
+
+    &--nav {
+        background-color: $co-m;
+        height: 100vh;
+
+        position: fixed;
+        /*Con right y left definimos la dirección de entrada
+        y salida del menu*/
+        //right: 0;
+        left: 0;
+        top: 0;
+        transition: all .8s cubic-bezier(.36,-0.08,0,1.4);
+        width: 0;
+        z-index: 150;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &--list {
+        left: 50%;
+        list-style: none;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    &--item {
+        padding: 1rem;
+        color: $cw-m;
+        font-size: 1.5rem;
+    }
+
+    &--link {
+        text-transform: capitalize;
+        cursor: pointer;
+        color: $cw-m;
+        &:link,
+        &:visited {
+            background-image: linear-gradient(120deg, transparent 0%, $co-m 50%, $cw-m 50%);
+            background-size: 230%;
+            color: $cw-m;
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: 400;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            text-transform: none;
+            
+            transition: all .4s;
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $co-m;
+            transform: translateX(1rem);
+            border-radius: 10px; /// Absolutamente opcional
+        }
+
+
+
+    }
+
+    //Funcionalidad
+    &--checkbox:checked ~ &--background {
+        transform: scale(50);
+    }
+
+    &--checkbox:checked ~ &--nav {
+        //display: block;
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    //Icon
+    &--icon {
+        margin-top: 2.5rem;
+        position: relative;
+
+        &,
+        &::before,
+        &::after {
+            background-color: $co-m;
+            display: inline-block;
+            height: 2.5px;
+            width: 2.5rem;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            left: 0;
+            position: absolute;
+            transition: all .2s;
+        }
+
+        &::before { top: -.6rem;@include respond(mobile) {top: -.7rem;} }
+        &::after {top: .6rem;@include respond(mobile) {top: .7rem;}  }
+    }
+
+    &--button:hover &--icon::before {
+        top: -.5rem;
+
+    }
+    &--button:hover &--icon::after {
+        top: .5rem;
+
+    }
+
+    //Icono de cruz
+    &--checkbox:checked + &--button &--icon{
+        background-color: transparent;
+    }
+
+    &--checkbox:checked + &--button &--icon::before{
+        top: 0;
+        transform: rotate(315deg);
+    }
+
+    &--checkbox:checked + &--button &--icon::after{
+        top: 0;
+        transform: rotate(-315deg);
+    }
+}
+
+.d-n {
+    display: none;
+    
+    @include respond(tab-big){
+        display:block;
+    }
+}

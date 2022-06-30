@@ -1,0 +1,13 @@
+.websites-section {
+    background-color: $co-m;
+    & > h2 { color: $cw-m }
+    &__elements {
+        background-color: $cw-m;
+        //border-radius: 1rem;
+
+        padding: 2rem;
+
+
+    }
+
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+//GLobal
+@import "./global/variables";
+@import "./global/global";
+@import "./global/mixins";
+
+//Components
+@import "./layout/navigation-desktop";
+@import "./layout/navigation-mobile";
+
+//Specials
+@import "./specials/points";
+@import "./specials/underline";
+@import "./specials/slider";
+
+//Pages
+@import "./pages/home";
+@import "./pages/visual-identity";
+@import "./pages/ecommerce";
+@import "./pages/websites";
+@import "./pages/marketing";
+
+//Sections
+@import "./pages/sections/service-hero";
+@import "./pages/sections/black-section";
+@import "./pages/sections/services-section";

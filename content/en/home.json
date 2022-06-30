@@ -1,0 +1,71 @@
+{
+    "hero": {
+        "title":"",
+        "sutitle":"",
+        "cta":{
+            "title":"",
+            "url": ""
+        },
+        "card":""
+    },
+    "services": {
+        "top_title": "",
+        "title":"",
+        "list": [
+            {
+                "top_title":"",
+                "title":"",
+                "content": "",
+                "url":""
+            },
+            {
+                "top_title":"",
+                "title":"",
+                "content": "",
+                "url":""
+            },
+            {
+                "top_title":"",
+                "title":"",
+                "content": "",
+                "url":""
+            },
+            {
+                "top_title":"",
+                "title":"",
+                "content": "",
+                "url":""
+            }
+        ]
+    },
+    "blog": {
+        "top_title":"",
+        "title":"",
+        "list": [
+            {
+                "title":"",
+                "date": "",
+                "img": {
+                    "src":"",
+                    "alt":""
+                }
+            },
+            {
+                "title":"",
+                "date": "",
+                "img": {
+                    "src":"",
+                    "alt":""
+                }
+            },
+            {
+                "title":"",
+                "date": "",
+                "img": {
+                    "src":"",
+                    "alt":""
+                }
+            }
+        ]
+    }
+}
