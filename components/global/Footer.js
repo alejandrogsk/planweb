@@ -16,7 +16,9 @@ const Footer = ({menu}) => {
             }
         </ul>
 
-        <img className="footer__logo" src="/logo-mobile.png" alt="Smooth design logo mobile" />
+        <Link href="/contact">
+            <img className="footer__logo" src="/logo-mobile.png" alt="Smooth design logo mobile" />
+        </Link>
 
 
 

@@ -37,9 +37,7 @@
             display: flex;
             align-items: center;
 
-            @include respond(mobile) {
-                align-items: flex-start;
-            }
+           
 
             & > svg {
                 height: 2rem;

@@ -46,7 +46,7 @@
         width: 5rem;
         height: auto;
         justify-self: center;  
-
+        cursor: pointer;
         @include respond(desktop-small) {
             grid-row: 1/2;
             grid-column: 1/3;

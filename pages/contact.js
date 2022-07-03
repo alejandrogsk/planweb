@@ -65,7 +65,7 @@ const Contact = () => {
 <section className="contact">
       <div className="contact__content">
         <h1>Estamos encantados de conocerte<span className="point-orange">.</span></h1>
-        <p>Complatá el formulario y nos pondremos en contacto a la brevedad. Si es que ya tenes una idea de como queres tu proyecto, podes adjuntar un archivo con los detalles.</p>
+        <p>Estamos muy interesados en tu proyecto, complatá el formulario y nos pondremos en contacto a la brevedad.</p>
       </div>
     
         <form onSubmit={handeSubmit} className="contact__form">
