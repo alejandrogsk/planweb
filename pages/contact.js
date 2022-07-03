@@ -1,151 +1,166 @@
-import React from 'react'
-import useForm from '../hooks/useForm';
-import useCheckbox from '../hooks/useChecks';
+import React from "react";
+import useForm from "../hooks/useForm";
+import useCheckbox from "../hooks/useChecks";
 //Necesito el placeholder de cada input
-import TextareaAutosize from 'react-textarea-autosize'
-import Layout from '../components/global/Layout';
-import Head from 'next/head';
+import TextareaAutosize from "react-textarea-autosize";
+import Layout from "../components/global/Layout";
+import Head from "next/head";
 
-
-
+import ContactES from "../content/es/contact.json";
 
 const Contact = () => {
+    const { title, content, form_fields } = ContactES;
 
-  const [ exceptions, setExceptions ] = React.useState({
-    loading: false,
-    message: null
-  });
-  const { loading, message} = exceptions; 
-
-  //For CHeckbox
-  const [ services, handleChecks ] = useCheckbox();
-  //For checkbox
-
-  const [ formValues, handleImputChange ] = useForm({
-    userName:"",
-    userLastName: "",
-    userEmail: "",
-    userPhone: "",
-    userMessage: "",
-  });
-
- 
-
-  const { userName, userLastName, userEmail, userPhone, userMessage } = formValues;
-
-  const handeSubmit = async(e) => {
-    e.preventDefault()
-    setExceptions({...exceptions, loading: true})
-    const data = JSON.stringify({...formValues, services: services});
-
-    console.log(data)
-    const req = await fetch("/api/sendForm", {
-      method: "POST",
-      headers:{'Accept': 'application/json, text/plain, */*',
-      'Content-Type': 'application/json'},
-      body: data
+    //For loading in submit button, success message and error message
+    const [exceptions, setExceptions] = React.useState({
+        loading: false,
+        message: null,
+        isOk: true,
     });
-    const respuesta = await req.json();
-    console.log(respuesta)
-    setExceptions({...exceptions, message: respuesta.message})
-  }
+    const { loading, message, isOk } = exceptions;
 
+    //For Checkbox
+    const [services, handleChecks, resetCheck] = useCheckbox();
 
-  
+    //For Inputs
+    const [formValues, handleImputChange, resetInputs] = useForm({
+        userName: "",
+        userLastName: "",
+        userEmail: "",
+        userPhone: "",
+        userMessage: "",
+    });
 
-  return (
-    <div>
-      <Head>
-        <title>Agencia en crespo entre ríos.</title>
-        <meta name="description" content="Agencia de desarrollo web en crespo entre rios." />
-        
-        </Head>
-        <Layout>
+    const { userName, userLastName, userEmail, userPhone, userMessage } =
+        formValues;
 
-<section className="contact">
-      <div className="contact__content">
-        <h1>Estamos encantados de conocerte<span className="point-orange">.</span></h1>
-        <p>Estamos muy interesados en tu proyecto, complatá el formulario y nos pondremos en contacto a la brevedad.</p>
-      </div>
-    
-        <form onSubmit={handeSubmit} className="contact__form">
-          <div className="contact__form-input userName">
-            <input 
-              type="text" 
-              onChange={handleImputChange} 
-              value={userName} 
-              name="userName" 
-              id="userName" 
-              required
-              placeholder="Nombre"
-            />
-               
-          </div>
+    const handeSubmit = async (e) => {
+        e.preventDefault();
+        setExceptions({ ...exceptions, loading: true });
+        const data = JSON.stringify({ ...formValues, services: services });
 
-          <div className="contact__form-input">
-            <input 
-              type="text" 
-              name="userLastName" 
-              id="userLastName" 
-              placeholder="Apellido" 
-              required 
-              onChange={handleImputChange} 
-              value={userLastName} 
-            />
-                   
-          </div>
+        console.log(data);
+        const req = await fetch("/api/sendForm", {
+            method: "POST",
+            headers: {
+                Accept: "application/json, text/plain, */*",
+                "Content-Type": "application/json",
+            },
+            body: data,
+        });
+        const respuesta = await req.json();
+        console.log(respuesta);
+        setExceptions({ ...exceptions, message: respuesta.message });
 
-          <div className="contact__form-input">
-            <input
-              type="text"
-              name="userEmail"
-              id="userEmail" 
-              placeholder="Email" 
-              required
-              onChange={handleImputChange} 
-              value={userEmail} 
-            />       
-          </div>
+        if (respuesta.ok === true) {
+            resetCheck();
+            resetInputs();
 
-          <div className="contact__form-input">
-            <input 
-            type="text" 
-            name="userPhone" 
-            id="userPhone" 
-            placeholder="Teléfono" 
-            required
-            onChange={handleImputChange} 
-            value={userPhone} 
-            />   
-          </div>
+            setExceptions({
+                ...exceptions,
+                message: respuesta.message,
+                isOk: true,
+            });
+        } else
+            setExceptions({
+                ...exceptions,
+                message: respuesta.message,
+                isOk: false,
+            });
+    };
 
-          <div className="contact__form-box">
-            <span>¿Que servicio necesitas?</span>
+    return (
+        <div>
+            <Head>
+                <title>Agencia en crespo entre ríos.</title>
+                <meta
+                    name="description"
+                    content="Agencia de desarrollo web en crespo entre rios."
+                />
+            </Head>
+            <Layout>
+                <section className="contact">
+                    <div className="contact__content">
+                        <h1>
+                            {title}
+                            <span className="point-orange">.</span>
+                        </h1>
+                        <p>{content}</p>
+                    </div>
 
-            <div className="contact__form-box--list"> 
-            <div>
-              <input type="checkbox" value="Disenio" name="checkDesign" id="checkDesign" onChange={handleChecks} />
-              <label htmlFor="checkDesign">Diseño</label>  
-            </div> 
+                    <form onSubmit={handeSubmit} className="contact__form">
+                        <div className="contact__form-input userName">
+                            <input
+                                type="text"
+                                onChange={handleImputChange}
+                                value={userName}
+                                name="userName"
+                                id="userName"
+                                required
+                                placeholder={`${form_fields.name}`}
+                            />
+                        </div>
 
-            <div>
-              <input type="checkbox" value="website" name="checkWeb" id="checkWeb" onChange={handleChecks} />
-              <label htmlFor="checkWeb">Sitio Web</label>  
-            </div> 
+                        <div className="contact__form-input">
+                            <input
+                                type="text"
+                                name="userLastName"
+                                id="userLastName"
+                                placeholder={`${form_fields.lastName}`}
+                                required
+                                onChange={handleImputChange}
+                                value={userLastName}
+                            />
+                        </div>
 
-            <div>
-              <input type="checkbox" value="ecommerce" name="checkEcommerce" id="checkEcommerce" onChange={handleChecks} />
-              <label htmlFor="checkEcommerce">Ecommerce</label>  
-            </div> 
- 
-            <div>
-              <input type="checkbox" value="marketing" name="checkMarketing" id="checkMarketing" onChange={handleChecks} />
-              <label htmlFor="checkMarketing">Marketing</label>  
-            </div>    
-            </div>       
-          </div>
+                        <div className="contact__form-input">
+                            <input
+                                type="text"
+                                name="userEmail"
+                                id="userEmail"
+                                placeholder={`${form_fields.email}`}
+                                required
+                                onChange={handleImputChange}
+                                value={userEmail}
+                            />
+                        </div>
 
-          {/* <div className="contact__form-file">
+                        <div className="contact__form-input">
+                            <input
+                                type="text"
+                                name="userPhone"
+                                id="userPhone"
+                                placeholder={`${form_fields.phone}`}
+                                required
+                                onChange={handleImputChange}
+                                value={userPhone}
+                            />
+                        </div>
+
+                        <div className="contact__form-box">
+                            <span>{form_fields.services.title}</span>
+
+                            <div className="contact__form-box--list">
+                                {form_fields.services.options.map(
+                                    (service, i) => (
+                                        <div key={i}>
+                                            <input
+                                                type="checkbox"
+                                                value={service.placeholder}
+                                                name={service.id}
+                                                id={service.id}
+                                                onChange={handleChecks}
+                                            />
+                                            <label htmlFor={service.id}>
+                                                {service.placeholder}
+                                            </label>
+                                        </div>
+                                    )
+                                )}
+                            </div>
+                        </div>
+
+                        {/* <div className="contact__form-file">
             <input 
               type="file" 
               name="userPDF" 
@@ -156,28 +171,36 @@ const Contact = () => {
             <label htmlFor="userPDF">Adjuntar archiv <span>(opcional)</span></label>
           </div> */}
 
-          <div className="contact__form-message">
-            <TextareaAutosize 
-              name="userMessage"
-              id="userMessage"
-              placeholder="mensaje"
-              onChange={handleImputChange} 
-              value={userMessage} 
-            />
-         </div>
+                        <div className="contact__form-message">
+                            <TextareaAutosize
+                                name="userMessage"
+                                id="userMessage"
+                                placeholder="mensaje"
+                                onChange={handleImputChange}
+                                value={userMessage}
+                            />
+                        </div>
 
-          {
-            message && <p>{message}</p>
-          }
+                        {message && (
+                            <p
+                                className={`contact__form-alert ${
+                                    isOk ? "success" : "error"
+                                }`}
+                            >
+                                {message}
+                            </p>
+                        )}
 
-          <button type="submit" disabled={ loading } >{loading ? 'cargando...' : 'Enviar'}</button>
-        </form> 
-    
-    </section>
-        </Layout>
-    </div>
-    
-  )
-}
+                        <button type="submit" disabled={loading}>
+                            {loading
+                                ? form_fields.btn.loading
+                                : form_fields.btn.title}
+                        </button>
+                    </form>
+                </section>
+            </Layout>
+        </div>
+    );
+};
 
-export default Contact
+export default Contact;

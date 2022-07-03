@@ -1,7 +1,7 @@
 import {useState} from 'react';
-const useCheckbox = (initialState=[]) => {
+const useCheckbox = (initialState = []) => {
 
-    const [ values, setValues ] = useState([]);
+    const [ values, setValues ] = useState(initialState);
   
     const reset = () => {
       setValues( initialState );

@@ -1,14 +1,36 @@
 {
-    "title":"",
-    "content":"",
+    "title":"Estamos encantados de conocerte",
+    "content":"Estamos muy interesados en tu proyecto, completa el formulario y nos pondremos en contacto a la brevedad.",
     "form_fields": {
-        "name": "",
-        "email": "",
-        "phone": "",
-        "options": [],
-        "cta":{
-            "title":"",
-            "url": ""
+        "name": "Nombre",
+        "lastName":"Apellido",
+        "email": "Email",
+        "phone": "Teléfono",
+        "services":{
+            "title": "¿Qué servicios necesitas?",
+            "options": [
+                {
+                    "placeholder": "Diseño",
+                    "id": "checkDesign"
+                },
+                {
+                    "placeholder": "Ecommerce",
+                    "id": "checkEcommerce"
+                },
+                {
+                    "placeholder": "Marketing",
+                    "id": "checkMarketing"
+                },
+                {
+                    "placeholder": "Sitio Web",
+                    "id": "checkWeb"
+                }
+            ]
+        },
+        "message":"Mensaje",
+        "btn": {
+            "title": "Enviar",
+            "loading": "Cargando"
         }
     }
 }

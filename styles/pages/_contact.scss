@@ -162,6 +162,16 @@
             }
         }
 
+        &-alert {
+            grid-column: 1/3;
+            
+            @include respond(phone-tab) {
+                grid-column: 1/2;
+            }
+
+            
+        }
+
 
         & > button {
             cursor: pointer;

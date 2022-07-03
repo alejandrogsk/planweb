@@ -8,7 +8,6 @@ const useForm = ( initialState = {} ) => {
         setValues( initialState );
     }
 
-
     const handleImputChange = ({ target }) => {
         setValues({
             ...values,
