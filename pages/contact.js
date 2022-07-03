@@ -3,6 +3,8 @@ import useForm from '../hooks/useForm';
 import useCheckbox from '../hooks/useChecks';
 //Necesito el placeholder de cada input
 import TextareaAutosize from 'react-textarea-autosize'
+import Layout from '../components/global/Layout';
+import Head from 'next/head';
 
 
 
@@ -52,7 +54,15 @@ const Contact = () => {
   
 
   return (
-    <section className="contact">
+    <div>
+      <Head>
+        <title>Agencia en crespo entre ríos.</title>
+        <meta name="description" content="Agencia de desarrollo web en crespo entre rios." />
+        
+        </Head>
+        <Layout>
+
+<section className="contact">
       <div className="contact__content">
         <h1>Estamos encantados de conocerte<span className="point-orange">.</span></h1>
         <p>Complatá el formulario y nos pondremos en contacto a la brevedad. Si es que ya tenes una idea de como queres tu proyecto, podes adjuntar un archivo con los detalles.</p>
@@ -164,6 +174,9 @@ const Contact = () => {
         </form> 
     
     </section>
+        </Layout>
+    </div>
+    
   )
 }
 
