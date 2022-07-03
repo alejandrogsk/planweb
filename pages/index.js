@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Layout from './components/global/Layout'
+import Layout from '../components/global/Layout'
 
 import HomerES from '../content/es/home.json';
+import Link from 'next/link';
 export default function Home() {
 
   const { hero, services, blog } = HomerES;
@@ -21,7 +22,9 @@ export default function Home() {
           <div className="home-hero__left">
             <h1>{hero.title}<span className="point-orange">.</span></h1>
             <p>{hero.sutitle}</p>
-            <a>{hero.cta.title}</a>
+            <Link href={hero.cta.url}>
+              <a>{hero.cta.title}</a>
+            </Link>
           </div>
           <div className="home-hero__right">
             <img className="home-hero__img" src={hero.img.src} alt={hero.img.alt} />

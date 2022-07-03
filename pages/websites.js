@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import React from 'react'
-import Layout from './components/global/Layout';
+import Layout from '../components/global/Layout';
 import WebsitesES from '../content/es/websites.json'
+import Link from 'next/link';
 
 const websites = () => {
 
@@ -39,7 +40,9 @@ const websites = () => {
                     {
                         description.content.map((paragraph, index)=> <p key={index}>{paragraph}</p>)
                     }
-                    <a>{description.cta.title}</a>
+                    <Link href={description.cta.url}>
+                        <a>{description.cta.title}</a>
+                    </Link>
                 </div>
             </section>
 

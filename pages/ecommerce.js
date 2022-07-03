@@ -1,6 +1,7 @@
 import Head from 'next/head'
+import Link from 'next/link';
 import React from 'react'
-import Layout from './components/global/Layout'
+import Layout from '../components/global/Layout'
 import EcommerceES from '../content/es/ecommerce.json';
 const ecommerce = () => {
   const { hero, description, services, mobile, payment, platforms } = EcommerceES;
@@ -38,7 +39,9 @@ const ecommerce = () => {
                     {
                         description.content.map((paragraph, index)=> <p key={index}>{paragraph}</p>)
                     }
-                    <a>{description.cta.title}</a>
+                     <Link href={description.cta.url}>
+                        <a>{description.cta.title}</a>
+                    </Link>
                 </div>
             </section>
 

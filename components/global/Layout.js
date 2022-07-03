@@ -9,10 +9,10 @@ const menues = {
         },
         menu: [
             { title: "Inicio", link: "/" },
-            { title: "Diseño", link: "/" },
-            { title: "Ecommerce", link: "/" },
-            { title: "Websites", link: "/" },
-            { title: "Marketing", link: "/" },
+            { title: "Diseño", link: "/identidad-visual" },
+            { title: "Ecommerce", link: "/ecommerce" },
+            { title: "Websites", link: "/websites" },
+            { title: "Marketing", link: "/marketing" },
         ]
     },
     en: {
@@ -22,8 +22,7 @@ const menues = {
         },
         menu: [
             { title: "Home", link: "/" },
-            { title: "UX/UI", link: "/" },
-            { title: "Branding", link: "/" },
+            { title: "Design", link: "/identidad-visual" },
             { title: "Ecommerce", link: "/ecommerce" },
             { title: "Websites", link: "/websites" },
             { title: "Marketing", link: "/marketing" },
@@ -33,7 +32,7 @@ const menues = {
 }
 const Layout = ({ children }) => {
 
-    const menu = menues.es;
+ const menu = menues.es;
   return (
     <>
         <Navigation menu={menu.menu} cta={menu.cta} />

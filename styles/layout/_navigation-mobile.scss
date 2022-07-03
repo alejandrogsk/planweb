@@ -1,11 +1,18 @@
 
 .logo-mobile {
     display: none;
+    
     @include respond(tab-big){
         position: absolute;
-        top: 1rem;
+        top: 2rem;
         left: 4rem;
         display:block;
+
+        & > img {
+            display: block;
+            height: 2.2rem;
+            width: auto;
+        }
     }
 
     @include respond(phone-tab) {

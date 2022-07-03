@@ -1,6 +1,6 @@
 .desktop {
     &__header {
-        margin: 0 4rem;
+        padding: 0 4rem;
         position: absolute;
         top: 1rem;
         left: 0;
@@ -19,9 +19,11 @@
     }
 
 
-    &__logo > svg{ 
-        max-height: 50px;
+    &__logo > img {
+        display: block; 
+        height: 3.5rem;
         width: auto;
+        
     }
 
 
@@ -50,5 +52,22 @@
         &:hover {
             background-color:$co-l;
         }
+    }
+}
+
+.sticky {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: $cw-m;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    & > .desktop__cta {
+        color: $co-m;
+        background-color: $cw-m;
+        border: solid 2px $co-m;
     }
 }
