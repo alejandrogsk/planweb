@@ -7,7 +7,9 @@
     
     @include respond(tab-big) {
         grid-template-columns: 1fr;
+        padding: 10rem 2rem;
     }
+
 
     &__img {
         @include respond(tab-big) {

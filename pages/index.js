@@ -55,7 +55,8 @@ export default function Home() {
             {
               services.list.map((item, key)=> {
                 return(
-                  <div key={key} className="home-services__item">
+                 <Link key={key} href={item.cta.url}>
+                  <div className="home-services__item">
                     <div>
                       <h6>{item.top_title}</h6>
                       <h3>{item.title}<span className="point-orange">.</span></h3>
@@ -63,6 +64,7 @@ export default function Home() {
                       <a>{item.cta.title}</a>
                     </div>
                   </div>
+                 </Link>
                 )
               })
             }

@@ -1,5 +1,6 @@
 
 import React from 'react'
+import Footer from './Footer';
 import Navigation from './Navigation'
 const menues = {
     es: {
@@ -39,9 +40,7 @@ const Layout = ({ children }) => {
             <main>
                 {children}
             </main>
-        <footer>
-            footer
-        </footer>
+        <Footer menu={menu.menu} />
     </>
   )
 }

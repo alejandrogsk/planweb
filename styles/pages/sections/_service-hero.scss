@@ -4,6 +4,11 @@
     display: grid;
     align-items: center;
     position: relative;
+
+    @include respond(tab){
+        margin: 8rem 2rem;
+    }
+
     & > div {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -21,7 +26,7 @@
                 grid-column: 1/span 2;
             }
             @include respond(phone-tab) {
-                font-size: 3.5rem;
+                font-size: 3rem;
             }
             @include respond(tab){
                 grid-column: 1/2;
@@ -40,6 +45,10 @@
             @include respond(tab){
                 grid-row: 2/3;
                 grid-column: 1/2;
+            }
+
+            @include respond(phone-tab) {
+                font-size: 2.2rem;
             }
         }
 

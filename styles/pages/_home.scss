@@ -111,6 +111,10 @@
         @include respond( tab ) {
             right: 0rem;
         }
+
+        @include respond(mobile) {
+            width: 25rem;
+        }
         & > div {
             padding: 1rem;
             display: grid;
@@ -183,7 +187,7 @@
         position: relative;
         overflow: hidden;
         transition: all 300ms;
-
+cursor: pointer;
         @include respond(mobile){
             min-height: 30vh;
         }
@@ -217,7 +221,7 @@
                 left: 2rem;
             }
 
-            & > h6,p {
+            & > h6,p, a {
                 @include respond(tab) {
                     display: none;
                 }
@@ -236,6 +240,10 @@
                 @include respond(tab) {
                     margin-bottom: 0;
                 }
+
+                @include respond(mobile) {
+                    font-size: 3rem;
+                }
             }
 
             & > p {
@@ -251,10 +259,7 @@
                 bottom: -15rem;
                 text-transform: uppercase;
                 font-weight: 500;
-
-                &:hover {
-                    text-decoration: underline;
-                }
+                
             }
 
            
@@ -274,6 +279,11 @@
                 color: $cw-m;
                 position: absolute;
                 bottom: -3rem;
+
+                transition: all 300ms;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

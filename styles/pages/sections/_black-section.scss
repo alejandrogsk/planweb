@@ -13,15 +13,18 @@
 
     @include respond(tab-big) {
         grid-template-columns: 1fr;
-     }
-    &__img {
+    }
+    
+    @include respond(tab){
+        padding: 10rem 2rem;
+    }
 
+    &__img {
         & > img {
             position: absolute;
             top: -3rem;
             width: 500px;
             height: auto;
-
             @include respond(desktop) {
                 position: relative;
                 width: 100%;
@@ -33,15 +36,24 @@
         &-verified {
             display: flex;
             align-items: center;
+
+            @include respond(mobile) {
+                align-items: flex-start;
+            }
+
             & > svg {
                 height: 2rem;
-                width: auto;
+                width: 2rem;
             }
+
             & > h3 {
                 font-size: 1.8rem;
                 color: $co-m;
                 font-weight: 500;
                 margin-left: .5rem;
+                @include respond(mobile) {
+                    font-size: 1.2rem;
+                }
             }
         }
 
@@ -51,6 +63,11 @@
             margin-top: 1rem;
             margin-bottom: 2rem;
             font-size: 3rem; //sm 2.5
+
+            @include respond(mobile) {
+                font-size: 2rem;
+            }
+
         }   
 
 
@@ -61,6 +78,7 @@
             }
 
             & > a {
+                text-align: center;
                 margin-top: 2rem;
                 display: inline-block;
                 background-color: $co-m;
@@ -71,13 +89,17 @@
                 padding: 1rem 2rem;
                 transition: all 300ms;
                 box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-            @include respond(phone-tab) {
-                font-size: 1.8rem;
-            }
-            &:hover {
-                background-color: $co-l;
-                border-color: $co-l;
-            }
+                @include respond(tab) {
+                    font-size: 1.8rem;
+                }
+
+                @include respond(mobile) {
+                    font-size: 1.3rem;
+                }
+                &:hover {
+                    background-color: $co-l;
+                    border-color: $co-l;
+                }
             }
         
     }

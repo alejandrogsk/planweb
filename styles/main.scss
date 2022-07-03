@@ -2,12 +2,13 @@
 
 //GLobal
 @import "./global/variables";
-@import "./global/global";
 @import "./global/mixins";
+@import "./global/global";
 
 //Components
 @import "./layout/navigation-desktop";
 @import "./layout/navigation-mobile";
+@import "./layout/footer";
 
 //Specials
 @import "./specials/points";

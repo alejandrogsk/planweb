@@ -126,7 +126,10 @@ const marketing = () => {
                 {
                     email_marketing.list.map((element,index)=>{
                         return (
-                            <div className="marketing-grid__card-social" key={index}>
+                            <div className="marketing-grid__card-google" key={index}>
+                                <div className="services-section__grid-element--icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#f84525" transform="translate(0, 0) scale(1, 1) "><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></g></svg>
+                                </div>
                                 <h3>{element.title}.</h3>
                                 <p>{element.description}</p>
                             </div>
