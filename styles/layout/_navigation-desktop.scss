@@ -41,14 +41,15 @@
 
 
     &__cta {
-        font-size: 1.75rem;
-        //font-weight: 500;
-        color: $cw-m;
         background-color: $co-m;
-        padding: 1rem 2rem;
-        transition: background-color 300ms;
-        text-transform: capitalize;
         border-radius: 2rem;
+        color: $cw-m;
+        font-size: 1.75rem;
+        font-weight: 500;
+        padding: 1rem 2rem;
+        text-align: center;
+        text-transform: capitalize;
+        transition: background-color 300ms;
         &:hover {
             background-color:$co-l;
         }
@@ -66,8 +67,8 @@
     padding-bottom: 1rem;
 
     & > .desktop__cta {
-        color: $co-m;
-        background-color: $cw-m;
         border: solid 2px $co-m;
+        background-color: $cw-m;
+        color: $co-m;
     }
 }

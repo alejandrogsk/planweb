@@ -72,7 +72,7 @@ export default function Home() {
 
         </section>
 
-        <section className="home-blog__section">
+        {/* <section className="home-blog__section">
             <h6>{blog.top_title}</h6>
             <h2>{blog.title}<span className="point-orange">.</span></h2>
             <div className="home-blog__list">
@@ -95,7 +95,9 @@ export default function Home() {
                 })
               }
             </div>
-        </section>
+        </section> */}
+
+
       </Layout>
     </div>
   )
