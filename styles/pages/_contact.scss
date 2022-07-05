@@ -175,18 +175,24 @@
 
         & > button {
             cursor: pointer;
-            display: block;
-            background-color: $co-m;
-            color: $cw-m;
-            border: none;
-            border-radius: 1rem;
-            padding: 1.5rem 1rem;
+            display: inline-block;
+            background-color: $cw-m;
             font-size: 2rem;
+            color: $co-m;
+            border: $co-m 2px solid;
+            border-radius: 3rem;
+            padding: 1rem 2rem;
             transition: all 300ms;
-            &:hover {
-                background-color: $co-l;
-                
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+            @include respond(phone-tab) {
+                font-size: 1.8rem;
             }
+            &:hover {
+                background-color: $co-m;
+                color: $cw-m;
+            }
+
+            
 
             @include respond(desktop-small) {
                 width: 100%;

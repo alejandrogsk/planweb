@@ -28,10 +28,12 @@ const Contact = () => {
         userLastName: "",
         userEmail: "",
         userPhone: "",
+        userCompany:"",
+        userLocation: "",
         userMessage: "",
     });
 
-    const { userName, userLastName, userEmail, userPhone, userMessage } =
+    const { userName, userLastName, userEmail, userPhone, userMessage, userLocation, userCompany } =
         formValues;
 
     const handeSubmit = async (e) => {
@@ -91,6 +93,7 @@ const Contact = () => {
                     <form onSubmit={handeSubmit} className="contact__form">
                         <div className="contact__form-input userName">
                             <input
+                            autocomplete="off"
                                 type="text"
                                 onChange={handleImputChange}
                                 value={userName}
@@ -103,6 +106,7 @@ const Contact = () => {
 
                         <div className="contact__form-input">
                             <input
+                            autocomplete="off"
                                 type="text"
                                 name="userLastName"
                                 id="userLastName"
@@ -115,7 +119,8 @@ const Contact = () => {
 
                         <div className="contact__form-input">
                             <input
-                                type="text"
+                            autocomplete="off"
+                                type="email"
                                 name="userEmail"
                                 id="userEmail"
                                 placeholder={`${form_fields.email}`}
@@ -127,6 +132,7 @@ const Contact = () => {
 
                         <div className="contact__form-input">
                             <input
+                            autocomplete="off"
                                 type="text"
                                 name="userPhone"
                                 id="userPhone"
@@ -134,6 +140,32 @@ const Contact = () => {
                                 required
                                 onChange={handleImputChange}
                                 value={userPhone}
+                            />
+                        </div>
+
+                        <div className="contact__form-input">
+                            <input
+                            autocomplete="off"
+                                type="text"
+                                name="userCompany"
+                                id="userCompany"
+                                placeholder={`${form_fields.company}`}
+                                required
+                                onChange={handleImputChange}
+                                value={userCompany}
+                            />
+                        </div>
+
+                        <div className="contact__form-input">
+                            <input
+                            autocomplete="off"
+                                type="text"
+                                name="userLocation"
+                                id="userLocation"
+                                placeholder={`${form_fields.location}`}
+                                required
+                                onChange={handleImputChange}
+                                value={userLocation}
                             />
                         </div>
 

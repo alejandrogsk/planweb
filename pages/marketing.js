@@ -114,7 +114,7 @@ const marketing = () => {
                 
                 
                 <div className="marketing-grid__content">
-                    <h2>{email_marketing.title}.</h2>
+                    <h2>{email_marketing.title}<span className="point-orange">.</span></h2>
                     {
                         email_marketing.content.map((paragraph, index)=> <p key={index}>{paragraph}</p>)
                     }

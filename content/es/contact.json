@@ -5,7 +5,9 @@
         "name": "Nombre",
         "lastName":"Apellido",
         "email": "Email",
-        "phone": "Teléfono",
+        "phone": "+54 343 5890355",
+        "company": "Empresa",
+        "location": "Localidad",
         "services":{
             "title": "¿Qué servicios necesitas?",
             "options": [
