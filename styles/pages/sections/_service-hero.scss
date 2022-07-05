@@ -1,10 +1,10 @@
 
 
 .service-hero {
+    align-items: center;
+    display: grid;
     min-height: 100vh;
     margin: 6rem 4rem;
-    display: grid;
-    align-items: center;
     position: relative;
 
     @include respond(tab){
