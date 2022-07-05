@@ -3,7 +3,7 @@ import TagManager from "react-gtm-module";
 import React from "react";
 
 const tagManagerArgs = {
-  gtmid: process.env.GTM_ID
+  gtmId: process.env.GTM_ID
 }
 
 
