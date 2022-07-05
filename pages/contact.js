@@ -93,7 +93,7 @@ const Contact = () => {
                     <form onSubmit={handeSubmit} className="contact__form">
                         <div className="contact__form-input userName">
                             <input
-                            autocomplete="off"
+                            autoComplete="off"
                                 type="text"
                                 onChange={handleImputChange}
                                 value={userName}
@@ -106,7 +106,7 @@ const Contact = () => {
 
                         <div className="contact__form-input">
                             <input
-                            autocomplete="off"
+                            autoComplete="off"
                                 type="text"
                                 name="userLastName"
                                 id="userLastName"
@@ -119,7 +119,7 @@ const Contact = () => {
 
                         <div className="contact__form-input">
                             <input
-                            autocomplete="off"
+                            autoComplete="off"
                                 type="email"
                                 name="userEmail"
                                 id="userEmail"
@@ -132,7 +132,7 @@ const Contact = () => {
 
                         <div className="contact__form-input">
                             <input
-                            autocomplete="off"
+                            autoComplete="off"
                                 type="text"
                                 name="userPhone"
                                 id="userPhone"
@@ -145,7 +145,7 @@ const Contact = () => {
 
                         <div className="contact__form-input">
                             <input
-                            autocomplete="off"
+                            autoComplete="off"
                                 type="text"
                                 name="userCompany"
                                 id="userCompany"
@@ -158,7 +158,7 @@ const Contact = () => {
 
                         <div className="contact__form-input">
                             <input
-                            autocomplete="off"
+                            autoComplete="off"
                                 type="text"
                                 name="userLocation"
                                 id="userLocation"
