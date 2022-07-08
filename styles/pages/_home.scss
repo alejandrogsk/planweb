@@ -1,368 +1,172 @@
-.home-hero {
-    &__section {
+.home {
+    &-hero {
+        height: 100vh;
         display: grid;
-        grid-template-columns: 50% 50%;
-        min-height: 100vh;
+        grid-template-columns: 1fr;
         align-items: center;
-        grid-gap: 6rem;
-        margin: 10rem 4rem;
-        overflow-x: hidden;
-        
+        justify-items: center;
         position: relative;
-
-        @include respond( desktop-small ) {
-            grid-template-columns: 1fr;
-        }
-
-        @include respond(tab){
-            margin: 10rem 2rem;
-        }
-    }
-
-
-    &__left {
-        margin-left: 4rem;
-
-
-        @include respond( desktop-small ) {
-            margin-left: 0;
-        }
-        & > h1 {
-            font-size: 5.5rem;
-            @include respond(phone-tab) {
-                font-size: 3.5rem;
-            }
-        }
-    
-        & > p {
-            font-size: 2.2rem;
-            margin: 2rem 0;
-
-            @include respond(phone-tab) {
-                font-size: 1.8rem;
-            }
-        }
-
-        & > a {
-            cursor: pointer;
-            display: inline-block;
-            background-color: $cw-m;
-            font-size: 2rem;
-            color: $co-m;
-            border: $co-m 2px solid;
-            border-radius: 3rem;
-            padding: 1rem 2rem;
-            transition: all 300ms;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-            @include respond(phone-tab) {
-                font-size: 1.8rem;
-            }
-            &:hover {
-                background-color: $co-m;
-                color: $cw-m;
-            }
-        }
-    }
-
-    &__right {
-        position: relative; min-height: 100vh; width: 100%;
-    }
-
-    &__img {
-        height: auto;
-        max-width: 50rem;
-        top: 10rem;
-        right: 0;
-        position: absolute;
-        z-index: 3;
-
-        @include respond( desktop-small ) {
-            position: relative;
-            width: 90%;
-            margin: 0 auto;
-            display: block;
-        }
-
-        @include respond( tab ) {
-            width: 100%;
-        }
-    }
-
-    &__card {
-        z-index: 6;
-        position: absolute;
-        background-color: $cw-m;
-        width: 30rem;
-
-        height: 15rem;
-        overflow: hidden;
-        border-radius: .5rem;
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-        top: 35rem;
-        right: 35rem;
-
-        @include respond( desktop-big) {
-            right: 30rem;
-        }
-
-        @include respond( desktop ) {
-            right: 20rem;
-        }
-
-        @include respond( tab ) {
-            right: 0rem;
-        }
-
-        @include respond(mobile) {
-            width: 25rem;
-        }
-        & > div {
-            padding: 1rem;
-            display: grid;
-            grid-gap: .5rem;
-            grid-template-columns: min-content 1fr;
-            
-            & > span { font-size: 1.8rem; font-weight: 500;}
-            & > h6 {
-                font-size: 2rem;
-                font-weight: 400;
-            }
-            & > p {
-                font-size: 1.3rem;
-                grid-column: 1/3;
-            }
-            
-        }
 
         & > svg {
             position: absolute;
-            width: 110%;
-            height: auto;
-            bottom: -3px;
-            right: -2px;
-            left:-3px;
+            left: -10rem;
+            bottom: 1rem;
+            z-index: 1;
         }
     }
-}
 
-.home-services {
+    &-container {
+        max-width: 70%;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
 
-    &__section {
-        background-color: $cg-l;
-        padding: 8rem 4rem;
-
-        @include respond(tab){
-            padding: 8rem 2rem;
+        @include respond(desktop-small) {
+            max-width: 80%;
         }
-        & > h6 {
-            font-size: 1.1rem;
-            font-weight: 500;
+
+        @include respond(tab) {
+            max-width: 100%;
+            padding: 10rem 2rem;
+        }
+
+        & > h1 {
+            font-size: 6rem;
             text-align: center;
-            color: $cg-m;
-        }
-    
-        & > h2 {
-            text-align: center;
-            font-size: 4rem;
-            @include respond(phone-tab) {
-                font-size: 2.7rem;
-            }
-        }
-    }
-
-    
-
-    &__list {
-        margin: 6rem 0;
-        display: grid;
-        grid-template-columns: 100%;
-        row-gap: 6rem;
-    }
-
-    &__item {
-        min-height: 80vh;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: .5rem;
-        position: relative;
-        overflow: hidden;
-        transition: all 300ms;
-cursor: pointer;
-        @include respond(mobile){
-            min-height: 30vh;
-        }
-
-        &:nth-child(1){
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('/home/brand-design.jpg');
-        }
-        &:nth-child(2){
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/home/ecommerce.jpg');
-        } 
-        &:nth-child(3){
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('/home/web-development.jpg');
-        }
-        &:nth-child(4){
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('/home/marketing.jpg');
-        }
-
-        & > div {
-            position: absolute;
-            bottom: 8rem;
-            max-width: 40%;
-            left: 3rem;
-            color: $cw-m;
 
             @include respond(desktop-small) {
-                max-width: 70%;
-            }
-            @include respond(tab) {
-                max-width: 100%;
-                bottom: 3rem;
-                left: 2rem;
+                font-size: 5rem;
             }
 
-            & > h6,p, a {
-                @include respond(tab) {
-                    display: none;
-                }
+            @include respond(phone-tab) {
+                font-size: 3.5rem;
             }
 
-            & > h6,h3,p,a { transition: all 300ms; }
-            & > h6 {
-                font-weight:600;
-                text-transform: uppercase;
-                font-size: 1.4rem;
-            }
-            & > h3 {
-                margin: 1rem 0rem 2rem 0rem;
-                font-size: 3rem;
-                font-weight:600;
-                @include respond(tab) {
-                    margin-bottom: 0;
-                }
-
-                @include respond(mobile) {
-                    font-size: 3rem;
-                }
-            }
-
-            & > p {
-                
-                font-size: 1.8rem;
-            }
-
-            & > a {
-                
-                font-size: 1.8rem;
-                color: $cw-m;
-                position: absolute;
-                bottom: -15rem;
-                text-transform: uppercase;
-                font-weight: 500;
-                
-            }
-
-           
+            & > .orange-text { color: $co-m; }
         }
-        &:hover {
-            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
-            
-            & > div {
-            h6,h3,p{
-                transform: translateY(-6px);
-            }
+        & > p {
+            text-align: center;
+            margin: 3rem 0;
+            text-transform: none;
+            font-size: 2.2rem;
+        }
 
-            a {
-
-                font-size: 1.8rem;
+        & > a {
+            width: 30rem;
+            background-color: $cw-m;
+            color: $co-m;
+            padding: 1rem 2rem;
+            border-radius: 10rem;
+            display: block;
+            border: 1px solid $co-m;
+            transition: all 300ms;
+            text-align: center;
+            &:hover {
+                background-color: $co-m;
+                box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
                 color: $cw-m;
-                position: absolute;
-                bottom: -3rem;
-
-                transition: all 300ms;
-                &:hover {
-                    text-decoration: underline;
-                }
             }
         }
-    }
     }
 }
 
-.home-blog {
-    &__section {
-        background-color: $cb-m;
-        padding: 8rem 4rem;
-        color: $cw-m;
-
-        @include respond(tab){
-            padding: 8rem 2rem;
-        }
-        & > h6 {
-            text-transform: uppercase;
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-    
-        & > h2 {
-            font-size: 4rem;
-            max-width: 80%;
-            @include respond(phone-tab) {
-                font-size: 2.7rem;
-            }
-        }
-    }
-
-    &__list {
-        margin-top: 4rem;
+.home {
+    &-services {
+        background-color: $cg-l;
+        padding: 10rem 4rem;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 3rem;
-
-        @include respond(tab){
-            grid-template-columns: 1fr;
-            gap: 6rem;
-        }
+        grid-template-columns: 1fr;
+        row-gap: 12rem;
     }
 
-    &__article {
-        &:hover {
-            & > a {
-                text-decoration: underline;
+    &-service {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(3, minmax(min-content, max-content)) 2rem;
+
+        @include respond(tab-big) {
+            justify-items: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, minmax(min-content, max-content)) 5rem max-content;
+        }
+
+        &:nth-child(2),
+        &:nth-child(4) {
+            & > img {
+                grid-column: 3/10;
+            }
+
+            & > div {
+                grid-column: 7/10;
+                grid-column: 1/4;
             }
         }
 
-        & > img {max-width: 100%;}
+        & > img {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+            box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.1);
+            grid-column: 1/8;
+            grid-row: 1/5;
 
-        & > div {
-            margin-top: 2rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            & > h3 {
-                grid-column: 1/3;
-                font-size: 2.5rem;
-                max-width: 80%;
-                font-weight: 600;
-                @include respond(phone-tab) {
-                    font-size: 2rem;
-                }
+            @include respond(tab-big) {
+                grid-column: 1/2;
+                grid-row: 1/4;
+            }
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 2;
+            background-color: white;
+            padding: 3rem;
+            min-height: 35rem;
+            box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.1);
+            transition: all 900ms;
+            border-radius: 2rem;
+            grid-column: 7/10;
+            grid-row: 2/4;
+
+            &:hover {
+                transform: translateY(-1rem);
             }
 
+            @include respond(tab-big) {
+                max-width: 95%;
+                grid-column: 1/2;
+                grid-row: 3/6;
+                transform: none;
+            }
+
+            & > img {
+                width: 40px;
+                height: auto;
+                margin-bottom: 2rem;
+            }
             & > span {
-                font-size: 1.8rem;
+            }
+
+            & > h2 {
+                font-size: 4rem;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            & > p {
+                font-size: 2rem;
+                margin: 2rem 0;
             }
 
             & > a {
-                transition: all 300ms;
-                color: $cw-m;
-                font-size: 1.8rem;
-                text-align: end;
-                &:hover {
-                    color: $co-m;
-                }
+                max-width: 15rem;
             }
         }
     }

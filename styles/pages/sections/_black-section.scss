@@ -6,6 +6,9 @@
     align-items: center;
     position: relative;
     background-color: $cb-m;
+    background-image: url('/blackbg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
 
     @include respond(desktop) {
        gap: 4rem;

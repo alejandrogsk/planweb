@@ -18,8 +18,11 @@
         "title":"Nuestros Servicios",
         "list": [
             {
-                "top_title":"La imagen de tu marca",
-                "title":"Diseño de identidad visual",
+                "icon":{
+                    "url": "/home/icono-diseño.png",
+                    "alt":"diseño para pymes Crespo,Entre Ríos"
+                },
+                "title":"Diseñamos la imagen de tu marca",
                 "content": "Te ayudamos a tener una imagen de visual bien definida, lo que hará que tu marca se destaque en el sector en que compite.",
                 "img": {
                     "src":"/home/brand-design.jpg",
@@ -31,8 +34,11 @@
                 }
             },
             {
-                "top_title":"Tu plataforma de ventas online",
-                "title":"Diseño y desarrollo de ecommerce",
+                "icon":{
+                    "url": "/home/Icono-ecommerce.png",
+                    "alt":"Ecommerce  para pymes Crespo,Entre Ríos"
+                },
+                "title":"Tu plataforma de ventas online",
                 "content": "Hacemos que tu negocio llegue a más clientes las 24hs los 7 días de la semana con tu propia plataforma de ventas online.",
                 "img": {
                     "src":"/home/ecommerce.jpg",
@@ -44,8 +50,11 @@
                 }
             },
             {
-                "top_title":"Tu presencia online",
-                "title":"Diseño y desarrollo web",
+                "icon":{
+                    "url": "/home/Icono-web.png",
+                    "alt":"Sitios web para pymes crespo"
+                },
+                "title":"Tu mejor agente comercial 24/7",
                 "content": "Estudiamos las necesidades de tu empresa y desarrollamos tu sitio web que las satisfaga.",
                 "img": {
                     "src":"/home/web-development.jpg",
@@ -57,8 +66,11 @@
                 }
             },
             {
-                "top_title":"Llegá a más y mejores clientes",
-                "title":"Marketing Digital",
+                "icon":{
+                    "url": "/home/Icono-marketing.png",
+                    "alt":"Marketing digital para pymes Crespo,Entre Ríos"
+                },
+                "title":"Llegá a más y mejores clientes",
                 "content": "Ponemos múltiples servicios de marketing digital al alcance de tu negocio para ayudarte a alcanzar tus objetivos.",
                 "img": {
                     "src":"/home/marketing.jpg",

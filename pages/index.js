@@ -18,86 +18,161 @@ export default function Home() {
       </Head>
        
       <Layout>
-        <section className="home-hero__section">
-          <div className="home-hero__left">
-            <h1>{hero.title}<span className="point-orange">.</span></h1>
-            <p>{hero.sutitle}</p>
-            <Link href={hero.cta.url}>
-              <a>{hero.cta.title}</a>
-            </Link>
+        
+
+        <section className="home-hero">
+          <div className="home-container">
+            <h1 >Soluciones digitales <br/><span className="orange-text">al alcance de tu empresa</span><span className="point-orange">.</span></h1>
+            <p>Nos dedicamos al diseño de desarrollo de soluciones digitales para empresas que buscan crecer aprovechando canales digitales.</p>
+<Link href="/contact">
+              <a >Solicitar presupuesto</a>
+</Link>
+             
           </div>
-          <div className="home-hero__right">
-            <img className="home-hero__img" src={hero.img.src} alt={hero.img.alt} />
-            <div className="home-hero__card">
-              <div>
-                <span>+</span>
-                <h6>200%</h6>
-                <p>{hero.card}</p>
-              </div>
-              <svg width="261" height="113" viewBox="0 0 261 113" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M32.6382 66.5695C13.0584 69.3178 1 88.1821 1 88.1821V112H243.83C243.83 112 280.652 7.81581 243.83 1.32834C214.152 -3.90038 206.153 55.0238 175.843 56.8659C156.934 58.0151 137.947 43.8718 119.227 46.2801C100.545 48.6835 105.792 69.4332 87.0336 71.4213C69.4949 73.2801 50.0624 64.1238 32.6382 66.5695Z" fill="url(#paint0_linear_1144_4)" stroke="#F84525"/>
+          <svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clipPath="url(#clip0_981_84)">
+<rect x="7" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="107" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="27" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="127" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="47" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="147" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="67" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="167" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="87" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="187" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="207" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="7" y="24" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="107" y="24" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="27" y="24" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="127" y="24" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="47" y="24" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="147" y="24" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="67" y="24" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="167" y="24" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="87" y="24" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="187" y="24" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="207" y="24" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="7" y="48" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="107" y="48" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="27" y="48" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="127" y="48" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="47" y="48" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="147" y="48" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="67" y="48" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="167" y="48" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="87" y="48" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="187" y="48" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="207" y="48" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="7" y="72" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="107" y="72" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="27" y="72" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="127" y="72" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="47" y="72" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="147" y="72" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="67" y="72" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="167" y="72" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="87" y="72" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="187" y="72" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="207" y="72" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="7" y="92" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="107" y="92" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="27" y="92" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="127" y="92" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="47" y="92" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="147" y="92" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="67" y="92" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="167" y="92" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="87" y="92" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="187" y="92" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="207" y="92" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="7" y="116" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="107" y="116" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="27" y="116" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="127" y="116" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="47" y="116" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="147" y="116" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="67" y="116" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="167" y="116" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="87" y="116" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="187" y="116" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="207" y="116" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="7" y="140" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="107" y="140" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="27" y="140" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="127" y="140" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="47" y="140" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="147" y="140" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="67" y="140" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="167" y="140" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="87" y="140" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="187" y="140" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="207" y="140" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="7" y="164" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="107" y="164" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="27" y="164" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="127" y="164" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="47" y="164" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="147" y="164" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="67" y="164" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="167" y="164" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="87" y="164" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="187" y="164" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="207" y="164" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="9" y="184" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="109" y="184" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="29" y="184" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="129" y="184" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="49" y="184" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="149" y="184" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="69" y="184" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="169" y="184" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="89" y="184" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="189" y="184" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="209" y="184" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="9" y="208" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="109" y="208" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="29" y="208" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="129" y="208" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="49" y="208" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="149" y="208" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="69" y="208" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="169" y="208" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="89" y="208" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="189" y="208" width="5" height="5" rx="2.5" fill="#F84525"/>
+<rect x="209" y="208" width="5" height="5" rx="2.5" fill="#F84525"/>
+</g>
 <defs>
-<linearGradient id="paint0_linear_1144_4" x1="122.969" y1="21.5303" x2="122.969" y2="112" gradientUnits="userSpaceOnUse">
-<stop stopColor="#F84525"/>
-<stop offset="1" stopColor="#FFC300" stopOpacity="0"/>
-</linearGradient>
+<clipPath id="clip0_981_84">
+<rect width="220" height="220" rx="110" fill="white"/>
+</clipPath>
 </defs>
 </svg>
-            </div>
-          </div>
-        </section>
-
-
-        <section className="home-services__section" >
-          <h6>{services.top_title}</h6>
-          <h2>{services.title}</h2>
-          <div className="home-services__list">
-            {
-              services.list.map((item, key)=> {
-                return(
-                 <Link key={key} href={item.cta.url}>
-                  <div className="home-services__item">
-                    <div>
-                      <h6>{item.top_title}</h6>
-                      <h3>{item.title}<span className="point-orange">.</span></h3>
-                      <p>{item.content}</p>
-                      <a>{item.cta.title}</a>
-                    </div>
-                  </div>
-                 </Link>
-                )
-              })
-            }
-          </div>
 
         </section>
 
-        {/* <section className="home-blog__section">
-            <h6>{blog.top_title}</h6>
-            <h2>{blog.title}<span className="point-orange">.</span></h2>
-            <div className="home-blog__list">
-              {
-                blog.list.map((element,index)=> {
-                  return(
-                    <div key={index} className="home-blog__article">
-                      <img src={element.img.src} alt={element.img.alt} />
-                      
-                      <div>
-                        <h3>{element.title}</h3>
-                        <span>{element.date}</span>
-                        <a>{element.cta.title}</a>
-                      </div>
+        <section className="home-services">
+          {
+            services.list.map((service, i) => (
+              <div key={i} className="home-service">
+                <img src={service.img.src} alt={service.img.alt} />
 
+                <div className="home-service__card">
+                  {/* <span>{service.top_title}</span> */}
+                  <img src={service.icon.url} alt={service.icon.alt} />
+                  <h2>{service.title}</h2>
+                  <p>{service.content}</p>
+                  <Link href={service.cta.url}>
+                  <a className="btn-secondary">{service.cta.title}</a>
+                  </Link>
+                </div>
 
+              </div>
+            ))
+          }
 
-                    </div>
-                  )
-                })
-              }
-            </div>
-        </section> */}
-
-
+        </section>
+      
       </Layout>
     </div>
   )
