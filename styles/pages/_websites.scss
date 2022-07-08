@@ -1,12 +1,43 @@
+.websites-services-section {
+    background-color: $cg-l;
+}
+
 .websites-section {
-    background-color: $co-m;
-    & > h2 { color: $cw-m }
+    background-color: $cw-m;
+    & > h2 { color: $cb-l }
     &__elements {
         background-color: $cw-m;
         //border-radius: 1rem;
-
+        min-height: 30rem;
         padding: 2rem;
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.05);
+        &:nth-child(1) {
+            background-color: $co-m;
+            color: $cw-m;
+            & > div {
+                border-color: $cw-m;
+                & > svg > g > path { fill: $cw-m; }
+            }
+        }
+        &:nth-child(3) {
+            background-color: $cb-l;
+            color: $cw-m;
+          
+        }
+        &:nth-child(4) {
+            background-color: $cg-l;
 
+          
+        }
+
+        &:nth-child(5) {
+            background-color: $co-l;
+            color: $cw-m;
+            & > div {
+                border-color: $cw-m;
+                & > svg > g > path { fill: $cw-m; }
+            }
+        }
 
     }
 

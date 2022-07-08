@@ -46,7 +46,7 @@ const websites = () => {
                 </div>
             </section>
 
-            <section className="services-section">
+            <section className="services-section websites-services-section">
                 <h2>{services.title}<span className="point-orange">.</span></h2>
                 <div className="services-section__grid">
                 {
