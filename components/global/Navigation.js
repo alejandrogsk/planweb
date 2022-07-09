@@ -1,8 +1,5 @@
+import React, { useEffect, useRef } from "react";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
-
-import {useRouter} from 'next/router'
-
 const Logo = () => {
 
     return(
@@ -65,8 +62,19 @@ const NavigationDesktop = ({ menu, cta }) => {
 };
 
 const NavigationMobile = ({menu}) => {
-    
-    
+    const navigationCheck = useRef(null);
+
+    useEffect(()=> {
+        console.log('navigationCheck',navigationCheck)
+    },[navigationCheck])
+
+    const handleNav = () => {
+        if(navigationCheck.current.checked === true){
+            navigationCheck.current.checked=false;
+        }
+    }
+
+
     return (
         <>
             <div className="logo-mobile">
@@ -75,6 +83,7 @@ const NavigationMobile = ({menu}) => {
 
             <div className="navbar__responsive d-n">
                 <input
+                    ref={navigationCheck}
                     type="checkbox"
                     className="navbar__responsive--checkbox"
                     id="navi-toggle"
@@ -95,7 +104,7 @@ const NavigationMobile = ({menu}) => {
                 menu.map((element,i) => (
                         <li key={i} className="navbar__responsive--item">
                             <Link href={element.link}>
-                                <a className="navbar__responsive--link">
+                                <a onClick={handleNav} className="navbar__responsive--link">
                                     {element.title}
                                 </a>
                             </Link>

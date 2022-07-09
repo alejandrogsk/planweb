@@ -4,12 +4,14 @@ import Layout from '../components/global/Layout'
 
 import HomerES from '../content/es/home.json';
 import Link from 'next/link';
+
+
 export default function Home() {
 
   const { hero, services, blog } = HomerES;
 
   return (
-    <div >
+    <div>
       {/* {Debo crear un componente aparte para el head} */}
       <Head>
         <title>Create Next App</title>
