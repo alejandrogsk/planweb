@@ -24,10 +24,10 @@ export default function Home() {
 
         <section className="home-hero">
           <div className="home-container">
-            <h1 >Soluciones digitales <br/><span className="orange-text">al alcance de tu empresa</span><span className="point-orange">.</span></h1>
-            <p>Nos dedicamos al diseño de desarrollo de soluciones digitales para empresas que buscan crecer aprovechando canales digitales.</p>
-<Link href="/contact">
-              <a >Solicitar presupuesto</a>
+            <h1 >{hero.title[1]} <br/><span className="orange-text">{hero.title[2]}</span><span className="point-orange">.</span></h1>
+            <p>{hero.sutitle}</p>
+<Link href={hero.cta.url}>
+              <a >{hero.cta.title}</a>
 </Link>
              
           </div>

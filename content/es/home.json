@@ -4,8 +4,12 @@
             "src":"/home/home-hero-photo.png",
             "alt": "Diseño de tiendas online"
         },
-        "title":"Diseño y desarrollo de soluciones digitales",
-        "sutitle":"Brindamos nuestros conocimientos y recursos para que tu empresa esté al alcance de las expectativas y nuevas necesidades de sus clientes.",
+        "title": {
+            "1":"Soluciones digitales ",
+            "2": "al alcance de tu empresa"
+        },
+        
+        "sutitle":"Nos dedicamos al diseño de desarrollo de soluciones digitales para empresas que buscan crecer aprovechando canales digitales.",
         "cta":{
             "title":"Solicitar Presupuesto",
             "url": "/contact"

@@ -53,7 +53,11 @@ const Layout = ({ children }) => {
                         },
                         
                     }}
-                    transition={{ delay: 0.3, duration: .7 }}
+                    transition={{ 
+                        duration: 1,
+                        type: "tween",
+                        
+                    }}
 
                     
                 >
