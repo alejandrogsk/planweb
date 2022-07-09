@@ -2,7 +2,7 @@
     display: inline;
     position: relative;
     overflow: hidden;
-
+    z-index: 200;
     &__orange {
         &:after { background: $co-m; }
     }
@@ -10,24 +10,19 @@
     &__white {
         &:after { background: $cw-m }
     }
-&:after {
+    &:after {
     content: "";
     position: absolute;
-    z-index: 100;
-    right: 0;
-    width: 0;
-    bottom: -1px;
-    height: 2px;
-    transition-property: width;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-    }
-    
-    &:hover:after,
-    &:focus:after,
-    &:active:after {
+    z-index: -1;
     left: 0;
     right: auto;
     width: 100%;
+    bottom: 1px;
+    height: 2px;
+    
     }
+    
 }
+
+
+

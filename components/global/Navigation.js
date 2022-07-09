@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 const Logo = () => {
 
     return(
@@ -12,7 +13,7 @@ const Logo = () => {
 
 const NavigationDesktop = ({ menu, cta }) => {
 
-    
+    const {route} = useRouter();
     //Sticky Navigation
     // const [stickyClass, setStickyClass] = useState('relative');
 
@@ -45,14 +46,16 @@ const NavigationDesktop = ({ menu, cta }) => {
                 <ul>
                     {
                         menu.map((element, i) => (
-                            <Link href={element.link} key={i}><a>{element.title}</a></Link>
+                            <Link href={element.link} key={i}>
+                                <a className={(route === element.link) && 'underline underline__orange'}>{element.title}</a>
+                            </Link>
                         ))
                     } 
                 </ul>
             </nav>
             <Link href={cta.link}>
             <a
-                className="desktop__cta"
+                className="desktop__cta "
                 >
                 {cta.title}
             </a>

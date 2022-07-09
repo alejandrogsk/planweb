@@ -51,10 +51,12 @@ const Layout = ({ children }) => {
                         pageAnimate: {
                             opacity: 1,
                         },
-                        
+                        pageExit: {
+                            opacity:0
+                        }
                     }}
                     transition={{ 
-                        duration: 1,
+                        duration: .5,
                         type: "tween",
                         
                     }}

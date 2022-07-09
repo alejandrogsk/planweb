@@ -2,5 +2,10 @@
     color: $co-m;
 }
 
+.text-orange {
+    color: $co-m;
+    &:hover{ color: $co-l }
+}
+
 .success {color: $cgreen-m !important;}
             .error {color: $cred-m !important;}
