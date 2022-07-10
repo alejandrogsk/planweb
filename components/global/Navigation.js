@@ -115,7 +115,11 @@ const NavigationMobile = ({menu}) => {
                 ))
             }
                         
-            
+                        <Link href="/contact">
+                                <a onClick={handleNav} className="navbar__responsive--link">
+                                    Contacto
+                                </a>
+                            </Link>
                     </ul>
                 </div>
             </div>

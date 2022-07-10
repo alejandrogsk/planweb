@@ -54,10 +54,10 @@ const Hero = ({ hero }) => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                      transition={{ duration: 1.8 }}
+                      transition={{ duration: 1.6 }}
                       variants={{
                         visible: { opacity: 1, y: 0 },
-                        hidden: { opacity: 0, y: "100px" }
+                        hidden: { opacity: 0, y: "50px" }
                       }}
                     >{hero.cta.title}</motion.a>
                 </Link>

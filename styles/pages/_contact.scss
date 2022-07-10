@@ -179,11 +179,12 @@
             background-color: $cw-m;
             font-size: 2rem;
             color: $co-m;
-            border: $co-m 2px solid;
+            border: $co-m 1px solid;
             border-radius: 3rem;
             padding: 1rem 2rem;
             transition: all 300ms;
             box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+            text-transform: uppercase;
             @include respond(phone-tab) {
                 font-size: 1.8rem;
             }
