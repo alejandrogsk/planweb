@@ -32,7 +32,7 @@ const Hero = ({ hero }) => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                      transition={{ duration: 1.6 }}
+                      transition={{ duration: 1.4 }}
                       variants={{
                         visible: { opacity: 1, y: 0 },
                         hidden: { opacity: 0, y: "100px" }
@@ -43,7 +43,7 @@ const Hero = ({ hero }) => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                  transition={{ duration: 1.7 }}
+                  transition={{ duration: 1.6 }}
                   variants={{
                     visible: { opacity: 1, y: 0 },
                     hidden: { opacity: 0, y: "100px" }
@@ -54,7 +54,7 @@ const Hero = ({ hero }) => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                      transition={{ duration: 2 }}
+                      transition={{ duration: 1.8 }}
                       variants={{
                         visible: { opacity: 1, y: 0 },
                         hidden: { opacity: 0, y: "100px" }

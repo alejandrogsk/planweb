@@ -17,7 +17,7 @@ const ServiceCard = ({service}) => {
       transition={{ duration: 1 }}
       variants={{
         visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: "200px" }
+        hidden: { opacity: 0, y: "150px" }
       }}
     src={service.img.src} alt={service.img.alt} />
 

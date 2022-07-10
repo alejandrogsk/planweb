@@ -1,14 +1,48 @@
 import React from 'react'
-
+import {motion} from 'framer-motion'
 const ServiceHero = ({hero}) => {
   return (
     <section className="service-hero">
                 <div>
-                    <h1>{hero.title}<span className="point-orange">.</span></h1>
-                    <h2>{hero.subtitle}</h2>
+                    <motion.h1
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{ once: true }}
+                        transition={{ duration: 1 }}
+                        variants={{
+                          visible: { opacity: 1, y: 0 },
+                          hidden: { opacity: 0, y: "100px" }
+                        }}
+                    >{hero.title}<span className="point-orange">.</span></motion.h1>
+                    <motion.h2
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                      transition={{ duration: 1.2 }}
+                      variants={{
+                        visible: { opacity: 1, y: 0 },
+                        hidden: { opacity: 0, y: "100px" }
+                      }}
+                    >{hero.subtitle}</motion.h2>
                     <div>
                     {
-                        hero.content.map((paragraph, index)=> <p key={index}>{paragraph}</p>)
+                        hero.content.map((paragraph, index)=> {
+                          let duration = index+1*2;
+                          return(
+                            <motion.p
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                          transition={{ duration: `1.${duration}`}}
+                          variants={{
+                            visible: { opacity: 1, y: 0 },
+                            hidden: { opacity: 0, y: "100px" }
+                          }}
+                        key={index}>
+                          {paragraph}
+                        </motion.p>
+                          )
+                        })
                     }
                     </div>
                 </div>
