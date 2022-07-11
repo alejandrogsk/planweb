@@ -12,7 +12,6 @@ function MyApp({ Component, pageProps }) {
     React.useEffect(() => {
         TagManager.initialize(tagManagerArgs);
     });
-
     return (
       <Component {...pageProps} />
     );

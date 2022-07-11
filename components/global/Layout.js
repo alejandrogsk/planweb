@@ -40,6 +40,7 @@ const Layout = ({ children }) => {
             <Navigation menu={menu.menu} cta={menu.cta} />
             <AnimatePresence>
                 <motion.main
+                className="main-global"
                     key={router.route}
                     initial="pageInitial"
                     animate="pageAnimate"

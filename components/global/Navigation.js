@@ -47,7 +47,7 @@ const NavigationDesktop = ({ menu, cta }) => {
                     {
                         menu.map((element, i) => (
                             <Link href={element.link} key={i}>
-                                <a className={(route === element.link) && 'underline underline__orange'}>{element.title}</a>
+                                <a className={(route === element.link) ? 'underline underline__orange' : ''}>{element.title}</a>
                             </Link>
                         ))
                     } 
@@ -67,9 +67,7 @@ const NavigationDesktop = ({ menu, cta }) => {
 const NavigationMobile = ({menu}) => {
     const navigationCheck = useRef(null);
 
-    useEffect(()=> {
-        console.log('navigationCheck',navigationCheck)
-    },[navigationCheck])
+
 
     const handleNav = () => {
         if(navigationCheck.current.checked === true){
