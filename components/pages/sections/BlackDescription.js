@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 const BlackDescription = ({ description }) => {
-
     return (
         <section className="black-section">
             <div className="black-section__img">
@@ -13,7 +12,7 @@ const BlackDescription = ({ description }) => {
                     transition={{ duration: 1 }}
                     variants={{
                         visible: { opacity: 1, y: 0 },
-                        hidden: { opacity: 0, y: "200px" },
+                        hidden: { opacity: 0, y: "100px" },
                     }}
                     src={description.img.src}
                     alt={description.img.alt}
@@ -78,7 +77,7 @@ const BlackDescription = ({ description }) => {
                         transition={{ duration: 0.7 }}
                         variants={{
                             visible: { opacity: 1, y: 0 },
-                            hidden: { opacity: 0, y: "100px" },
+                            hidden: { opacity: 0, y: "50px" },
                         }}
                     >
                         {description.cta.title}

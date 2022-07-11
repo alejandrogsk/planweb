@@ -1,9 +1,14 @@
 import Head from 'next/head'
 import React from 'react'
 import Layout from '../components/global/Layout'
+import EcommerceMobile from '../components/pages/ecommerce/EcommerceMobile';
+import EcommercePlatforms from '../components/pages/ecommerce/EcommercePlatforms';
 import BlackDescription from '../components/pages/sections/BlackDescription';
+import ServiceCharacteristics from '../components/pages/sections/ServiceCharacteristics';
 import ServiceHero from '../components/pages/sections/ServiceHero';
 import EcommerceES from '../content/es/ecommerce.json';
+
+import EcommercePayments from '../components/pages/ecommerce/EcommercePayments';
 const ecommerce = () => {
   const { hero, description, services, mobile, payment, platforms } = EcommerceES;
 
@@ -17,68 +22,15 @@ const ecommerce = () => {
         <Layout>
             <ServiceHero hero={hero}/>
             <BlackDescription description={description} />
-            <section className="services-section">
-                <h2>{services.title}<span className="point-orange">.</span></h2>
-                <div className="services-section__grid">
-                {
-                    services.content.map((service, index)=> {
-                        return(
-                            <div key={index} className="services-section__grid-element">
-                                <div className="services-section__grid-element--icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#f84525" transform="translate(0, 0) scale(1, 1) "><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></g></svg>
-                                </div>
-                                <h3>{service.title}</h3>
-                                <p>{service.description}</p>
-                            </div>
-                        )
-                    })
-                }
-                </div>
-            </section>
+            <ServiceCharacteristics services={services} />
+            
 
 
-            <section className="ecommerce-mobile">
+            <EcommerceMobile mobile={mobile} />
 
-                <div className="ecommerce-mobile__content">
-                  <h2>{mobile.title}</h2>
-                  <p>{mobile.subtitle}</p>
-                </div>
-                <div className="ecommerce-mobile__img">
-                  <img src={mobile.img.src} alt={mobile.img.alt} />
-                </div>
-                <div className="ecommerce-mobile__content">
-                  <h3>{mobile.title_two}</h3>
-                  <p>{mobile.subtitle_two}</p>
-                </div>
+            <EcommercePayments payment={payment} />
 
-
-            </section>
-
-            <section className="ecommerce-payments">
-                <h2>{payment.title}<span className="point-orange">.</span></h2>
-                <div className="ecommerce-payments__grid">
-                {
-                  payment.sistems.map((element,index)=><img key={index} src={element.src} alt={element.alt}/>)
-                }
-                </div>
-            </section>
-
-            <section className="ecommerce-platforms">
-                <h2>{platforms.title}<span className="point-orange">.</span></h2>
-
-                <div className="ecommerce-platforms__grid">
-                    {
-                        platforms.list.map((platform, index)=> {
-                            return(
-                                <div key={index}>
-                                    <img src={platform.img.src} alt={platform.img.alt} />
-                                    <p>{platform.content}</p>
-                                </div>
-                            )
-                        })
-                    }
-                </div>
-            </section>
+           <EcommercePlatforms platforms={platforms} />
         </Layout>
     </div>
   )

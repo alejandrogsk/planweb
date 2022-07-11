@@ -6,7 +6,7 @@
     align-items: center;
     position: relative;
     background-color: $cb-m;
-    background-image: url('/blackbg.svg');
+    //background-image: url('/blackbg.svg');
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -76,7 +76,7 @@
 
             & > p {
                 color: $cw-m;
-                margin-bottom: 1rem;
+                margin-bottom: 1.2rem;
             }
 
             & > a {
@@ -84,7 +84,7 @@
                 margin-top: 2rem;
                 display: inline-block;
                 background-color: $co-m;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 color: $cw-m;
                 border: $co-m 1px solid;
                 border-radius: 3rem;

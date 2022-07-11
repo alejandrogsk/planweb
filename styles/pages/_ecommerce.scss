@@ -1,7 +1,7 @@
 .ecommerce-mobile {
     background-color: $co-m;
     padding: 10rem 4rem;
-
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(3,minmax(min-content,max-content));
     justify-items: center;
@@ -68,12 +68,12 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        column-gap: 15rem;
+        column-gap: 2rem;
         @include respond(phone-tab) {
             column-gap: 5rem;
         }
         & > img {
-            height: 10rem;
+            height: 7rem;
             width: auto;
 
             @include respond(phone-tab) {
