@@ -3,7 +3,7 @@
         "title":"Marketing digital",
         "subtitle":"El marketing digital es en 2022 la mejor opción para estar donde están tu clientes.",
         "content": [
-            "Las personas pasan cada vez más tiempo navegando por internet, particularmente en las distintas redes sociales, esto abre un amplio abanico de posibilidades para que tu empresa pueda comunicar su valor a tus clientes.",
+            "Las personas pasan cada vez más tiempo navegando por internet, particularmente en las distintas redes sociales, esto abre un amplio abanico de posibilidades para que tu empresa pueda comunicar su propuesta valor a tus clientes.",
             "Nosotros sabemos como poner estos canales a disposición de tu empresa, a través de diferentes estrategias de marketing digital, para alcanzar así a más clientes."
         ]
     },
@@ -74,18 +74,9 @@
         "content": [
             "El negocio de las redes sociales se basa en recolectar datos de los usuarios y ponerlos al servicio de empresas como la tuya para que promociones tus productos o servicios.",
             "En Smooth Design desarrollamos campañas de publicidad en redes sociales para que llegues a personas que están interesadas en tu marca pero aún no te conocen.",
-            "Aplicamos distintos enfoques para distintos objetivos. No son iguales los anuncios que se enfocan en el branding  y los que se enfocan en las ventas directas."
-        ],
-        "list": [
-            {
-                "title":"Publicidad en Instagram, facebook, Linkedin, Pinterest y más",
-                "description":"Utilizando las plataformas publicitarias que estas compañías proveen, tu negocio puede llegar a una audiencia muy específica, ya que nos permiten segmentar a los usuario por datos demográficos, intereses y más."
-            },
-            {
-                "title":"El marketing de influencers es uno de los formatos que más está creciendo",
-                "description":"Mediante el marketing de influencer tu marca se puede apalancar de la confianza existente entre la persona y su audiencia. Muchos “influencers” compran seguidores para estafar a las marcas, así que es necesario analizar primero las cuentas de estos, para no tirar el dinero a la basura."
-            }
+            "Utilizando las plataformas publicitarias que estas compañías proveen, tu negocio puede llegar a una audiencia muy específica, las personas forman parte de tu target."
         ]
+
     },
     "email_marketing": {
         "img": {
@@ -103,16 +94,8 @@
                 "description":"Con una herramienta de email marketing podemos enviar ofertas personalizadas a nuestra lista de cientos de clientes de forma personalizada."
             },
             {
-                "title":"Automatización de ventas",
-                "description":"Cuando un cliente compra en nuestra tienda online, podemos enviarle la factura y un bono de descuento en un producto complementario al que acaba de comprar."
-            },
-            {
                 "title":"Remarketing",
                 "description":"Un caso muy común de remarketing es cuando un cliente deja el carrito con productos en tu tienda online y la envías un email de “Juan, olvidaste tu carrito”, con un link a tu tienda."
-            },
-            {
-                "title":"Newsletters",
-                "description":"Una táctica muy utilizada en marketing de contenidos y una excelente manera de trabajar la relación a largo plazo con tus clientes compartiendo contenido que les es de utilidad directamente por email."
             }
         ]
     }

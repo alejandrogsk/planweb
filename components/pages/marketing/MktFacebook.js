@@ -43,23 +43,23 @@ const MktFacebook = ({social_ads}) => {
                 
                 
                 {
-                    social_ads.list.map((element,index)=>{
-                        return (
-                            <motion.div 
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            transition={{ duration: 1 }}
-                            variants={{
-                                visible: { opacity: 1, y: 0 },
-                                hidden: { opacity: 0, y: "50px" },
-                            }}
-                            className="marketing-grid__card-social" key={index}>
-                                <h3>{element.title}<span className="point-orange">.</span></h3>
-                                <p>{element.description}</p>
-                            </motion.div>
-                        )
-                    })
+                    // social_ads.list.map((element,index)=>{
+                    //     return (
+                    //         <motion.div 
+                    //         initial="hidden"
+                    //         whileInView="visible"
+                    //         viewport={{ once: true }}
+                    //         transition={{ duration: 1 }}
+                    //         variants={{
+                    //             visible: { opacity: 1, y: 0 },
+                    //             hidden: { opacity: 0, y: "50px" },
+                    //         }}
+                    //         className="marketing-grid__card-social" key={index}>
+                    //             <h3>{element.title}<span className="point-orange">.</span></h3>
+                    //             <p>{element.description}</p>
+                    //         </motion.div>
+                    //     )
+                    // })
                 }
 
             </section>
