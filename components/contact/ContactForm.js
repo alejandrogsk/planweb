@@ -34,7 +34,6 @@ const ContactForm = ({form_fields}) => {
         setExceptions({ ...exceptions, loading: true });
         const data = JSON.stringify({ ...formValues, services: services });
 
-        console.log(data);
         const req = await fetch("/api/sendForm", {
             method: "POST",
             headers: {
@@ -44,7 +43,7 @@ const ContactForm = ({form_fields}) => {
             body: data,
         });
         const respuesta = await req.json();
-        console.log(respuesta);
+
         setExceptions({ ...exceptions, message: respuesta.message });
 
         if (respuesta.ok === true) {

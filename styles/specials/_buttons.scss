@@ -19,12 +19,31 @@
     color: $co-m;
     padding: 1rem 2rem;
     border-radius: 10rem;
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
     border: 1px solid $co-m;
     transition: all 300ms;
     text-align: center;
+    justify-content: center;
+    & > svg {
+        height: 2rem;
+        width: 2rem;
+        transition: all 300ms;
+        & > path {
+            fill: $co-m;
+        }
+    }
+
     &:hover {
         background-color: $co-m;
         color: $cw-m;
+
+        & > svg {
+            stroke: $cw-m;
+            transform: translateX(3px);
+            & > path {
+                fill: $cw-m;
+            }
+        }
     }
 }

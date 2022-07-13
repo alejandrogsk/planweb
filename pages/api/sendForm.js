@@ -35,7 +35,15 @@ export default async function sendForm(req, res) {
             from: data.userEmail,
             to: process.env.GMAIL_RECEPTOR,
             subject: subject,
-            text: `Name: ${data.userName} ${data.userLastName}. Email: ${data.userEmail}. Phone: ${data.userPhone}. Message: ${data.userMessage}`,
+            text: `
+            Nombre: ${data.userName} ${data.userLastName}. 
+            Email: ${data.userEmail}. 
+            Teléfono: ${data.userPhone}. 
+            Empresa: ${data.userCompany}. 
+            Localidad: ${data.userLocation}. 
+            Mensaje: ${data.userMessage}
+            
+            `,
             // attachments: [
             //     {
             //         path: data.userPDF || ""

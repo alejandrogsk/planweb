@@ -82,7 +82,9 @@
             & > a {
                 text-align: center;
                 margin-top: 2rem;
-                display: inline-block;
+                display: inline-grid;
+                justify-content: center;
+                grid-template-columns: repeat(2,max-content);
                 background-color: $co-m;
                 font-size: 1.8rem;
                 color: $cw-m;
@@ -99,11 +101,32 @@
 
                 @include respond(mobile) {
                     font-size: 1.3rem;
+                    
+                   
                 }
+
+                & > svg {
+                    height: 2rem;
+                    width: 2rem;
+                    transition: all 300ms;
+                    stroke: $cw-m;
+                    & > path {
+                        fill: $cw-m;
+                    }
+                }
+
                 &:hover {
                     background-color: $cw-m;
                     border-color: $cw-m;
                     color: $cb-m;
+
+                    & > svg {
+                        stroke: $cb-m;
+                        transform: translateX(3px);
+                        & > path {
+                            fill: $cb-m;
+                        }
+                    }
                 }
             }
         

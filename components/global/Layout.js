@@ -12,7 +12,7 @@ const menues = {
         },
         menu: [
             { title: "Inicio", link: "/" },
-            { title: "Diseño", link: "/identidad-visual" },
+            //{ title: "Diseño", link: "/identidad-visual" },
             { title: "Ecommerce", link: "/ecommerce" },
             { title: "Websites", link: "/websites" },
             { title: "Marketing", link: "/marketing" },
@@ -25,7 +25,7 @@ const menues = {
         },
         menu: [
             { title: "Home", link: "/" },
-            { title: "Design", link: "/identidad-visual" },
+            //{ title: "Design", link: "/identidad-visual" },
             { title: "Ecommerce", link: "/ecommerce" },
             { title: "Websites", link: "/websites" },
             { title: "Marketing", link: "/marketing" },

@@ -7,16 +7,20 @@
         top: 2rem;
         left: 4rem;
         display:block;
-z-index: 1;
+        z-index: 1;
         & > img {
             display: block;
-            height: 2.2rem;
+            height: 4rem;
             width: auto;
         }
     }
 
     @include respond(phone-tab) {
         left: 2rem;
+
+        & > img {
+            height: 3rem;
+        }
     }
 }
 

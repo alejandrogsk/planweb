@@ -1,42 +1,21 @@
 {
     "hero": {
-        "img": {
-            "src":"/home/home-hero-photo.png",
-            "alt": "Diseño de tiendas online"
-        },
         "title": {
             "1":"Soluciones digitales ",
             "2": "al alcance de tu empresa"
         },
         
-        "sutitle":"Nos dedicamos al diseño de desarrollo de soluciones digitales para empresas que buscan crecer aprovechando canales digitales.",
+        "sutitle":"Somos la agencia que ayudará a tu negocio a conectar con más clientes utilizando medios digitales. Somos especialistas en web, e-commerce y marketing digital.",
         "cta":{
             "title":"Solicitar Presupuesto",
             "url": "/contact"
-        },
-        
-        "card":"Fué lo que creció el ecommerce la última década."
+        }
     },
     "services": {
         "top_title": "CÓMO TE PODEMOS AYUDAR",
         "title":"Nuestros Servicios",
         "list": [
-            {
-                "icon":{
-                    "url": "/home/icono-diseño.png",
-                    "alt":"diseño para pymes Crespo,Entre Ríos"
-                },
-                "title":"Diseñamos la imagen de tu marca",
-                "content": "Te ayudamos a tener una imagen de visual bien definida, lo que hará que tu marca se destaque en el sector en que compite.",
-                "img": {
-                    "src":"/home/brand-design.jpg",
-                    "alt": "Diseño de identidad de marca"
-                },
-                "cta": {
-                    "url":"/identidad-visual",
-                    "title":"Ver más"
-                }
-            },
+            
             {
                 "icon":{
                     "url": "/home/Icono-ecommerce.png",
