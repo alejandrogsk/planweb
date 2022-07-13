@@ -1,25 +1,13 @@
-
 .logo-mobile {
     display: none;
-    
     @include respond(tab-big){
-        position: absolute;
-        top: 2rem;
-        left: 4rem;
-        display:block;
-        z-index: 1;
-        & > img {
-            display: block;
-            height: 4rem;
-            width: auto;
-        }
-    }
+        display: inline-block;
 
-    @include respond(phone-tab) {
-        left: 2rem;
-
-        & > img {
-            height: 3rem;
+        & > .logo {
+            position: absolute;
+            left: 1.5rem;
+            top: 2rem;
+            z-index: 100;
         }
     }
 }

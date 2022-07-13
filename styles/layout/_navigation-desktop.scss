@@ -1,3 +1,11 @@
+.logo {
+    cursor: pointer;
+    & > svg {
+        height: 2.25rem;
+        width: auto;
+    }
+}
+
 .desktop {
     &__header {
         padding: 0 4rem;
@@ -16,14 +24,6 @@
         @include respond(tab-big){
             display: none;
         }
-    }
-
-
-    &__logo > img {
-        display: block; 
-        height: 3.5rem;
-        width: auto;
-        
     }
 
 
