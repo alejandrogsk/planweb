@@ -4,7 +4,6 @@ const HeadComponent = ({ title, description}) => {
   return (
     <Head>
       <link rel="icon" href="/favicon-smd.ico" />
-
       <title>{title}</title>
       <meta name="description" content={description} />
     </Head>
