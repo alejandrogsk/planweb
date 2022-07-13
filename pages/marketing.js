@@ -7,15 +7,17 @@ import MktGoogle from '../components/pages/marketing/MktGoogle';
 import MktFacebook from '../components/pages/marketing/MktFacebook';
 import MktAnalitycs from '../components/pages/marketing/MktAnalitycs';
 import MktEmail from '../components/pages/marketing/MktEmail';
+import HeadComponent from '../components/global/HeadComponent';
 
 
 
 const marketing = () => {
-    const { hero, description, google_ads, google_analitycs, social_ads, email_marketing } = MarketingES;
+    const { head, hero, description, google_ads, google_analitycs, social_ads, email_marketing } = MarketingES;
 
 
   return (
     <div>
+      <HeadComponent title={head.title} description={head.description} />
         <Layout> 
             <ServiceHero  hero={hero}/>
             <BlackDescription description={description} />

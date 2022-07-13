@@ -17,7 +17,7 @@ const ServiceCard = ({service}) => {
       transition={{ duration: 1 }}
       variants={{
         visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: "150px" }
+        hidden: { opacity: 0, y: "125px" }
       }}
     src={service.img.src} alt={service.img.alt} />
 
@@ -29,7 +29,7 @@ const ServiceCard = ({service}) => {
       transition={{ duration: .7 }}
       variants={{
         visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: "100px" }
+        hidden: { opacity: 0, y: "75px" }
       }}
     >
         {/* <span>{service.top_title}</span> */}

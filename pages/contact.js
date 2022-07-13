@@ -1,22 +1,15 @@
 import React from "react";
 import Layout from "../components/global/Layout";
-import Head from "next/head";
 import ContactES from "../content/es/contact.json";
 import ContactForm from "../components/contact/ContactForm";
-
+import HeadComponent from "../components/global/HeadComponent";
 const Contact = () => {
-    const { title, content, form_fields } = ContactES;
+    const { head, title, content, form_fields } = ContactES;
 
 
     return (
         <div>
-            <Head>
-                <title>Agencia en crespo entre ríos.</title>
-                <meta
-                    name="description"
-                    content="Agencia de desarrollo web en crespo entre rios."
-                />
-            </Head>
+            <HeadComponent title={head.title} description={head.description} />
             <Layout>
                 <section className="contact">
 

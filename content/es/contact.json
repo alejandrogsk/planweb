@@ -1,4 +1,8 @@
 {
+    "head": {
+        "title": "La agencia de marketing digital cerca tuyo",
+        "description": "Contacta nuestra agencia de digital y te ayudaremos a desarrollar una solución digital"
+    },
     "title":"Estamos encantados de conocerte",
     "content":"Estamos muy interesados en tu proyecto, completa el formulario y nos pondremos en contacto a la brevedad.",
     "form_fields": {

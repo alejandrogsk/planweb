@@ -9,9 +9,9 @@ const tagManagerArgs = {
 };
 
 function MyApp({ Component, pageProps }) {
-    React.useEffect(() => {
-        TagManager.initialize(tagManagerArgs);
-    });
+    
+    React.useEffect(() => { TagManager.initialize(tagManagerArgs); });
+
     return (
       <Component {...pageProps} />
     );
