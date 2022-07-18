@@ -1,5 +1,7 @@
 import nodemailer from "nodemailer";
+
 export default async function sendForm(req, res) {
+
     try {
         const data = req.body;
 
@@ -57,7 +59,7 @@ export default async function sendForm(req, res) {
                 return res.status(400).json({
                     ok: false,
                     message:
-                        "Lo sentimos hubo un problema. Contactenos por otro medio.",
+                        "Lo sentimos, hubo un problema. Contactenos por otro medio.",
                 });
             } else {
                 return res.status(200).json({
@@ -71,8 +73,7 @@ export default async function sendForm(req, res) {
         console.log("Error en catch", e);
         return res.status(400).json({
             ok: true,
-            message:
-                "Lo sentimos hubo un problema. Contactenos por otro medio.",
+            message: "Lo sentimos, hubo un problema. Contactenos por otro medio.",
         });
     }
 }

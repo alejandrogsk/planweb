@@ -3,7 +3,7 @@ import Head from 'next/head'
 const HeadComponent = ({ title, description}) => {
   return (
     <Head>
-      <link rel="icon" href="/favicon-smd.ico" />
+      {/* <link rel="icon" href="/-smd.ico" /> */}
       <title>{title}</title>
       <meta name="description" content={description} />
     </Head>

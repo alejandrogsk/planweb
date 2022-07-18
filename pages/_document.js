@@ -6,7 +6,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           
-          <link rel="icon" href="/favicon-smd.ico" />
+          <link rel="icon" href="/web-icon.ico" />
           
           
           
