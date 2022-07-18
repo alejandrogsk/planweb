@@ -43,9 +43,10 @@
     }
 
     &__logo {
-        width: 5rem;
-        height: auto;
-        justify-self: center;  
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
         @include respond(desktop-small) {
             grid-row: 1/2;
