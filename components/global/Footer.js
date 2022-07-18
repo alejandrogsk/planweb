@@ -22,7 +22,7 @@ const Footer = ({menu}) => {
 
 
 
-        <span className="footer__copy">Copiryght Smooth Design | 2022.</span>
+        <span className="footer__copy">Copiryght PLANWEB | 2022.</span>
     </footer>
   )
 }
