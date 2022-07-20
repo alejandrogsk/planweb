@@ -1,6 +1,13 @@
 import Link from "next/link";
 import React from "react";
 import {motion} from 'framer-motion';
+
+const motionVariant = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: "100px" },
+
+}
+
 const Hero = ({ hero }) => {
     return (
         <section className="home-hero">
@@ -10,20 +17,14 @@ const Hero = ({ hero }) => {
                 whileInView="visible"
                 viewport={{ once: true }}
                   transition={{ duration: 1 }}
-                  variants={{
-                    visible: { opacity: 1, y: 0 },
-                    hidden: { opacity: 0, y: "100px" }
-                  }}
+                  variants={motionVariant}
                 >
                     <motion.span
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                      transition={{ duration: 1.2 }}
-                      variants={{
-                        visible: { opacity: 1, y: 0 },
-                        hidden: { opacity: 0, y: "100px" }
-                      }}
+                      transition={{ duration: 1 }}
+                      variants={motionVariant}
                     >
                         {hero.title[1]} 
                     </motion.span>
@@ -32,18 +33,15 @@ const Hero = ({ hero }) => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                      transition={{ duration: 1.4 }}
-                      variants={{
-                        visible: { opacity: 1, y: 0 },
-                        hidden: { opacity: 0, y: "100px" }
-                      }}
+                      transition={{ duration: 1}}
+                      variants={motionVariant}
                     className="orange-text">{hero.title[2]}.</motion.span>
                 </motion.h1>
                 <motion.p
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                  transition={{ duration: 1.6 }}
+                  transition={{ duration: 1 }}
                   variants={{
                     visible: { opacity: 1, y: 0 },
                     hidden: { opacity: 0, y: "100px" }
@@ -54,7 +52,7 @@ const Hero = ({ hero }) => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                      transition={{ duration: 1.6 }}
+                      transition={{ duration: 1 }}
                       variants={{
                         visible: { opacity: 1, y: 0 },
                         hidden: { opacity: 0, y: "50px" }
