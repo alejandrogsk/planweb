@@ -14,7 +14,7 @@ const Contact = () => {
                 <section className="contact">
 
                     <div className="contact__img">
-                        <img  src="/goodvibes.jpg" />
+                        <img  src="/goodvibes.avif" />
                     </div>
 
                     <div className="contact__content">

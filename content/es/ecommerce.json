@@ -13,7 +13,7 @@
     },
     "description": {
         "img": {
-            "src": "/ecommerce/ecommerce-black.jpg",
+            "src": "/ecommerce/ecommerce-black.avif",
             "alt": "Agencia especialista en diseño y desarrollo de proyectos de ecommerce"
         },
         "top_title":"Especialistas en desarrollo de ecommerce",
@@ -60,7 +60,7 @@
     
     },
     "mobile": {
-        "img":{ "src":"/ecommerce/ecommerce-mockup-es.png", "alt":"Diseño responsive"},
+        "img":{ "src":"/ecommerce/ecommerce-mockup-es.avif", "alt":"Diseño responsive"},
         "title": "Diseño Móvil",
         "subtitle":"En todos nuestros diseños hacemos especial énfasis en el diseño para tablets y smartphones.",
         "title_two":"Más de un 60% de las compras por internet se realizan desde un smartphone",
@@ -70,32 +70,32 @@
         "title": "Integración con plataformas de pagos",
         "sistems": [
             {
-                "src": "/ecommerce/payment/Paypal.png", 
+                "src": "/ecommerce/payment/Paypal.avif", 
                 "alt": "PayPal"
             },
             {
-                "src": "/ecommerce/payment/GooglePay.png", 
+                "src": "/ecommerce/payment/GooglePay.avif", 
                 "alt": "GooglePay"
             },
             {
-                "src": "/ecommerce/payment/Stripe.png", 
+                "src": "/ecommerce/payment/Stripe.avif", 
                 "alt": "Stripe"
             },
             {
-                "src": "/ecommerce/payment/MercadoPago.png", 
+                "src": "/ecommerce/payment/MercadoPago.avif", 
                 "alt": "MercadoPago"
             },
             
             {
-                "src": "/ecommerce/payment/ApplePay.png", 
+                "src": "/ecommerce/payment/ApplePay.avif", 
                 "alt": "ApplePay"
             },
             {
-                "src": "/ecommerce/payment/ShopPay.png", 
+                "src": "/ecommerce/payment/ShopPay.avif", 
                 "alt": "ShopPay"
             },
             {
-                "src": "/ecommerce/payment/PayU.png", 
+                "src": "/ecommerce/payment/PayU.avif", 
                 "alt": "PayU"
             }
         ]
@@ -105,21 +105,21 @@
         "list": [
             {
                 "img": {
-                    "src":"/ecommerce/tiendanube.png",
+                    "src":"/ecommerce/tiendanube.avif",
                     "alt":"Agencia especializada en tienda nube"
                 },
                 "content": "Tienda nube es nuestra opción más rápida y  accesible. Se enfoca principalmente en clientes que están dando sus primeros pasos en ecommerce."
             },
             {
                 "img": {
-                    "src":"/ecommerce/woocommerce.png",
+                    "src":"/ecommerce/woocommerce.avif",
                     "alt":"Agencia especializada en woocommerce"
                 },
                 "content": "Woocommerce es una alternativa un poco más compleja, permite un diseño más avanzado y a diferencia de tienda nube, no cobra comisiones por ventas."
             },
             {
                 "img": {
-                    "src":"/ecommerce/bigcommerce.png",
+                    "src":"/ecommerce/bigcommerce.avif",
                     "alt":"Agencia especializada en bigcommerce"
                 },
                 "content": "Bigcommerce es nuestra opción más avanzada y es tu mejor opción para  proyectos de aplicaciones web SPA y aplicaciones móviles."

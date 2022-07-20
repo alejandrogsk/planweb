@@ -13,7 +13,7 @@
     },
     "description": {
         "img": {
-            "src": "/marketing/marketing.jpg",
+            "src": "/marketing/marketing.avif",
             "alt": "Agencia especialista en diseño y desarrollo de estrategias de marketing digital"
         },
         "top_title":"Especialistas en marketing digital",
@@ -32,7 +32,7 @@
     },
     "google_ads": {
         "img": {
-            "src":"/marketing/google-ads-banner-es.png",
+            "src":"/marketing/google-ads-banner-es.avif",
             "alt":"Agencia especialista en PPC"
         },
         "title":"Hacemos crecer sus ventas con publicidad digital en Google",
@@ -61,7 +61,7 @@
     },
     "google_analitycs":{
         "img": {
-            "src":"/marketing/data.jpg",
+            "src":"/marketing/data.avif",
             "alt":"Agencia especialista en google analitycs"
         },
         "title":"Utilizamos herramientas de análisis de datos, para medir los resultados de nuestras campañas",
@@ -71,7 +71,7 @@
     },
     "social_ads": {
         "img": {
-            "src":"/marketing/facebook-ads-banner.png",
+            "src":"/marketing/facebook-ads-banner.avif",
             "alt":"Agencia de marketing especializada en google ads"
         },
         "title":"4000 millones de personas utilizan redes sociales",
@@ -84,7 +84,7 @@
     },
     "email_marketing": {
         "img": {
-            "src": "/marketing/email-marketing.jpg",
+            "src": "/marketing/email-marketing.avif",
             "alt": "Agencia especializada en email marketing"
         },
         "title":"Campañas de email marketing",
