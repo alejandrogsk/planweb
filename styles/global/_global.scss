@@ -1,6 +1,7 @@
 * {
     font-family: 'Inter', sans-serif;
     //font-family: 'DM Sans', sans-serif;
+   // font-family: 'Poppins', sans-serif;
     line-height: 115% !important;
     letter-spacing: .05rem !important;
     margin: 0;
@@ -29,7 +30,9 @@ a {
 
 
 @media only screen and (min-width: 2000px ){
-    .main-global {
+    .main-global,
+    .desktop__header,
+    .footer{
         max-width: 1440px;
         margin: auto;
     }

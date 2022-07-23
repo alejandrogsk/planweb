@@ -9,6 +9,7 @@
 
     @include respond(desktop-small) {
         grid-template-columns: 1fr;
+        margin: 10rem 2rem;
     }
 
     &__img {

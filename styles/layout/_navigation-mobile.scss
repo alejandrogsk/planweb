@@ -1,6 +1,6 @@
 .logo-mobile {
     display: none;
-    position: absolute;
+    //position: absolute;
     @include respond(tab-big){
         display: inline-block;
         & > a {

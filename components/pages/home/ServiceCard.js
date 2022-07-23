@@ -14,10 +14,10 @@ const ServiceCard = ({service}) => {
     initial="hidden"
     whileInView="visible"
     viewport={{ once: true }}
-      transition={{ duration: 1 }}
+      transition={{ duration: .8 }}
       variants={{
         visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: "125px" }
+        hidden: { opacity: 0, y: "75px" }
       }}
     src={service.img.src} alt={service.img.alt} />
 
@@ -26,10 +26,10 @@ const ServiceCard = ({service}) => {
     initial="hidden"
     whileInView="visible"
     viewport={{ once: true }}
-      transition={{ duration: .7 }}
+      transition={{ duration: .4 }}
       variants={{
         visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: "75px" }
+        hidden: { opacity: 0, y: "50px" }
       }}
     >
         {/* <span>{service.top_title}</span> */}
