@@ -18,8 +18,7 @@
             z-index: 1;
 
             @include respond(mobile){
-                left: -10rem;
-                bottom: -10rem;
+                display: none;
             }
         }
     }
