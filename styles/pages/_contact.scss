@@ -190,6 +190,8 @@
 
 
         & > button {
+            position: relative;
+            overflow: hidden;
             cursor: pointer;
             display: inline-block;
             background-color: $cw-m;
@@ -204,11 +206,10 @@
             @include respond(phone-tab) {
                 font-size: 1.8rem;
             }
-            &:hover {
+            &:hover,&:active {
                 background-color: $co-m;
                 color: $cw-m;
             }
-
             
 
             @include respond(desktop-small) {

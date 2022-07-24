@@ -1,11 +1,13 @@
-import React from 'react'
-import useCheckbox from '../../hooks/useChecks';
-import useForm from '../../hooks/useForm';
+import React, {useState} from 'react'
+import useCheckbox from '../../../hooks/useChecks';
+import useForm from '../../../hooks/useForm';
 import TextareaAutosize from "react-textarea-autosize";
-const ContactForm = ({form_fields}) => {
+import { ClipLoader } from 'react-spinners';
 
+
+const ContactForm = ({form_fields}) => {
     //For loading in submit button, success message and error message
-    const [exceptions, setExceptions] = React.useState({
+    const [exceptions, setExceptions] = useState({
         loading: false,
         message: null,
         isOk: true,
@@ -200,10 +202,15 @@ const ContactForm = ({form_fields}) => {
 
                         <button type="submit" disabled={loading}>
                             {loading
-                                ? form_fields.btn.loading
-                                : form_fields.btn.title}
+                                ? <ClipLoader size={18} color="#1A1A1A" />
+                                : form_fields.btn.title
+                                
+                                }
                         </button>
+
+
                     </form>
+
   )
 }
 

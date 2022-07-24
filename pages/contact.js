@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../components/global/Layout";
 import ContactES from "../content/es/contact.json";
-import ContactForm from "../components/contact/ContactForm";
+import ContactForm from "../components/pages/contact/ContactForm";
 import HeadComponent from "../components/global/HeadComponent";
 const Contact = () => {
     const { head, title, content, form_fields } = ContactES;
 
-
+   
     return (
         <div>
             <HeadComponent title={head.title} description={head.description} />
@@ -24,6 +24,8 @@ const Contact = () => {
                         </h1>
                         <p>{content}</p>
                     <ContactForm form_fields={form_fields} />
+
+                    
                     </div>
 
                 </section>

@@ -15,10 +15,7 @@
         "services":{
             "title": "¿Qué servicios necesitas?",
             "options": [
-                {
-                    "placeholder": "Diseño",
-                    "id": "checkDesign"
-                },
+                
                 {
                     "placeholder": "Ecommerce",
                     "id": "checkEcommerce"
