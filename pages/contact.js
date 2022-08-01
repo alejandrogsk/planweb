@@ -3,8 +3,8 @@ import Layout from "../components/global/Layout";
 import ContactES from "../content/es/contact.json";
 import ContactForm from "../components/pages/contact/ContactForm";
 import HeadComponent from "../components/global/HeadComponent";
-const Contact = () => {
-    const { head, title, content, form_fields } = ContactES;
+const Contact = ({data}) => {
+    const { head, title, content, form_fields } = data;
 
    
     return (
@@ -36,3 +36,12 @@ const Contact = () => {
 
 export default Contact;
 
+export async function getStaticProps(context) {
+    const data = ContactES;
+  
+    return {
+      props: {
+        data
+      },
+    }
+  }

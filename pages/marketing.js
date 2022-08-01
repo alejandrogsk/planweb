@@ -11,8 +11,8 @@ import HeadComponent from '../components/global/HeadComponent';
 
 
 
-const marketing = () => {
-    const { head, hero, description, google_ads, google_analitycs, social_ads, email_marketing } = MarketingES;
+const marketing = ({data}) => {
+    const { head, hero, description, google_ads, google_analitycs, social_ads, email_marketing } = data;
 
 
   return (
@@ -39,3 +39,13 @@ const marketing = () => {
 }
 
 export default marketing
+
+export async function getStaticProps(context) {
+  const data = MarketingES;
+
+  return {
+    props: {
+      data
+    },
+  }
+}

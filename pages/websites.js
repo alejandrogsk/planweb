@@ -8,8 +8,8 @@ import ServiceCharacteristics from "../components/pages/sections/ServiceCharacte
 import ServiceSquares from "../components/pages/sections/ServiceSquares";
 import HeadComponent from "../components/global/HeadComponent";
 
-const websites = () => {
-    const { head, hero, description, services, websites } = WebsitesES;
+const websites = ({data}) => {
+    const { head, hero, description, services, websites } = data;
 
     return (
         <div>
@@ -29,3 +29,14 @@ const websites = () => {
 };
 
 export default websites;
+
+
+export async function getStaticProps(context) {
+    const data = WebsitesES;
+  
+    return {
+      props: {
+        data
+      },
+    }
+  }

@@ -7,9 +7,9 @@ import BlackDescription from '../components/pages/sections/BlackDescription';
 import ServiceCharacteristics from '../components/pages/sections/ServiceCharacteristics';
 
 import HeadComponent from "../components/global/HeadComponent";
-const identidadVisual = () => {
+const identidadVisual = ({data}) => {
 
-    const { head, hero, description, services } = DesignES;
+    const { head, hero, description, services } = data;
   return (
     <div>
         <HeadComponent title={head.title} description={head.description} />
@@ -25,3 +25,13 @@ const identidadVisual = () => {
 }
 
 export default identidadVisual
+
+export async function getStaticProps(context) {
+  const data = DesignES;
+
+  return {
+    props: {
+      data
+    },
+  }
+}

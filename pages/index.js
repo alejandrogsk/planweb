@@ -5,8 +5,8 @@ import Hero from "../components/pages/home/Hero";
 import Services from "../components/pages/home/Services";
 import HeadComponent from "../components/global/HeadComponent";
 
-export default function Home() {
-    const { head, hero, services, blog } = HomerES;
+export default function Home({data}) {
+    const { head, hero, services, blog } = data;
 
     return (
         <div>
@@ -21,3 +21,13 @@ export default function Home() {
         </div>
     );
 }
+
+export async function getStaticProps(context) {
+    const data = HomerES;
+
+    return {
+      props: {
+        data
+      }, // will be passed to the page component as props
+    }
+  }

@@ -9,8 +9,8 @@ import ServiceHero from '../components/pages/sections/ServiceHero';
 import EcommerceES from '../content/es/ecommerce.json';
 import HeadComponent from "../components/global/HeadComponent";
 import EcommercePayments from '../components/pages/ecommerce/EcommercePayments';
-const ecommerce = () => {
-  const { head, hero, description, services, mobile, payment, platforms } = EcommerceES;
+const ecommerce = ({data}) => {
+  const { head, hero, description, services, mobile, payment, platforms } = data;
 
   return (
     <div>
@@ -33,3 +33,14 @@ const ecommerce = () => {
 }
 
 export default ecommerce
+
+
+export async function getStaticProps(context) {
+  const data = EcommerceES;
+
+  return {
+    props: {
+      data
+    },
+  }
+}
