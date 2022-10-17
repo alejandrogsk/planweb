@@ -1,8 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
 import Navigation from "./Navigation";
-import { motion, AnimatePresence } from "framer-motion";
-import { useRouter } from "next/router";
 
 const menues = {
     es: {
@@ -12,10 +10,10 @@ const menues = {
         },
         menu: [
             { title: "Inicio", link: "/" },
-            //{ title: "Diseño", link: "/identidad-visual" },
             { title: "Ecommerce", link: "/ecommerce" },
-            { title: "Websites", link: "/websites" },
-            { title: "Marketing", link: "/marketing" },
+            { title: "Publicidad Digital", link: "/publicidad-digital" },
+            { title: "Sitio Web", link: "/web" },
+            { title: "Contacto", link: "/contacto" },
         ],
     },
     en: {
@@ -34,39 +32,12 @@ const menues = {
 };
 const Layout = ({ children }) => {
     const menu = menues.es;
-    const router = useRouter()
     return (
         <>
             <Navigation menu={menu.menu} cta={menu.cta} />
-            <AnimatePresence>
-                <motion.main
-                className="main-global"
-                    key={router.route}
-                    initial="pageInitial"
-                    animate="pageAnimate"
-                    
-                    variants={{
-                        pageInitial: {
-                            opacity: 0,
-                        },
-                        pageAnimate: {
-                            opacity: 1,
-                        },
-                        pageExit: {
-                            opacity:0
-                        }
-                    }}
-                    transition={{ 
-                        duration: .5,
-                        type: "tween",
-                        
-                    }}
-
-                    
-                >
-                    {children}
-                </motion.main>
-            </AnimatePresence>
+            <main>
+            {children}
+            </main>
             <Footer menu={menu.menu} />
         </>
     );

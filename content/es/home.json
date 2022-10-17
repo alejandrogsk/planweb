@@ -3,113 +3,54 @@
         "title": "Planweb: Web, E-commerce y Marketing Digital en Entre Ríos.",
         "description": "Somos una agencia digital ubicada en Crespo, Entre Ríos. Nos dedicamos al diseño y desarrollo de sitios Web y Ecommerce, como así también al Marketing Digital."
     },
-    "hero": {
+    "heroContent":{
         "title": {
-            "1":"Soluciones digitales ",
-            "2": "al alcance de tu empresa"
+            "first":"Soluciones digitales",
+            "second": "al alcance de tu empresa"
         },
-        
-        "sutitle":"Somos la agencia que ayudará a tu negocio a conectar con más clientes utilizando medios digitales. Somos especialistas en web, e-commerce y marketing digital.",
-        "cta":{
-            "title":"Solicitar Presupuesto",
-            "url": "/contact"
+        "subtitle":"Somos la agencia que ayudará a tu negocio a conectar con más clientes utilizando medios digitales. Somos especialistas en web, e-commerce y marketing digital.",
+        "cta1":{
+            "title":"Ecommerce",
+            "url": "/ecommerce"
+        },
+        "cta2":{
+            "title":"Publicidad",
+            "url": "/publicidad-digital"
         }
     },
-    "services": {
-        "top_title": "CÓMO TE PODEMOS AYUDAR",
-        "title":"Nuestros Servicios",
-        "list": [
-            
-            {
-                "icon":{
-                    "url": "/home/Icono-ecommerce.avif",
-                    "alt":"Ecommerce  para pymes Crespo,Entre Ríos"
-                },
-                "title":"Tu plataforma de ventas online",
-                "content": "Hacemos que tu negocio llegue a más clientes las 24hs los 7 días de la semana con tu propia plataforma de e-commerce.",
-                "img": {
-                    "src":"/home/ecommerce.avif",
-                    "alt": "Diseño de ecommerce"
-                },         
-                "cta": {
-                    "url":"/ecommerce",
-                    "title":"Ver más"
-                }
-            },
-            {
-                "icon":{
-                    "url": "/home/Icono-web.avif",
-                    "alt":"Sitios web para pymes crespo"
-                },
-                "title":"Tu mejor agente comercial 24/7",
-                "content": "Estudiamos las necesidades de tu empresa y desarrollamos tu web a medida, utilizando la última tecnología en desarrollo y diseño web.",
-                "img": {
-                    "src":"/home/web-development.avif",
-                    "alt": "Diseño de sitios web a medida"
-                },
-                "cta": {
-                    "url":"/websites",
-                    "title":"Ver más"
-                }
-            },
-            {
-                "icon":{
-                    "url": "/home/Icono-marketing.avif",
-                    "alt":"Marketing digital para pymes Crespo,Entre Ríos"
-                },
-                "title":"Llegá a más y mejores clientes",
-                "content": "Ponemos múltiples servicios de marketing digital al alcance de tu negocio para ayudarte aumentar tus ventas.",
-                "img": {
-                    "src":"/home/marketing.avif",
-                    "alt": "Servicios de marketing digital"
-                },
-                "cta": {
-                    "url":"/marketing",
-                    "title":"Ver más"
-                }
+    "home_services": [
+        {
+            "title": "Tu plataforma de ventas online",
+            "subtitle": "Hacemos que tu negocio llegue a más clientes las 24hs los 7 días de la semana con tu propia plataforma de e-commerce.",
+            "cta": {"title": "Ver más", "url": "/ecommerce"},
+            "img": {
+                "alt":"Ecommerce  para pymes Crespo,Entre Ríos",
+                "src":"/assets/home-ecommerce.png",
+                "width": "484",
+                "height":"430"
             }
-        ]
-    },
-    "blog": {
-        "top_title":"Noticias",
-        "title":"Tal vez te interese ver algunas de nuestras últimas publicaciones",
-        "list": [
-            {
-                "title":"¿Qué dicen los expertos del ecommerce en 2022?",
-                "date": "05/07/22",
-                "img": {
-                    "src":"/home/blog-1.avif",
-                    "alt":""
-                },
-                "cta": {
-                    "url":"",
-                    "title":"Ver más"
-                }
-            },
-            {
-                "title":"Tendencias de ecommerce para 2022",
-                "date": "15/07/22",
-                "img": {
-                    "src":"/home/blog-2.avif",
-                    "alt":""
-                },
-                "cta": {
-                    "url":"",
-                    "title":"Ver más"
-                }
-            },
-            {
-                "title":"10 Tips de marketing digital para implementar ya mismo",
-                "date": "30/07/22",
-                "img": {
-                    "src":"/home/blog-3.avif",
-                    "alt":""
-                },
-                "cta": {
-                    "url":"",
-                    "title":"Ver más"
-                }
-            }
-        ]
-    }
+        },
+        {
+            "title":"Llegá a más y mejores clientes",
+            "subtitle": "Ponemos múltiples servicios de publicidad digital al alcance de tu negocio para ayudarte aumentar tus ventas.",
+            "cta": {"title": "Ver más", "url": "/publicidad-digital"}    ,   
+            "img": {
+                "alt":"Ecommerce  para pymes Crespo,Entre Ríos",
+                "src":"/assets/home-marketing.png",
+                "width": "600",
+                "height":"594"
+            } 
+        },
+        {
+            "title":"Tu mejor agente comercial 24/7",
+        "subtitle": "Estudiamos las necesidades de tu empresa y desarrollamos tu web a medida, utilizando la última tecnología en desarrollo y diseño web.",
+        "cta": {"title": "Ver más", "url": "/sitio-web"},
+        "img": {
+            "alt":"Diseño de sitios web a medida, Crespo,Entre Ríos",
+            "src":"/assets/home-web.png",
+            "width": "550",
+            "height":"344"
+        }
+        }
+    ]
 }

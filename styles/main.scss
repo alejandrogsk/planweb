@@ -1,5 +1,6 @@
-//@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 //GLobal
 @import "./global/variables";
 @import "./global/mixins";
@@ -29,3 +30,10 @@
 @import "./pages/sections/black-section";
 @import "./pages/sections/services-section";
 @import "./pages/sections/services-squares";
+
+
+//V2
+@import "./Home/home_hero";
+@import "./Ecommerce/ecommerce";
+
+@import "./ServicesComponents/commonService";

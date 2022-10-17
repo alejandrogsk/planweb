@@ -1,126 +1,150 @@
-{
-    "head": {
+{"head": {
     "title": "Agencia especialista en Ecommerce en Entre Ríos",
     "description": "Diseñamos tu E-commerce pensando en tus clientes. Desarrollamos tiendas online para PYMES y hacemos publicidad digital de tus productos."
     },
     "hero": {
-        "title":"Ecommerce",
-        "subtitle":"Dejamos todo listo para que tu tienda tenga la habilidad de vender 24/7.",
+        "title": "Somos una agencia especializada en Ecommerce",
         "content": [
-            "Tener tu propia plataforma de ventas online le permite a tus clientes comprar en el momento y desde el lugar que ellos elijan.",
-            "Ya sea que te dediques al comercio minorista o mayorista, o si contás con un punto de venta físico, tener un canal de ventas online te ayudará a mejorar la experiencia de compra de tus clientes, y conseguir nuevos."
+            "El comercio electrónico no ha parado de crecer desde su aparición, pero en la última década su crecimiento se ha disparado y a raíz de la pandemia muchos consumidores que nunca habían comprado por internet, se vieron en la obligación de hacerlo, hoy en día muchos de estos clientes ven las tiendas en línea como una primera opción para ver productos, comparar precios y realizar comprar.",
+            "Tener tu propia plataforma ecommerce no es solo una oportunidad de crecimiento, sino que es un requisito indispensable para que tu negocio sea competitivo en 2022 y en los próximos años.",
+            "Ya sea que te dediques al comercio B2B, B2C, minorista o mayorista, o si contás con un punto de venta físico, tener un canal de ventas online te ayudará a facilitar y mejorar la experiencia de compra de tus clientes y conseguir nuevos, 24/7 los 365 días del año."
         ]
-    },
-    "description": {
-        "img": {
-            "src": "/ecommerce/ecommerce-black.avif",
-            "alt": "Agencia especialista en diseño y desarrollo de proyectos de ecommerce"
+    },    
+    "banner": {
+        "image1": {
+            "src": "/assets/ecommerce-banner.png",
+            "alt": "Agencia de ecommerce Entre Ríos",
+            "width": "1412",
+            "height": "795"
         },
-        "top_title":"Especialistas en desarrollo de ecommerce",
-        "title":"Te ayudamos a poner en marcha tu proyecto de ecommerce.",
-        "content": [
-            "El comercio electrónico no ha parado de crecer desde su aparición, pero en la última década su crecimiento se ha disparado y a raíz de la pandemia muchos clientes que antes eran reticentes a comprar por internet ahora prefieren comprar desde la comodidad de su hogar.",
-            "Sabemos lo abrumador que puede llegar a ser afrontar un proyecto de ecommerce.",
-            "Si lo que estás buscando es tener una tienda online que cuente con las funcionalidades necesarias para tu emprendimiento, con un diseño atractivo y fácil de utilizar para tus clientes, estás en el sitio correcto, ponete en contacto con nosotros para charlar sobre tu proyecto."
-        ],
-        "cta":{
-            "title":"Contactanos Ahora",
-            "url": "/contact"
+        "image2": {
+            "src": "/assets/ecommerce-card.png",
+            "alt": "Agencia especialista en ecommerce Crespo",
+            "width": "431",
+            "height": "211"
         }
     },
+    
     "services": {
         "title":"Servicios de Ecommerce",
         "content": [
             {
-                "title":"Diseño visual de tu tienda",
-                "description":"Combinamos un atractivo diseño visual, con una fluida experiencia de usuario para facilitar los procesos de compra de sus clientes"
+                "list": [
+                    {
+                        "title":"Diseño UX/UI",
+                        "subtitle":"Diseñamos una tienda atractiva visualmente y además enfocada en facilitarle la compra a tus clientes."
+                    },
+                    {
+                        "title":"Desarrollo de E-Commerce",
+                        "subtitle":"Desarrollamos sobre las plataformas más utilizadas del mercado y también Headless ecommerce para proyectos más complejos."
+                    },
+                    {
+                        "title":"Panel de gestión",
+                        "subtitle":"Dejamos todo listo para que puedas gestionar tus productos y pedidos de una forma muy sencilla."
+                    }
+                ],
+                "image":{
+                    "src": "/assets/Ecommerce-1.png",
+                    "alt": "Especialista en diseño de ecommerce",
+                    "width": "550",
+                    "height": "344"
+                }
             },
             {
-                "title":"Desarrollo integral",
-                "description":"Nos ocupamos del desarrollo de tu tienda, utilizando la tecnología que mejor se adapte a las necesidades de tu proyecto"
-            },
-            {
-                "title":"Configuración y mantenimiento",
-                "description":"Dominio, hosting, certificados SSL, y demás configuraciones están incluidas"
-            },
-            {
-                "title":"Panel de gestión",
-                "description":"Mediante un panel de control podrás llevar a cabo un correcto control del inventario de tu tienda"
-            },
-            {
-                "title":"Integración con marketplaces",
-                "description":"Integra tu tienda online con marketplaces para que puedas vender tus productos en plataformas de terceros"
-            },
-            {
-                "title":"Sincronización con redes sociales",
-                "description": " SIncronizamos los productos de tu tienda con redes sociales como instagram y facebook"
-            }
-
-        ]
-    
-    },
-    "mobile": {
-        "img":{ "src":"/ecommerce/ecommerce-mockup-es.avif", "alt":"Diseño responsive"},
-        "title": "Diseño Móvil",
-        "subtitle":"En todos nuestros diseños hacemos especial énfasis en el diseño para tablets y smartphones.",
-        "title_two":"Más de un 60% de las compras por internet se realizan desde un smartphone",
-        "subtitle_two":"De ahí la importancia del diseño móvil en todo proyecto de Ecommerce."
-    },
-    "payment": {
-        "title": "Integración con plataformas de pagos",
-        "sistems": [
-            {
-                "src": "/ecommerce/payment/Paypal.avif", 
-                "alt": "PayPal"
-            },
-            {
-                "src": "/ecommerce/payment/GooglePay.avif", 
-                "alt": "GooglePay"
-            },
-            {
-                "src": "/ecommerce/payment/Stripe.avif", 
-                "alt": "Stripe"
-            },
-            {
-                "src": "/ecommerce/payment/MercadoPago.avif", 
-                "alt": "MercadoPago"
-            },
-            
-            {
-                "src": "/ecommerce/payment/ApplePay.avif", 
-                "alt": "ApplePay"
-            },
-            {
-                "src": "/ecommerce/payment/ShopPay.avif", 
-                "alt": "ShopPay"
-            },
-            {
-                "src": "/ecommerce/payment/PayU.avif", 
-                "alt": "PayU"
+                "list": [
+                    {
+                        "title":"Integración con marketplaces",
+                        "subtitle":"Integra tu tienda online con marketplaces para que puedas vender tus productos en plataformas de terceros."
+                    },
+                    {
+                        "title":"Integración con redes sociales",
+                        "subtitle":"Sincronizamos los productos de tu tienda con redes sociales como instagram y facebook."
+                    },
+                    {
+                        "title":"Integración con plataformas de pagos",
+                        "subtitle":"Recibí pagos en tu tienda cualquier día y a cualquier hora de una forma segura."
+                    }
+                ],
+                "image":{
+                    "src": "/assets/Ecommerce-2.png",
+                    "alt": "Especialista en desarrollo de ecommerce",
+                    "width": "464",
+                    "height": "498"
+                }
             }
         ]
     },
+    "payments": [
+        {
+            "src": "/assets/payment/Paypal.png", 
+            "alt": "PayPal",
+            "width": "182",
+            "height": "70"
+        },
+        {
+            "src": "/assets/payment/GooglePay.png", 
+            "alt": "GooglePay",
+            "width": "132",
+            "height":"70"
+        },
+        {
+            "src": "/assets/payment/Stripe.png", 
+            "alt": "Stripe",
+            "width": "134",
+            "height": "70"
+        },
+        {
+            "src": "/assets/payment/MercadoPago.png", 
+            "alt": "MercadoPago",
+            "width": "170",
+            "height":"70"
+        },
+        {
+            "src": "/assets/payment/ApplePay.png", 
+            "alt": "ApplePay",
+            "width": "123",
+            "height":"70"
+        },
+        {
+            "src": "/assets/payment/ShopPay.png", 
+            "alt": "ShopPay",
+            "width": "208",
+            "height":"70"
+        },
+        {
+            "src": "/assets/payment/PayU.png", 
+            "alt": "PayU",
+            "width": "140",
+            "height":"70"
+        }
+    ],
     "platforms": {
         "title":"Trabajamos con las plataformas más utilizadas en la industria",
         "list": [
             {
-                "img": {
+                "image": {
                     "src":"/ecommerce/tiendanube.avif",
-                    "alt":"Agencia especializada en tienda nube"
+                    "alt":"Agencia especializada en tienda nube",
+                    "width": "310",
+                    "height":"60"
                 },
                 "content": "Tienda nube es nuestra opción más rápida y  accesible. Se enfoca principalmente en clientes que están dando sus primeros pasos en ecommerce."
             },
             {
-                "img": {
+                "image": {
                     "src":"/ecommerce/woocommerce.avif",
-                    "alt":"Agencia especializada en woocommerce"
+                    "alt":"Agencia especializada en woocommerce",
+                    "width": "260",
+                    "height":"60"
                 },
                 "content": "Woocommerce es una alternativa un poco más compleja, permite un diseño más avanzado y a diferencia de tienda nube, no cobra comisiones por ventas."
             },
             {
-                "img": {
+                "image": {
                     "src":"/ecommerce/bigcommerce.avif",
-                    "alt":"Agencia especializada en bigcommerce"
+                    "alt":"Agencia especializada en bigcommerce",
+                    "width": "265",
+                    "height":"60"
                 },
                 "content": "Bigcommerce es nuestra opción más avanzada y es tu mejor opción para  proyectos de aplicaciones web SPA y aplicaciones móviles."
             }

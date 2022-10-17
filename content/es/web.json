@@ -1,0 +1,101 @@
+{
+    "head": {
+        "title": "Desarrollo web a la medida de su negocio",
+        "description": "Diseñamos tu sitio web pensando en tus clientes. Desarrollamos paginas web para PYMES y hacemos publicidad digital de tus negocio."
+    },
+    "hero": {
+        "title": "Diseño y desarrollo web a medida",
+        "content": [
+            "Si tu negocio tiene procesos de ventas más largos, como por ejemplo los negocios inmobiliarios, lo que necesita es un sitio web mediante el cual comunicar sus productos o servicios pero orientado a cerrar la venta por otro canal.",
+            "Existen diferentes tipos de sitios web, cada uno con unos fines específicos, unos orientados a comunicación corporativa, otros a ventas o campañas de marketing.",
+            "Nosotros diseñamos sitios web de principio a fin, partiendo de las necesidades específicas de tu negocio, proyecto o campaña."
+        ]
+    },
+    "banner": {
+        "src": "/assets/websites-banner.jpg",
+        "alt":"Desarrollo web Crespo Entre Ríos",
+        "width": "1412",
+            "height": "795"
+    },
+    "platforms": [
+        {
+            "src": "/assets/wordpress.png",
+            "alt":"Especialistas en desarrollo wordpress",
+            
+            "width": "262.58",
+            "height": "60"
+        },
+        {
+            "src": "/assets/nextjs.png",
+            "alt":"Especialistas en desarrollo de nextjs",
+            
+            "width": "146.08",
+            "height": "88"
+        },
+        {
+            "src": "/assets/gatsby.png",
+            "alt":"Especialistas en desarrollo gatsbyjs",
+            "width": "227.14",
+            "height": "60"
+            
+        }
+    ],
+    "services": {
+        "title": "Tener un sitio web es como tener un agente comercial trabajando para tu negocio las 24hs.",
+        "subtitle": "Utilizamos las plataformas y herramientas de desarrollo más utilizadas en la industria del desarrollo web",
+        "list": [
+            {
+                "image": {
+                    "src": "/assets/web1.png",
+                    "alt":"Icono web corporativo",
+                    "width": "35",
+                    "height": "35"
+                },
+                "title": "Sitio web corporativo",
+                "subtitle": "Para empresas medianas o grandes y empresas que venden productos o servicios a otras empresas.",
+                "examples": [
+                    "Empresas que venden servicios agropecuarios",
+                    "Empresas constructoras",
+                    "Compañías consultoras",
+                    "Empresas de consultoría"
+                ]
+            },
+            {
+                "image": {
+                    "src": "/assets/web2.png",
+                    "alt":"Icono cms website",
+                    "width": "35",
+                    "height": "35"
+                },
+                "title": "Web CMS",
+                "subtitle": "Para empresas que necesitan una forma sencilla de gestionar por sí mismas el contenido de su sitio.",
+                "examples": [
+                    "Agencias Inmobiliarias",
+                    "Agencias de viajes",
+                    "Agencias de seguros",
+                    "Agencias Automotrices"
+                    
+                ]
+            },
+            {
+                "image": {
+                    "src": "/assets/web3.png",
+                    "alt":"Icono landing page",
+                    "width": "35",
+                    "height": "35"
+                },
+                "title": "Landing page",
+                "subtitle": "Es lo que estás buscando si lo que necesitas es promocionar un número limitado de productos o servicios.",
+                "examples": [
+                   "Promoción de productos o servicios",
+                    "Promoción de eventos",
+                    "Captación de leads"
+                ]
+            }
+        ]
+    },
+    "cta": {
+        "title": "Solicitar Ahora",
+        "link": "/contactanos"
+    }
+}

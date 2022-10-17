@@ -1,7 +1,7 @@
 {
     "head": {
-        "title": "La agencia de marketing digital cerca tuyo",
-        "description": "Contacta nuestra agencia de digital y te ayudaremos a desarrollar una solución digital"
+        "title": "Agencia de marketing digital crespo entre rios",
+        "description": "Contactanos para desarrollar juntos tu estrategia digital | Ecommerce - Web - Publicidad"
     },
     "title":"Estamos encantados de conocerte",
     "content":"Estamos muy interesados en tu proyecto, completa el formulario y nos pondremos en contacto a la brevedad.",
@@ -21,12 +21,20 @@
                     "id": "checkEcommerce"
                 },
                 {
-                    "placeholder": "Marketing",
-                    "id": "checkMarketing"
-                },
-                {
                     "placeholder": "Sitio Web",
                     "id": "checkWeb"
+                },
+                {
+                    "placeholder": "Publicidad en google",
+                    "id": "checkPpc"
+                },
+                {
+                    "placeholder": "Publicidad en redes",
+                    "id": "checkSocial"
+                },
+                {
+                    "placeholder": "Consultoría",
+                    "id": "checkConsulting"
                 }
             ]
         },

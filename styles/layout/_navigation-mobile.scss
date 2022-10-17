@@ -38,7 +38,7 @@
     }
 
     &--background {
-        background-image: radial-gradient($co-m, $co-l);
+        background-image: radial-gradient($cy-m, $cy-l);
         border-radius: 50%;
         height: 2rem;
         position: fixed;
@@ -52,7 +52,7 @@
     }
 
     &--nav {
-        background-color: $co-m;
+        background-color: $cy-m;
         height: 100vh;
 
         position: fixed;
@@ -90,9 +90,9 @@
         color: $cw-m;
         &:link,
         &:visited {
-            background-image: linear-gradient(120deg, transparent 0%, $co-m 50%, $cw-m 50%);
+            background-image: linear-gradient(120deg, transparent 0%, $cy-m 50%, $cw-m 50%);
             background-size: 230%;
-            color: $cw-m;
+            color: $cb-m;
             display: inline-block;
             font-size: 2rem;
             font-weight: 400;
@@ -106,7 +106,7 @@
         &:hover,
         &:active {
             background-position: 100%;
-            color: $co-m;
+            color: $cy-m;
             transform: translateX(1rem);
             border-radius: 10px; /// Absolutamente opcional
         }
@@ -135,7 +135,7 @@
         &,
         &::before,
         &::after {
-            background-color: $co-m;
+            background-color: $cb-m;
             display: inline-block;
             height: 2.5px;
             width: 2.5rem;

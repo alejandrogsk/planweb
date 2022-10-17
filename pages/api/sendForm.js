@@ -55,7 +55,7 @@ export default async function sendForm(req, res) {
         };
         await transporter.sendMail(mailData, function (err, info) {
             if (err) {
-                console.log(err);
+                
                 return res.status(400).json({
                     ok: false,
                     message:
@@ -70,7 +70,7 @@ export default async function sendForm(req, res) {
             }
         });
     } catch (e) {
-        console.log("Error en catch", e);
+       
         return res.status(400).json({
             ok: true,
             message: "Lo sentimos, hubo un problema. Contactenos por otro medio.",
