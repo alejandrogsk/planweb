@@ -16,7 +16,7 @@ const Hero = ({title, content}) => {
                     {paragraph}
                 </p>
             ))}
-            <span className="ecommerce_hero-span--1 bg-yellow-500"></span>
+            <span className="ecommerce_hero-span--1 bg-primary"></span>
         </section>
     );
 };
