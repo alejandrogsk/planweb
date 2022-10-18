@@ -42,7 +42,7 @@ const Home = ({data}) => {
                   <h2 className="text-3xl md:text-4xl lg:text-5xl	font-bold uppercase ">{service.title}</h2>
                   <p className="text-xl md:text-2xl pt-3 pb-6">{service.subtitle}</p>
                   <Link href={service.cta.url}>
-                    <a className="transition-all duration-200 text-xl text-center inline-block px-6 py-3 bg-primary hover:bg-black text-black hover:text-white uppercase">{service.cta.title}</a>
+                    <a className="shadow transition-all duration-200 text-xl text-center inline-block px-6 py-3 bg-primary hover:bg-black text-black hover:text-white uppercase">{service.cta.title}</a>
                   </Link>
 
                   </div>
