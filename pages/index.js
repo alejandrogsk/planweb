@@ -25,10 +25,13 @@ const Home = ({data}) => {
                   </Link>
                    </div>
             </div>
-            <div className="pt-16 md:pt-0 col-start-1 md:col-start-2 col-end-2 md:col-end-3 ">
+            <div className="hidden md:block pt-16 md:pt-0 col-start-1 md:col-start-2 col-end-2 md:col-end-3 ">
               <Image src="/assets/hero-image.png" layout="intrinsic" width="600" height="420" />
+              
             </div>
-
+            <div className="block md:hidden pt-16 md:pt-0 col-start-1 md:col-start-2 col-end-2 md:col-end-3 "> 
+                  <Image src="/assets/home-hero-mobile.png" width={390} height={345} layout="intrinsic" />
+                </div>
             <span className="home_hero-square1 bg-yellow-400"></span>
             <span className="home_hero-square2 bg-primary"></span>
         </section>
@@ -44,11 +47,13 @@ const Home = ({data}) => {
                   <Link href={service.cta.url}>
                     <a className="shadow transition-all duration-200 text-xl text-center inline-block px-6 py-3 bg-primary hover:bg-black text-black hover:text-white uppercase">{service.cta.title}</a>
                   </Link>
-
-                  </div>
-                <div> 
+                </div>
+                
+                <div > 
                   <Image src={service.img.src} width={service.img.width} height={service.img.height} layout="intrinsic" />
                 </div>
+                
+              
 
                 <span className={`home_service--${i}-span bg-yellow-500`}></span>
               </div>
