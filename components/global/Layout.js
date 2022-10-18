@@ -6,13 +6,13 @@ const menues = {
     es: {
         cta: {
             title: "Contactanos Ahora",
-            link: "/contact",
+            link: "/contacto",
         },
         menu: [
             { title: "Inicio", link: "/" },
             { title: "Ecommerce", link: "/ecommerce" },
             { title: "Publicidad Digital", link: "/publicidad-digital" },
-            { title: "Sitio Web", link: "/web" },
+            { title: "Sitio Web", link: "/disenio-y-desarrollo-web" },
             { title: "Contacto", link: "/contacto" },
         ],
     },

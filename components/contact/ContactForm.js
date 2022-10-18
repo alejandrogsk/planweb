@@ -200,7 +200,7 @@ const ContactForm = ({form_fields}) => {
                             </p>
                         )}
 
-                        <button type="submit" disabled={loading}>
+                        <button type="submit shadow" disabled={loading}>
                             {loading
                                 ? <ClipLoader size={18} color="#1A1A1A" />
                                 : form_fields.btn.title

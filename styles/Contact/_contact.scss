@@ -56,11 +56,13 @@
 
 
         &-input, &-box, &-message {
+            
             & > textarea::placeholder, 
             & > input::placeholder {
                 font-size: 1.6rem;
                 color: $cb-m;
                 text-transform: capitalize;
+                
             }
         }
 
@@ -70,14 +72,14 @@
             position: relative;
             height: 4rem;
             font-size: 1.6rem;
-        
+            
             & > input {
                 width: 100%;
                 border: none;
                 border-bottom: solid 2px $cb-l;
                 height: 100%;
                 font-size: 1.6rem;
-
+                background-color: transparent;
                 &:focus{
                     outline: none;
                 }
@@ -117,7 +119,7 @@
                 }
 
                 & > label {
-                    font-size: 1.6rem;
+                    font-size: 1.2rem;
                     margin-left: .5rem;
                 }
                }
@@ -194,11 +196,9 @@
             overflow: hidden;
             cursor: pointer;
             display: inline-block;
-            background-color: $cw-m;
+            background-color: $cy-m;
             font-size: 1.5rem;
             color: $cb-m;
-            border: $cy-m 2px solid;
-            border-radius: 1rem;
             padding: .75rem 1.5rem;
             transition: all 300ms;
             box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
@@ -207,13 +207,50 @@
             width: 20rem;
 
             &:hover,&:active {
-                background-color: $cy-m;
+                background-color: $cb-m;
+                color: $cw-m;
             }
 
             @include respond(phone-tab) {
                 grid-column: 1/2;
                 width: 100%;
             }
+        }
+    }
+
+}
+
+
+.contact-square {
+
+    &-1 {
+        display: block;
+        height: 20rem;
+        top: 0;
+        right:0;
+        position: absolute;
+        width: 30rem;
+        z-index: -1;
+
+        @include respond(mobile) {
+            height: 22.5rem;
+        }
+    }
+
+    &-2 {
+        display: block;
+        height: 15rem;
+        top: 35rem;
+        left:0;
+        position: absolute;
+        width: 2rem;
+        z-index: -1;
+
+        @include respond( phone-tab ) {
+            width: 1rem;
+        }
+        @include respond(mobile) {
+            width: .5rem;
         }
     }
 

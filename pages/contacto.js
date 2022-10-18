@@ -21,6 +21,9 @@ const Contacto = ({ data }) => {
                     </p>
 
                     <ContactForm form_fields={form_fields} />
+
+                    <span className="contact-square-1 bg-yellow-900"></span>
+                    <span className="contact-square-2 bg-yellow-700"></span>
                 </section>
             </Layout>
         </div>

@@ -41,7 +41,7 @@ const ecommerces = ({data}) => {
             </section>
 
 
-            <section className="ecommerce_services px-6 md:px-12 lg:px-16 py-36">
+            <section className="ecommerce_services px-6 md:px-12 lg:px-16 py-16 md:py-26 lg:py-36">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl	font-bold uppercase  text-center mb-16">{services.title}</h2>
                 <div className="ecommerce_services-section grid grid-cols-1 gap-16">
                     {services.content.map((serviceList, i) => (

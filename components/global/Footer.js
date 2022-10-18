@@ -12,14 +12,14 @@ const Footer = ({menu}) => {
             {
                 menu.map((element, index)=> (
                     <Link key={index} href={element.link} >
-                        <a className="text-white text-base uppercase font-semibold first:ml-0 ml-0 md:ml-4 first:mt-0 mt-4 md:mt-0">{element.title}</a>
+                        <a className="text-white text-base uppercase font-medium	 first:ml-0 ml-0 md:ml-4 first:mt-0 mt-4 md:mt-0">{element.title}</a>
                     </Link>
                 ))
             }
         </ul>
 
         <Link href="/">
-            <a className="text-white col-start-1 col-end-2 md:col-end-2 row-start-1 row-end-2 justify-self-center md:justify-self-start	 cursor-pointer font-poppins font-semibold text-xl md:text-2xl lg:text-3xl text-black text-center">PlanWeb</a>
+            <a className="text-white col-start-1 col-end-2 md:col-end-2 row-start-1 row-end-2 justify-self-center md:justify-self-start	 cursor-pointer font-poppins font-semibold text-xl md:text-2xl lg:text-3xl text-center">PlanWeb</a>
         </Link>
 
 

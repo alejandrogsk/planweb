@@ -2,7 +2,7 @@
     display: none;
     //position: absolute;
     @include respond(tab-big){
-        display: inline-block;
+        display: block;
         & > a {
             position: absolute;
             left: 1.5rem;
@@ -28,12 +28,12 @@
         border-radius: 50%;
         box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.14);
         cursor: pointer;
-        height: 5rem;
+        height: 3rem;
         position: fixed;
         right: 1rem;
         text-align: center;
         top: 1rem;
-        width: 5rem;
+        width: 3rem;
         z-index: 200;
     }
 
@@ -94,12 +94,12 @@
             background-size: 230%;
             color: $cb-m;
             display: inline-block;
-            font-size: 2rem;
-            font-weight: 400;
+            font-size: 1.2rem;
+            font-weight: 500;
             padding: 1rem 2rem;
             text-decoration: none;
             text-transform: none;
-            
+            text-transform: uppercase;
             transition: all .4s;
         }
 
@@ -129,7 +129,7 @@
 
     //Icon
     &--icon {
-        margin-top: 2.5rem;
+        margin-top: 1.5rem;
         position: relative;
 
         &,
@@ -137,8 +137,8 @@
         &::after {
             background-color: $cb-m;
             display: inline-block;
-            height: 2.5px;
-            width: 2.5rem;
+            height: 2px;
+            width: 2rem;
         }
 
         &::before,
@@ -149,8 +149,8 @@
             transition: all .2s;
         }
 
-        &::before { top: -.6rem;@include respond(mobile) {top: -.7rem;} }
-        &::after {top: .6rem;@include respond(mobile) {top: .7rem;}  }
+        &::before { top: -.4rem;@include respond(mobile) {top: -.6rem;} }
+        &::after {top: .4rem;@include respond(mobile) {top: .6rem;}  }
     }
 
     &--button:hover &--icon::before {
