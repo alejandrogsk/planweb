@@ -17,7 +17,7 @@ const Home = ({data}) => {
                 {heroContent.title.second}</h1>
                 <p className="text-xl md:text-2xl pt-6 pb-12">{heroContent.subtitle}</p>
                 <div className="flex flex-col md:flex-row">
-                  <Link href={heroContent.cta2.url}>
+                  <Link href={heroContent.cta1.url}>
                   <a className="transition-all duration-200 shadow text-lg md:text-xl inline-block px-6 py-3 bg-white md:bg-primary text-black hover:bg-primary hover:md:bg-white uppercase text-center">{heroContent.cta1.title}</a>
                   </Link>
                   <Link href={heroContent.cta2.url}>
