@@ -11,7 +11,7 @@ const Home = ({data}) => {
     <div>
       <HeadComponent title={head.title} description={head.description} />
       <Layout>
-      <section className="home_hero overflow-x-hidden grid items-center grid-cols-1 md:grid-cols-2 gap-12 relative px-6 md:px-12 lg:px-16 min-h-[110vh]">
+      <section className="home_hero overflow-x-hidden grid items-center grid-cols-1 md:grid-cols-2 gap-12 relative px-6 md:px-12 lg:px-16 overflow-hidden py-16 md:py-24 lg:py-36">
             <div className="pt-0 md:pt-20 row-start-2 row-end-3 md:row-start-1 md:row-end-2 ">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl	font-bold uppercase ">{heroContent.title.first}<br/>
                 {heroContent.title.second}</h1>
@@ -25,19 +25,19 @@ const Home = ({data}) => {
                   </Link>
                    </div>
             </div>
-            <div className="hidden md:block pt-16 md:pt-0 col-start-1 md:col-start-2 col-end-2 md:col-end-3 ">
+            <div className="hidden md:block pt-16 md:pt-0 col-start-1 md:col-start-2 col-end-2 md:col-end-3 justify-self-center	">
               <Image src="/assets/hero-image.png" layout="intrinsic" width="600" height="420" />
               
             </div>
-            <div className="block md:hidden pt-16 md:pt-0 col-start-1 md:col-start-2 col-end-2 md:col-end-3 "> 
-                  <Image src="/assets/home-hero-mobile.png" width={390} height={345} layout="intrinsic" />
+            <div className="block md:hidden pt-16 md:pt-0 col-start-1 md:col-start-2 col-end-2 md:col-end-3 justify-self-center	"> 
+                  <Image src="/assets/home-hero-mobile.png" width={400} height={400} layout="intrinsic" />
                 </div>
-            <span className="home_hero-square1 bg-yellow-400"></span>
+            <span className="home_hero-square1 bg-yellow-700"></span>
             <span className="home_hero-square2 bg-primary"></span>
         </section>
 
 
-        <section className="home_service grid grid-cols-1 px-6 md:px-12 lg:px-16 pt-36 pb-16 gap-y-36 relative">
+        <section className="home_service grid grid-cols-1 px-6 md:px-12 lg:px-16 pt-24 lg:pt-36 pb-16 gap-y-36 relative">
           {
             home_services.map((service, i)=> (
               <div  key={i} className={`home_service--${i} grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center	`}>
