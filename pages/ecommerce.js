@@ -20,6 +20,7 @@ const ecommerces = ({data}) => {
                     </p>
                 ))}
                 <span className="ecommerce_hero-span--1 bg-yellow-500"></span>
+                <span className="ecommerce_hero-span--special bg-primary"></span>
             </section>
             <section className="my-28 px-2 md:px-8 lg:px-12 flex flex-col items-center align-center justify-center relative">
                 <Image

@@ -17,7 +17,7 @@ const publicidadDigital = ({data}) => {
     <div>
         <HeadComponent title={head.title} description={head.description} />
         <Layout>
-            <Hero title={hero.title} content={hero.content} />
+            <Hero title={hero.title} content={hero.content} page={2} />
             <Banner banner={banner} />
             <Logos  logos={platforms}/>
 

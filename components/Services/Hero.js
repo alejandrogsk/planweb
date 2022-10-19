@@ -1,11 +1,11 @@
 import React from "react";
 
 /**
- * @param {string, string[]}
+ * @param {string, string[], page}
  * @returns React Component
 */
-
-const Hero = ({title, content}) => {
+// the page prop only changes the postition of the background square
+const Hero = ({title, content, page=1}) => {
     return (
         <section className="common-service__hero min-h-screen px-8 md:px-26 lg:px-48 relative ">
             <h1 className="pt-24 md:pt-32 lg:pt-40 mb-12 text-3xl md:text-4xl lg:text-5xl	font-bold uppercase">
@@ -16,7 +16,7 @@ const Hero = ({title, content}) => {
                     {paragraph}
                 </p>
             ))}
-            <span className="ecommerce_hero-span--1 bg-primary"></span>
+            <span className={`ecommerce_hero-span--${page} bg-primary`}></span>
         </section>
     );
 };

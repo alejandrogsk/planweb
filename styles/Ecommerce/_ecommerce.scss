@@ -2,10 +2,46 @@
     &-span--1 {
         position: absolute;
         top: 0px;
-        right: 100px;
+        right: 0px;
         height: 200px;
         width: 250px;
         z-index: -1;
+
+        @screen md {
+            right: 100px;
+        }
+    }
+
+    &-span--2 {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        
+        z-index: -1;
+        height: 400px;
+        width: 200px;
+        @screen md {
+            height: 300px;
+        width: 250px;
+        }
+    }
+
+    &-span--special {
+        position: absolute;
+        
+        left: 0;
+        top: 100px;
+        z-index: -1;
+        height: 400px;
+        width: 10px;
+@screen md {
+    width: 20px;
+    top: 250px;
+}
+
+        @screen lg {
+            top: 500px;
+        }
     }
 }
 

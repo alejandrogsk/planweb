@@ -40,7 +40,7 @@ const Home = ({data}) => {
         <section className="home_service grid grid-cols-1 px-6 md:px-12 lg:px-16 pt-24 lg:pt-36 pb-16 gap-y-36 relative">
           {
             home_services.map((service, i)=> (
-              <div  key={i} className={`home_service--${i} grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center	`}>
+              <div  key={i} className={`home_service--${i} grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center justify-center		`}>
                 <div className="flex flex-col items-start justify-center">
                   <h2 className="text-3xl md:text-4xl lg:text-5xl	font-bold uppercase ">{service.title}</h2>
                   <p className="text-xl md:text-2xl pt-3 pb-6">{service.subtitle}</p>
