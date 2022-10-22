@@ -12,7 +12,7 @@ const Contacto = ({ data }) => {
             <HeadComponent title={head.title} description={head.description} />
             <Layout>
                 <section className="common-service__hero min-h-screen px-8 md:px-26 lg:px-48 relative ">
-                    <h1 className="text-center pt-24 md:pt-32 lg:pt-40 mb-12 text-3xl md:text-4xl lg:text-5xl	font-bold uppercase">
+                    <h1 className="text-center pt-32 lg:pt-40 mb-12 text-3xl md:text-4xl lg:text-5xl	font-bold uppercase">
                         {title}
                     </h1>
 

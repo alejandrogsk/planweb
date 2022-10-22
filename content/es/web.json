@@ -94,8 +94,8 @@
             }
         ]
     },
-    "cta": {
-        "title": "Solicitar Ahora",
-        "link": "/contacto"
+    "contact": {
+        "url": "/contacto",
+        "title": "Solicitar Ahora"
     }
 }

@@ -68,7 +68,7 @@ const publicidadDigital = ({data}) => {
                 </div>
 
                 <Link href="/contacto">
-                        <a className="mt-8 text-xl text-center inline-block px-6 py-3 bg-primary text-black uppercase">Solicitar Ahora</a>
+                        <a className="mt-8 text-xl text-center inline-block px-6 py-3 bg-primary hover:bg-black text-black hover:text-white transition-all duration-200 uppercase">Solicitar Ahora</a>
                     </Link>
             </section>
 
@@ -93,7 +93,7 @@ const publicidadDigital = ({data}) => {
                         }
                         <div className="w-full flex justify-start align-center mt-8">
                             <Link href="/contacto">
-                                <a className="text-xl text-center inline-block px-6 py-3 bg-primary text-black uppercase">Solicitar Ahora</a>
+                                <a className="text-xl text-center inline-block px-6 py-3 bg-primary hover:bg-black text-black hover:text-white transition-all duration-200  uppercase">Solicitar Ahora</a>
                             </Link>
                         </div>
                     </div>
@@ -141,7 +141,7 @@ const publicidadDigital = ({data}) => {
                             ))
                         }
                         <Link href="/contacto">
-                        <a className="mt-8 text-xl text-center inline-block px-6 py-3 bg-primary text-black uppercase">Solicitar Ahora</a>
+                        <a className="mt-8 text-xl text-center inline-block px-6 py-3 bg-primary hover:bg-black text-black hover:text-white transition-all duration-200  uppercase">Solicitar Ahora</a>
                     </Link>
                     </div>
                    

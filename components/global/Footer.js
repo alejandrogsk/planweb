@@ -12,7 +12,7 @@ const Footer = ({menu}) => {
             {
                 menu.map((element, index)=> (
                     <Link key={index} href={element.link} >
-                        <a className="text-white text-base uppercase font-medium	 first:ml-0 ml-0 md:ml-4 first:mt-0 mt-4 md:mt-0">{element.title}</a>
+                        <a className="text-white text-base uppercase font-medium first:ml-0 ml-0 md:ml-4 first:mt-0 mt-4 md:mt-0">{element.title}</a>
                     </Link>
                 ))
             }

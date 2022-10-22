@@ -9,7 +9,7 @@ import Logos from "../components/Services/Logos";
 import WebEs from "../content/es/web.json";
 
 const DiseñoYDesarrolloWeb = ({ data }) => {
-    const { head, hero, banner, platforms, services, cta } = data;
+    const { head, hero, banner, platforms, services, contact } = data;
 
     return (
         <div>
@@ -30,12 +30,13 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                     <div className=" mt-16 col-start-1 col-end-2 lg:col-end-3 grid grid-cols-1 lg:grid-cols-3 gap-12 content-center ">
                         {
                         services.list.map((element, i) => (
+                            <Link href="/contacto">
                             <div className="
                             flex flex-col justify-between rounded-xl  shadow-md hover:shadow-lg min-h-[80vh] py-8 px-4 transition-all duration-300 md:hover:-translate-y-1
-                            
-                            first:bg-custom-black bg-primary last:bg-white
-                            first:text-white
-                            first:fill-white fill-black 
+                            bg-white
+                            text-black
+                            hover:bg-primary
+                            cursor-pointer
                             " key={i}>
                                <div className="flex flex-col">
                                     <div className="mb-6">
@@ -56,17 +57,17 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                                 <ul className="">
                                   {
                                     element.examples.map((example, i) =>(
-                                      <li key={i} className="text-base lg:text-lg mt-3 font-inter" >
-                                    {example}
+                                      <li key={i} className="text-base lg:text-lg mt-3 font-poppins" >
+                                    &#x2022; {example}
                                 </li>
                                     ))
                                   }
                                 </ul>
                                </div>
                                 <span className="text-inherit flex items-center py-2 group">
-                                    <Link href={cta.link}>
-                                        <a className="text-lg md:text-xl text-2xl text-inherit underline uppercase font-regular">
-                                            {cta.title}
+                                    <Link href={contact.url}>
+                                        <a className="text-lg  md:text-xl text-2xl text-inherit underline uppercase font-regular">
+                                            {contact.title}
                                         </a>
                                     </Link>
                                     <svg className="group-hover:translate-x-2 duration-300		 h-6 w-6 fill-inherit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -76,6 +77,7 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                                     </svg>
                                 </span>
                             </div>
+                            </Link>
                         ))
                         }
                     </div>

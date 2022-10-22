@@ -43,15 +43,15 @@
         "subtitle": "Utilizamos Google Ads, la plataforma de publicidad de Google para realizar campañas de pago por click",
         "list1": [
             {
-                "title": "Search Ads",
+                "title": "01. Search Ads",
                 "content": "Este es uno de los formatos de publicidad en google más utilizados, consiste en que cuando un usuario realiza una búsqueda en google,relacionada a tu producto o servicio, este le muestre entre los primeros resultados un anuncio enlazado a tu sitio web."
             },
             {
-                "title": "Shopping Search",
+                "title": "02. Shopping Search",
                 "content": "Esta es la opción por excelencia para tiendas online, ya que te permitirá mostrar tus productos en los resultados, mostrando nombre, precio y foto, con un link al producto dentro de tu tienda, es ideal para cuando tenes una amplio stock."
             },
             {
-                "title": "Display Ads",
+                "title": "03. Display Ads",
                 "content": "Los sitios de la red de Google Display llegan a más del 90% de los usuarios de Internet en todo el mundo. Utilizando la red de anunciantes de google podemos captar clientes mostrando anuncios gráficos. Este formato también sirve para acciones de remarketing o retargeting."
             }
         ],
@@ -63,15 +63,15 @@
         },
         "list2": [
             {
-                "title": "Youtube Ads",
+                "title": "04. Youtube Ads",
                 "content": "Los anuncios de youtube que ves todos los días antes de reproducir un video son de los anuncios más efectivos para llevar clientes a tu tienda, hablamos de una red con más de 300 millones de usuarios."
             },
             {
-                "title": "Local Search Ads",
+                "title": "05. Local Search Ads",
                 "content": "Con Local Search Ads podes mostrar anuncios en google maps, para aparecer primero en tu zona geográfica, esto es útil si tu negocio provee una solución física en un solo lugar, por ejemplo un hotel o restaurante."
             },
             {
-                "title": "Android Ads",
+                "title": "06. Android Ads",
                 "content": "Google es la empresa detrás de Android, esto significa que podemos mostrar anuncios en las aplicaciones de estos dispositivos, esto es ideal para empresas que promocionan la descarga de una app."
             }
         ],
@@ -86,15 +86,15 @@
         "subtitle":"4000 millones de personas utilizan redes sociales, promocioná tus productos en las principales redes sociales apuntando a las personas más se ajustan al perfil de tu cliente",
         "list": [
             {
-                "title": "Muestra anuncios específicos a tus potenciales clientes",
+                "title": "01. Muestra anuncios específicos a tus potenciales clientes",
                 "content": "De todos los usuarios de redes sociales, apuntamos a los que mejor encajan con tu producto."
             },
             {
-                "title": "Diseño de anuncios efectivos",
+                "title": "02. Diseño de anuncios efectivos",
                 "content": "Diseñamos múltiples piezas gráficas de tus anuncios y realizamos test A/B para aumentar el retorno de tu inversión."
             },
             {
-                "title": "Retargeting",
+                "title": "03. Retargeting",
                 "content": "Si una persona ingresa a tu tienda y ve un producto por más de 10 segundos, mañana a la noche podemos mostrarle el mismo producto en un anuncio dentro de instagram."
             }
         ],
@@ -114,15 +114,15 @@
         "subtitle":"El email marketing es una de las tácticas de marketing digital más rentables, ya que podemos comunicarnos de una forma segmentada, personalizada y a escala",
         "list": [
             {
-                "title": "Ofertas personalizadas",
+                "title": "01. Ofertas personalizadas",
                 "content": "Con una plataforma de email marketing podemos segmentar a nuestros clientes y enviarles ofertas que son de su interés, de esta forma le ahorramos la molestia de contactarlos para ofrecerles productos que no se ajustan a sus necesidades."
             },
             {
-                "title": "Retargeting",
+                "title": "02. Retargeting",
                 "content": "Quien no recibió nunca un email de una tienda diciendo “Olvidaste tu carrito”, con un enlace a la página para concretar la compra."
             },
             {
-                "title": "Correos de UpSelling",
+                "title": "03. Correos de UpSelling",
                 "content": "Luego de que tu cliente compre un producto, enviale un correo con un producto complementario."
             }
         ],
@@ -137,5 +137,9 @@
             "title":"Estas son solo algunas de las estrategias de email marketing más utilizadas por las empresas, pero cada una debe adaptarse al tipo de producto y al tipo de cliente.",
             "link":"/contacto"
         }
+    },
+    "contact": {
+        "url": "/contacto",
+        "title": "Solicitar Ahora"
     }
 }

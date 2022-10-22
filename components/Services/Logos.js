@@ -8,7 +8,7 @@ import React from 'react'
  */
 const Logos = ({logos}) => {
   return (
-    <section className="common-service__logos flex flex-wrap items-center justify-center gap-4 md:gap-12 lg:gap-16 ">
+    <section className="common-service__logos px-8 md:px-0 flex flex-wrap items-center justify-center gap-4 md:gap-12 lg:gap-16 ">
         {
             logos.map((logo, i) => (
                 <div key={i}>

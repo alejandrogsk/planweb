@@ -31,15 +31,15 @@
             {
                 "list": [
                     {
-                        "title":"Diseño UX/UI",
+                        "title":"1. Diseño UX/UI",
                         "subtitle":"Diseñamos una tienda atractiva visualmente y además enfocada en facilitarle la compra a tus clientes."
                     },
                     {
-                        "title":"Desarrollo de E-Commerce",
+                        "title":"2. Desarrollo de E-Commerce",
                         "subtitle":"Desarrollamos sobre las plataformas más utilizadas del mercado y también Headless ecommerce para proyectos más complejos."
                     },
                     {
-                        "title":"Panel de gestión",
+                        "title":"3. Panel de gestión",
                         "subtitle":"Dejamos todo listo para que puedas gestionar tus productos y pedidos de una forma muy sencilla."
                     }
                 ],
@@ -53,15 +53,15 @@
             {
                 "list": [
                     {
-                        "title":"Integración con marketplaces",
+                        "title":"4. Integración con marketplaces",
                         "subtitle":"Integra tu tienda online con marketplaces para que puedas vender tus productos en plataformas de terceros."
                     },
                     {
-                        "title":"Integración con redes sociales",
+                        "title":"5. Integración con redes sociales",
                         "subtitle":"Sincronizamos los productos de tu tienda con redes sociales como instagram y facebook."
                     },
                     {
-                        "title":"Integración con plataformas de pagos",
+                        "title":"6. Integración con plataformas de pagos",
                         "subtitle":"Recibí pagos en tu tienda cualquier día y a cualquier hora de una forma segura."
                     }
                 ],
@@ -149,5 +149,9 @@
                 "content": "Bigcommerce es nuestra opción más avanzada y es tu mejor opción para  proyectos de aplicaciones web SPA y aplicaciones móviles."
             }
         ]
-    }
+    },
+"contact": {
+    "url": "/contacto",
+    "title": "Solicitar Ahora"
+}
 }

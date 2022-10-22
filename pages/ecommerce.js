@@ -3,15 +3,17 @@ import React from "react";
 import HeadComponent from "../components/global/HeadComponent";
 import Layout from "../components/global/Layout";
 import EcommerceEs from "../content/es/ecommerce.json";
+import CtaRegular from "../components/Services/CtaRegular";
+
 
 const ecommerces = ({data}) => {
-    const { head, hero, banner, platforms, services, payments } = data;
+    const { head, hero, banner, platforms, services, payments, contact } = data;
     return (
       <div>
       <HeadComponent title={head.title} description={head.description} />
       <Layout>
             <section className="min-h-screen px-8 md:px-26 lg:px-48 relative ">
-                <h1 className="pt-16 md:pt-24 lg:pt-36 mb-12 text-3xl md:text-4xl lg:text-5xl	font-bold uppercase">
+                <h1 className="pt-32 lg:pt-36 mb-12 text-3xl md:text-4xl lg:text-5xl	font-bold uppercase">
                     {hero.title}
                 </h1>
                 {hero.content.map((paragraph, i) => (
@@ -47,8 +49,9 @@ const ecommerces = ({data}) => {
                 <div className="ecommerce_services-section grid grid-cols-1 gap-16">
                     {services.content.map((serviceList, i) => (
                         <div key={i} className="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center justify-items-center ">
-                            <div>
+                            <div className="row-start-2 md:row-start-1 row-end-3 md:row-end-2">
                                 {serviceList.list.map((element, i) => (
+
                                     <div className="first:mt-0 mt-6" key={i}>
                                         <h3 className="uppercase text-2xl font-semibold">
                                             {element.title}
@@ -56,10 +59,12 @@ const ecommerces = ({data}) => {
                                         <p className="text-lg lg:text-xl mt-3">
                                             {element.subtitle}
                                         </p>
+                                        
                                     </div>
                                 ))}
+                                <CtaRegular url={contact.url} title={contact.title}/>
                             </div>
-                            <div>
+                            <div >
                                 <Image
                                     alt={serviceList.image.alt}
                                     src={serviceList.image.src}
@@ -71,8 +76,10 @@ const ecommerces = ({data}) => {
                         </div>
                     ))}
                 </div>
-            </section>
 
+                
+            </section>
+            
             <section className="py-8 md:py-12 lg:py-16 px-auto flex flex-wrap justify-around	">
 
                     {payments.map((element, index) => {
