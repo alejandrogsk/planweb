@@ -30,14 +30,14 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                     <div className=" mt-16 col-start-1 col-end-2 lg:col-end-3 grid grid-cols-1 lg:grid-cols-3 gap-12 content-center ">
                         {
                         services.list.map((element, i) => (
-                            <Link href="/contacto">
+                            <Link key={i} href="/contacto">
                             <div className="
                             flex flex-col justify-between rounded-xl  shadow-md hover:shadow-lg min-h-[80vh] py-8 px-4 transition-all duration-300 md:hover:-translate-y-1
                             bg-white
                             text-black
                             hover:bg-primary
                             cursor-pointer
-                            " key={i}>
+                            ">
                                <div className="flex flex-col">
                                     <div className="mb-6">
                                         <Image 
