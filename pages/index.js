@@ -103,7 +103,7 @@ const Home = ({ data }) => {
                             className={`home_service--${i} grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center justify-center`}
                         >
                             <div className="flex flex-col items-center md:items-start justify-center row-start-2 row-end-3 md:row-start-1 row-end-2	">
-                                <h2 className="text-3xl md:text-4xl lg:text-5xl	font-bold uppercase ">
+                                <h2 className="text-center md:text-start text-3xl md:text-4xl lg:text-5xl	font-bold uppercase ">
                                     {service.title}
                                 </h2>
                                 <p className="text-center md:text-start text-xl md:text-2xl pt-3 pb-6">
