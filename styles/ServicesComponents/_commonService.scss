@@ -1,0 +1,18 @@
+.common-service {
+
+    
+    &__hero {
+
+    }
+
+    &__banner {
+        & > span {
+            border-radius: 10px;
+        }
+    }
+
+    &__logos {
+        
+    }
+
+}

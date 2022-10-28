@@ -1,0 +1,14 @@
+{
+    "title":"",
+    "content":"",
+    "form_fields": {
+        "name": "",
+        "email": "",
+        "phone": "",
+        "options": [],
+        "cta":{
+            "title":"",
+            "url": ""
+        }
+    }
+}

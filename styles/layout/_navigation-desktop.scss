@@ -1,0 +1,62 @@
+.logo {
+    cursor: pointer;
+    & > svg {
+        height: 2.5rem;
+        width: auto;
+    }
+}
+
+.desktop {
+    &__header {
+        padding: 0 4rem;
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        right: 0;
+        
+
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        background-color: transparent;
+        z-index: 100;
+
+        @include respond(tab-big){
+            display: none;
+        }
+    }
+
+
+    &__nav {
+
+        & > ul > a {
+            transition: all 300ms;
+            margin-left: 2rem;
+            font-size: 1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            
+            @include respond(tab-big){
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+}
+
+.sticky {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: $cw-m;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    & > .desktop__cta {
+        border: solid 2px $co-m;
+        background-color: $cw-m;
+        color: $co-m;
+    }
+}

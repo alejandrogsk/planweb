@@ -1,0 +1,72 @@
+.ecommerce_hero {
+    &-span--1 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 200px;
+        width: 250px;
+        z-index: -1;
+
+        @screen md {
+            right: 100px;
+        }
+    }
+
+    &-span--2 {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        
+        z-index: -1;
+        height: 400px;
+        width: 200px;
+        @screen md {
+            height: 300px;
+        width: 250px;
+        }
+    }
+
+    &-span--special {
+        position: absolute;
+        
+        left: 0;
+        top: 100px;
+        z-index: -1;
+        height: 400px;
+        width: 10px;
+@screen md {
+    width: 20px;
+    top: 250px;
+}
+
+        @screen lg {
+            top: 500px;
+        }
+    }
+}
+
+.ecommerce_banner-card {
+    position: relative;
+    margin: 2rem auto;
+
+   @screen md {
+    position: absolute;
+    bottom: -4rem;
+    right: 4rem;
+   }
+}
+
+.ecommerce_services-section > div:nth-child(2) {
+    & > div:nth-child(1) {
+       @screen lg {
+        grid-row:2/3;
+        grid-column: 2/3;
+       }
+    }
+    & > div:nth-child(2) {
+        @screen lg {
+            grid-row:2/3;
+        grid-column: 1/2;
+        }
+    }
+}

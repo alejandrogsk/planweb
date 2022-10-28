@@ -1,0 +1,59 @@
+{
+    "head": {
+        "title": "Planweb: Web, E-commerce y Marketing Digital en Entre Ríos.",
+        "description": "Somos una agencia digital ubicada en Crespo, Entre Ríos. Nos dedicamos al diseño y desarrollo de sitios Web y Ecommerce, como así también al Marketing Digital."
+    },
+    "heroContent":{
+        "title": {
+            "first":"Soluciones digitales",
+            "second": "al alcance de tu empresa"
+        },
+        "subtitle":"Somos la agencia que ayudará a tu negocio a conectar con más clientes utilizando medios digitales. Somos especialistas en web, e-commerce y marketing digital.",
+        "cta1":{
+            "title":"Ecommerce",
+            "url": "/ecommerce"
+        },
+        "cta2":{
+            "title":"Publicidad",
+            "url": "/publicidad-digital"
+        }
+    },
+    "home_services": [
+        {
+            "hover_title":"Ecommerce",
+            "title": "Tu plataforma de ventas online",
+            "subtitle": "Hacemos que tu negocio llegue a más clientes las 24hs los 7 días de la semana con tu propia plataforma de e-commerce.",
+            "cta": {"title": "Ver más", "url": "/ecommerce"},
+            "img": {
+                "alt":"Ecommerce Crespo Entre Ríos",
+                "src":"/assets/home-ecommerce.png",
+                "width": "484",
+                "height":"430"
+            }
+        },
+        {
+            "hover_title":"Publicidad Online",
+            "title":"Llegá a más y mejores clientes",
+            "subtitle": "Ponemos múltiples servicios de publicidad digital al alcance de tu negocio para ayudarte aumentar tus ventas.",
+            "cta": {"title": "Ver más", "url": "/publicidad-digital"}    ,   
+            "img": {
+                "alt":"Publicidad digital Crespo Entre Ríos",
+                "src":"/assets/home-marketing.png",
+                "width": "600",
+                "height":"594"
+            } 
+        },
+        {
+            "hover_title":"Websites",
+            "title":"Tu mejor agente comercial 24/7",
+        "subtitle": "Estudiamos las necesidades de tu empresa y desarrollamos tu web a medida, utilizando la última tecnología en desarrollo y diseño web.",
+        "cta": {"title": "Ver más", "url": "/disenio-y-desarrollo-web"},
+        "img": {
+            "alt":"Diseño de sitios web Crespo,Entre Ríos",
+            "src":"/assets/home-web.png",
+            "width": "550",
+            "height":"344"
+        }
+        }
+    ]
+}

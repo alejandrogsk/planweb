@@ -1,0 +1,70 @@
+{
+    "hero": {
+        "title":"",
+        "subtitle":"",
+        "content": [
+            "",""
+        ]
+    },
+    "description": {
+        "top_title":"",
+        "title":"",
+        "content": [],
+        "cta":{
+            "title":"",
+            "url": ""
+        }
+    },
+    "services": {
+        "title":"",
+        "content": [
+            {
+                "img": {
+                    "src":"",
+                    "alt":""
+                },
+                "title":"",
+                "description":""
+            }
+        ]
+    
+    },
+    "mobile": {
+        "title": "",
+        "subtitle":"",
+        "title_two":"",
+        "subtitle_two":""
+    },
+    "payment": {
+        "title":"",
+        "providers": [
+            {"src":"", "alt":""}
+        ]
+    },
+    "platforms": {
+        "title":"",
+        "list": [
+            {
+                "img": {
+                    "src":"",
+                    "alt":""
+                },
+                "content": ""
+            },
+            {
+                "img": {
+                    "src":"",
+                    "alt":""
+                },
+                "content": ""
+            },
+            {
+                "img": {
+                    "src":"",
+                    "alt":""
+                },
+                "content": ""
+            }
+        ]
+    }
+}

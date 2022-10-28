@@ -1,0 +1,76 @@
+.service-hero {
+    align-items: center;
+    display: grid;
+    min-height: 100vh;
+    margin: 6rem 4rem;
+    position: relative;
+
+    @include respond(tab){
+        margin: 8rem 2rem;
+    }
+
+& > svg  {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+    & > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        gap:4rem;
+
+        @include respond(tab){
+            grid-template-columns: 1fr;
+        }
+
+        & > h1 {
+            font-size: 5rem;
+            font-weight: 700;
+            grid-column: 1/span 2;
+            text-transform: uppercase;
+
+            @include respond(phone-tab) {
+                font-size: 3rem;
+            }
+            @include respond(tab){
+                grid-column: 1/2;
+            }
+        }
+
+        & > h2 {
+            font-size: 3rem;
+            font-weight: 600;
+            grid-column: 1/2;
+
+            @include respond(desktop-small){
+                font-size: 2.5;
+            }
+
+            @include respond(tab){
+                grid-row: 2/3;
+                grid-column: 1/2;
+            }
+
+            @include respond(phone-tab) {
+                font-size: 2.2rem;
+            }
+        }
+
+        & > div {
+            grid-row: 2/3;
+            grid-column: 2/3;
+
+            @include respond(tab){
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+            & > p {
+                
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+}
+

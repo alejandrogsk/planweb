@@ -1,0 +1,257 @@
+.contact {
+    margin: 10rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+
+    @include respond(desktop-small) {
+        grid-template-columns: 1fr;
+        margin: 10rem 2rem;
+    }
+
+    &__img {
+        position: relative;
+        @include respond(desktop-small) {
+            display: none;
+        }
+    }
+
+    &__content {
+        grid-column: 2/3;
+        align-self: flex-start;
+        & > h1 {
+            font-size: 5.5rem;
+            margin-bottom: 2rem;
+            margin-top: 8rem;
+            @include respond(phone-tab) {
+                font-size: 3.5rem;
+            }
+        }
+
+        & > p {
+            font-size: 2.2rem;
+            margin-bottom: 4rem;
+        }
+
+        @include respond(desktop-small) {
+            grid-column: 1/2;
+        }
+    }
+
+    &__form {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 6rem;
+        row-gap: 2rem;
+
+        
+        @include respond(phone-tab) {
+            grid-template-columns: 1fr;
+            column-gap: 0;
+        }
+
+
+        &-input, &-box, &-message {
+            
+            & > textarea::placeholder, 
+            & > input::placeholder {
+                font-size: 1.6rem;
+                color: $cb-m;
+                text-transform: capitalize;
+                
+            }
+        }
+
+        
+
+        &-input {
+            position: relative;
+            height: 4rem;
+            font-size: 1.6rem;
+            
+            & > input {
+                width: 100%;
+                border: none;
+                border-bottom: solid 2px $cb-l;
+                height: 100%;
+                font-size: 1.6rem;
+                background-color: transparent;
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            
+        }
+
+        &-box {
+            grid-column: 1/ span 2;
+            margin: 2rem 0;
+            & > span {
+                display: inline-block;
+                font-weight: 500;
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+            }
+
+            @include respond(phone-tab) {
+                grid-column: 1/2;
+            }
+    
+
+           &--list {
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                column-gap: 2rem;
+
+               & > div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & > input[type="checkbox"] {
+                    border-radius: 1rem;
+                }
+
+                & > label {
+                    font-size: 1.2rem;
+                    margin-left: .5rem;
+                }
+               }
+            
+           }
+
+
+        }
+
+        &-file {
+            grid-column: 1/ span 2;
+            @include respond(phone-tab) {
+                grid-column: 1/2;
+            }
+            & > input {
+                display: none;
+            }
+
+            & > label {
+                font-size: 1.6rem;
+                border: 1px solid $cb-m;
+                border-radius: 1rem;
+                padding: .5rem 1rem;
+                cursor: pointer;
+                transition: all 300ms;
+                
+                & > span {
+                    font-size: 1.6rem;
+                }
+
+                &:hover {
+                    color: $co-m;
+                    border-color: $co-m;
+                }
+            }
+        }
+
+        &-message {
+            margin: 2rem 0;
+            grid-column: 1/span 2;
+            position: relative;
+            min-height: 4rem;
+            font-size: 1.6rem;
+
+            @include respond(phone-tab) {
+                grid-column: 1/2;
+            }
+            & > textarea {
+                width: 100%;
+                border: none;
+                border-bottom: solid 2px $cb-l;
+                height: 100%;
+                font-size: 1.6rem;
+                display: inline-block;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+
+        &-alert {
+            grid-column: 1/3;
+            font-size: 1.5rem;
+            @include respond(phone-tab) {
+                grid-column: 1/2;
+            }
+
+            
+        }
+
+
+        & > button {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            display: inline-block;
+            background-color: $cy-m;
+            font-size: 1.5rem;
+            color: $cb-m;
+            padding: .75rem 1.5rem;
+            transition: all 300ms;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+            text-transform: uppercase;
+            text-align: center;
+            width: 20rem;
+
+            &:hover,&:active {
+                background-color: $cb-m;
+                color: $cw-m;
+            }
+
+            @include respond(phone-tab) {
+                grid-column: 1/2;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+
+.contact-square {
+
+    &-1 {
+        display: block;
+        height: 20rem;
+        top: 0;
+        right:0;
+        position: absolute;
+        width: 30rem;
+        z-index: -1;
+
+        @include respond(mobile) {
+            height: 22.5rem;
+        }
+    }
+
+    &-2 {
+        display: block;
+        height: 15rem;
+        top: 35rem;
+        left:0;
+        position: absolute;
+        width: 2rem;
+        z-index: -1;
+
+        @include respond( phone-tab ) {
+            width: 1rem;
+        }
+        @include respond(mobile) {
+            width: .5rem;
+        }
+    }
+
+}

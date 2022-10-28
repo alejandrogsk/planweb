@@ -1,0 +1,47 @@
+{
+    "head": {
+        "title": "Agencia de marketing digital crespo entre rios",
+        "description": "Contactanos para desarrollar juntos tu estrategia digital | Ecommerce - Web - Publicidad"
+    },
+    "title":"Estamos encantados de conocerte",
+    "content":"Estamos muy interesados en tu proyecto, completa el formulario y nos pondremos en contacto a la brevedad.",
+    "form_fields": {
+        "name": "Nombre",
+        "lastName":"Apellido",
+        "email": "Email",
+        "phone": "+54 343 5890355",
+        "company": "Empresa",
+        "location": "Localidad",
+        "services":{
+            "title": "¿Qué servicios necesitas?",
+            "options": [
+                
+                {
+                    "placeholder": "Ecommerce",
+                    "id": "checkEcommerce"
+                },
+                {
+                    "placeholder": "Sitio Web",
+                    "id": "checkWeb"
+                },
+                {
+                    "placeholder": "Publicidad en google",
+                    "id": "checkPpc"
+                },
+                {
+                    "placeholder": "Publicidad en redes",
+                    "id": "checkSocial"
+                },
+                {
+                    "placeholder": "Consultoría",
+                    "id": "checkConsulting"
+                }
+            ]
+        },
+        "message":"Mensaje",
+        "btn": {
+            "title": "Enviar",
+            "loading": "Cargando"
+        }
+    }
+}

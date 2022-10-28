@@ -1,0 +1,145 @@
+.black-section {
+    min-height: 130vh;
+    padding: 10rem 4rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    position: relative;
+    background-color: $cb-m;
+    //background-image: url('/blackbg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include respond(desktop) {
+       gap: 4rem;
+    }
+
+    @include respond(tab-big) {
+        grid-template-columns: 1fr;
+    }
+    
+    @include respond(tab){
+        padding: 10rem 2rem;
+    }
+
+    &__img {
+        & > img {
+            position: absolute;
+            top: -3rem;
+            width: 500px;
+            height: auto;
+            @include respond(desktop) {
+                position: relative;
+                width: 100%;
+            }
+        }
+    }
+
+    &__content {
+        &-verified {
+            display: flex;
+            align-items: center;
+
+           
+
+            & > svg {
+                display: block;
+                height: 2.5rem;
+                width: 2.5rem;
+            }
+
+            & > h3 {
+                font-size: 1.8rem;
+                color: $co-m;
+                font-weight: 500;
+                margin-left: .5rem;
+                @include respond(mobile) {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        & > h2 {
+
+            color: $cw-m;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            font-size: 3rem; //sm 2.5
+
+            @include respond(mobile) {
+                font-size: 2rem;
+            }
+
+        }   
+
+
+
+            & > p {
+                color: $cw-m;
+                margin-bottom: 1.2rem;
+            }
+
+            & > a {
+                align-items: center;
+                background-color: $co-m;
+                border: $co-m 1px solid;
+                border-radius: 3rem;
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+                color: $cw-m;
+                display: inline-grid;
+                font-size: 1.8rem;
+                font-weight: 400;
+                grid-template-columns: repeat(2,max-content);
+                justify-content: center;
+                margin-top: 2rem;
+                padding: 1rem 2rem;
+                transition: all 400ms;
+                text-transform: uppercase;
+                //text-align: center;
+
+
+                @include respond(tab) {
+                    font-size: 1.8rem;
+                }
+
+                @include respond(mobile) {
+                    font-size: 1.3rem;
+                    
+                   
+                }
+
+                & > svg {
+                    height: 2rem;
+                    width: 2rem;
+                    transition: all 400ms;
+                    stroke: $cw-m;
+                    transform: translate(0px, -1px);
+                    & > path {
+                        fill: $cw-m;
+                    }
+
+                    @include respond(mobile) {
+                        height: 1.6rem;
+                    width: 1.6rem;
+                        
+                       
+                    }
+                }
+
+                &:hover {
+                    background-color: $cw-m;
+                    border-color: $cw-m;
+                    color: $cb-m;
+
+                    & > svg {
+                        stroke: $cb-m;
+                        transform: translate(3px, -1px);
+                        & > path {
+                            fill: $cb-m;
+                        }
+                    }
+                }
+            }
+        
+    }
+}

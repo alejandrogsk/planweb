@@ -1,0 +1,250 @@
+.home {
+    &-hero {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+        background-color: $cw-m;
+        background-image: url('/home/Hero-bg.avif');
+        background-repeat: no-repeat;
+        background-position: center top;
+
+        & > svg {
+            position: absolute;
+            left: -9rem;
+            bottom: 1rem;
+            z-index: 1;
+
+            @include respond(mobile){
+                display: none;
+            }
+        }
+    }
+
+    &-container {
+        max-width: 70%;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+
+        @include respond(desktop-small) {
+            max-width: 80%;
+        }
+
+        @include respond(tab) {
+            max-width: 100%;
+            padding: 10rem 2rem;
+        }
+
+        & > h1 {
+            font-size: 6rem;
+            text-align: center;
+
+            @include respond(desktop-small) {
+                font-size: 5rem;
+            }
+
+            @include respond(phone-tab) {
+                font-size: 3.5rem;
+            }
+
+            & > .orange-text { color: $co-m; }
+        }
+
+        & > p {
+            text-align: center;
+            margin: 3rem 0;
+            text-transform: none;
+            font-size: 2.2rem;
+
+            @include respond(mobile) {
+                font-size: 2rem;
+            }
+        }
+
+        & > a {
+            justify-content: center;
+            align-items: center;
+            min-width: 30rem;
+            background-color: $co-m;
+            color: $cw-m;
+            padding: 1rem 2rem;
+            border-radius: 10rem;
+            display: inline-grid;
+            border: 1px solid $co-m;
+            transition: all 300ms;
+            text-align: center;
+            font-size: 2rem;
+            grid-template-columns: repeat(2,max-content);
+            @include respond(mobile) {
+                font-size: 1.7rem;
+               
+            }
+            & > svg {
+                height: 2rem;
+                width: 2rem;
+                transition: all 300ms;
+                stroke: $cw-m;
+                transform: translate(0px, -1px);
+                & > path {
+                    fill: $cw-m;
+                }
+
+                @include respond(mobile) {
+                    height: 1.6rem;
+                    width: 1.6rem;
+                    
+                   
+                }
+            }
+
+            &:hover {
+                background-color: $cb-m;
+                box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
+                color: $cw-m;
+                border: 1px solid $cb-m;
+
+                & > svg {
+                    stroke: $cw-m;
+                    transform: translate(3px, -1px);
+                    & > path {
+                        fill: $cw-m;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home {
+    &-services {
+        background-color: $cg-l;
+        padding: 10rem 4rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 12rem;
+
+        @include respond(mobile){
+            padding: 10rem 1rem;
+        }
+    }
+
+    &-service {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(3, minmax(min-content, max-content)) 2rem;
+
+        @include respond(tab-big) {
+            justify-items: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, minmax(min-content, max-content)) 5rem max-content;
+        }
+
+        &:nth-child(2),
+        &:nth-child(4) {
+            & > img {
+                grid-column: 3/10;
+                @include respond(tab-big) {
+                    grid-column: 1/2;
+                    grid-row: 1/4;
+                }
+            }
+
+            & > div {
+                grid-column: 7/10;
+                grid-column: 1/4;
+
+                @include respond(tab-big) {
+                    max-width: 95%;
+                    grid-column: 1/2;
+                    grid-row: 3/6;
+                    transform: none;
+                }
+            }
+        }
+
+        & > img {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+            box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.1);
+            grid-column: 1/8;
+            grid-row: 1/5;
+
+            @include respond(tab-big) {
+                grid-column: 1/2;
+                grid-row: 1/4;
+            }
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 2;
+            background-color: white;
+            padding: 3rem;
+            min-height: 35rem;
+            box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.1);
+            transition: all 900ms;
+            //border-radius: 2rem;
+            grid-column: 7/10;
+            grid-row: 2/4;
+
+            &:hover {
+                transform: translateY(-1rem);
+            }
+
+            @include respond(tab-big) {
+                max-width: 95%;
+                grid-column: 1/2;
+                grid-row: 3/6;
+                transform: none;
+            }
+
+            & > img {
+                width: 40px;
+                height: auto;
+                margin-bottom: 2rem;
+            }
+            & > span {
+            }
+
+            & > h2 {
+                font-size: 4rem;
+                font-weight: 600;
+                text-transform: uppercase;
+
+                @include respond(tab) {
+                    font-size: 3rem;
+                }
+
+                @include respond(mobile) {
+                    font-size: 2.5rem;
+                }
+            }
+            & > p {
+                font-size: 2rem;
+                margin: 2rem 0;
+
+                @include respond(mobile){
+                    font-size: 1.7rem;
+                }
+            }
+
+            & > a {
+                max-width: 15rem;
+                font-size: 1.8rem;
+                
+                text-transform: uppercase;
+            }
+        }
+    }
+}

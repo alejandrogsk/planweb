@@ -1,0 +1,38 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    line-height: 115% !important;
+    letter-spacing: .05rem !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-yellow-500: var(--color-yellow-500);
+}
+html {
+    color: $cb-l;
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    @include respond(mobile){
+        font-size: 1.6rem;
+    }
+}
+
+a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: $cb-l;
+}
+
+@media only screen and (min-width: 2000px ){
+    .main-global,
+    .desktop__header,
+    .footer{
+        max-width: 1440px;
+        margin: auto;
+    }
+}

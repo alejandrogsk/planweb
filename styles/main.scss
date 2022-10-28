@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+//GLobal
+@import "./global/variables";
+@import "./global/mixins";
+@import "./global/global";
+
+//Components
+@import "./layout/navigation-desktop";
+@import "./layout/navigation-mobile";
+@import "./layout/footer";
+
+//Specials
+@import "./specials/points";
+@import "./specials/underline";
+@import "./specials/slider";
+@import "./specials/buttons";
+
+//Pages
+@import "./pages/home";
+@import "./pages/visual-identity";
+@import "./pages/ecommerce";
+@import "./pages/websites";
+@import "./pages/marketing";
+//@import "./pages/contact"; 
+
+//Sections
+@import "./pages/sections/service-hero";
+@import "./pages/sections/black-section";
+@import "./pages/sections/services-section";
+@import "./pages/sections/services-squares";
+
+
+//V2
+@import "./Home/home_hero";
+@import "./Ecommerce/ecommerce";
+
+@import "./ServicesComponents/commonService";
+@import "./Contact/contact";
