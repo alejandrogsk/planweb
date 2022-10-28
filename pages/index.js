@@ -38,7 +38,7 @@ const Home = ({ data }) => {
                         </div>
 
                         <svg className="hidden absolute md:block top-12 right-0" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_372_37)">
+<g clipPath="url(#clip0_372_37)">
 <rect width="3" height="3" rx="1.5" fill="#FFF507"/>
 <rect y="24" width="3" height="3" rx="1.5" fill="#FFF507"/>
 <rect y="47" width="3" height="3" rx="1.5" fill="#FFF507"/>
