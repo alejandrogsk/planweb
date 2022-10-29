@@ -24,6 +24,7 @@ const ecommerces = ({data}) => {
                 <span className="ecommerce_hero-span--1 bg-yellow-500"></span>
                 <span className="ecommerce_hero-span--special bg-primary"></span>
             </section>
+
             <section className="mt-28 px-2 md:px-8 lg:px-12 flex flex-col items-center align-center justify-center relative">
                 <Image
                     alt={banner.image1.alt}
@@ -32,8 +33,28 @@ const ecommerces = ({data}) => {
                     height={banner.image1.height}
                     layout="intrinsic"
                 />
-                
             </section>
+            
+            <section className="ecommerce_platforms bg-white px-6 md:px-12 lg:px-16 py-36 grid grid-cols-1 justify-items-center">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl	font-bold uppercase  text-center mb-16 text-black w-full md:w-10/12 lg:w-8/12">{platforms.title}</h2>
+                <div className="grid gap-8 grid-cols-1 md:grid-cols-3 justify-center align-center">
+                {
+                    platforms.list.map((platform, i) => (
+                        <div key={i}>
+                        <Image 
+                            src={platform.image.src} alt={platform.image.alt}
+                            width={platform.image.width} height={platform.image.height}
+                            layout="intrinsic"
+                        />
+                        <p className="text-lg lg:text-xl text-custom-black mt-6">{platform.content}</p>
+                    </div>
+                    ))
+                }
+                </div>
+            </section>
+
+
+
 
 
             <section className="ecommerce_services px-6 md:px-12 lg:px-16 py-16 md:py-26 lg:py-36">
@@ -88,23 +109,7 @@ const ecommerces = ({data}) => {
                     })}
             </section>
 
-            <section className="ecommerce_platforms bg-black px-6 md:px-12 lg:px-16 py-36">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl	font-bold uppercase  text-center mb-16 text-white">{platforms.title}</h2>
-                <div className="grid gap-8 grid-cols-1 md:grid-cols-3 justify-center align-center">
-                {
-                    platforms.list.map((platform, i) => (
-                        <div key={i}>
-                        <Image 
-                            src={platform.image.src} alt={platform.image.alt}
-                            width={platform.image.width} height={platform.image.height}
-                            layout="intrinsic"
-                        />
-                        <p className="text-lg lg:text-xl text-white mt-6">{platform.content}</p>
-                    </div>
-                    ))
-                }
-                </div>
-            </section>
+            
             </Layout>
         </div>
     );

@@ -12,10 +12,10 @@ const Home = ({ data }) => {
         <div>
             <HeadComponent title={head.title} description={head.description} />
             <Layout>
-                <section className="home_hero overflow-x-hidden grid items-center grid-cols-1 md:grid-cols-2 gap-12 relative overflow-hidden min-h-screen 
-                bg-primary bg-[url('/assets/test-hero-mobile.png')] md:bg-white bg-cover md:bg-none
+                <section className="home_hero overflow-x-hidden grid items-center grid-cols-1 md:grid-cols-12 gap-12 relative overflow-hidden min-h-screen 
+                bg-primary bg-[url('/assets/test-hero-mobile.avif')] md:bg-white bg-cover md:bg-none
                 ">
-                    <div className="px-4 md:px-0 md:pl-12  py-24 lg:py-36 relative">
+                    <div className="px-4 md:px-0 md:pl-12  py-24 lg:py-36 relative col-start-1 col-end-8">
                         <h1 className="text-white md:text-black text-3xl md:text-4xl lg:text-5xl	font-bold uppercase ">
                             {heroContent.title.first}
                             <br />
@@ -58,6 +58,7 @@ const Home = ({ data }) => {
 
                     </div>
                     <div className="hidden relative md:block
+                    col-start-8 col-end-13
                     h-full
                     w-full
                     ">

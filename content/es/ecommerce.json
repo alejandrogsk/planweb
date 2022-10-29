@@ -123,16 +123,16 @@
         "list": [
             {
                 "image": {
-                    "src":"/ecommerce/tiendanube.avif",
+                    "src":"/assets/ecommerce/tienda-nube.svg",
                     "alt":"Agencia especializada en tienda nube",
-                    "width": "310",
+                    "width": "309.55",
                     "height":"60"
                 },
                 "content": "Tienda nube es nuestra opción más rápida y  accesible. Se enfoca principalmente en clientes que están dando sus primeros pasos en ecommerce."
             },
             {
                 "image": {
-                    "src":"/ecommerce/woocommerce.avif",
+                    "src":"/assets/ecommerce/woocommerce.svg",
                     "alt":"Agencia especializada en woocommerce",
                     "width": "260",
                     "height":"60"
@@ -141,12 +141,12 @@
             },
             {
                 "image": {
-                    "src":"/ecommerce/bigcommerce.avif",
+                    "src":"/assets/ecommerce/bigcommerce.svg",
                     "alt":"Agencia especializada en bigcommerce",
-                    "width": "265",
+                    "width": "266.27",
                     "height":"60"
                 },
-                "content": "Bigcommerce es nuestra opción más avanzada y es tu mejor opción para  proyectos de aplicaciones web SPA y aplicaciones móviles."
+                "content": "Bigcommerce es una plataforma más avanzada, es ideal para proyectos de Headless Ecommerce, la arquitectura más moderna para el desarrollo de tiendas online."
             }
         ]
     },
