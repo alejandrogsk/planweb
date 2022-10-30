@@ -63,6 +63,7 @@ const Home = ({ data }) => {
                     w-full
                     ">
                         <Image
+                            alt="agencia de ecommerce"
                             src="/assets/test-hero.png"
                             layout='fill'
                             objectFit='cover'
@@ -84,7 +85,7 @@ const Home = ({ data }) => {
                             `}
                         >
                             <div className="flex flex-col items-center md:items-start justify-center row-start-2 row-end-3 md:row-start-1 row-end-2	">
-                                <h3 className="font-poppins uppercase mb-2">{service.hover_title}</h3>
+                                <span className="font-poppins uppercase mb-2">{service.hover_title}</span>
                                 <h2 className="text-center md:text-start text-3xl md:text-4xl lg:text-5xl	font-bold uppercase ">
                                     {service.title}
                                 </h2>
@@ -100,6 +101,7 @@ const Home = ({ data }) => {
 
                             <div>
                                 <Image
+                                    alt={service.img.alt}
                                     src={service.img.src}
                                     width={service.img.width}
                                     height={service.img.height}

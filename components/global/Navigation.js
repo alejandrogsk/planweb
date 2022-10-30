@@ -57,9 +57,11 @@ const NavigationDesktop = ({ menu }) => {
             <nav className="desktop__nav">
                 <ul>
                     {menu.map((element, i) => (
-                        <Link href={element.link} key={i}>
-                            <a>{element.title}</a>
-                        </Link>
+                        <li key={i}>
+                            <Link href={element.link} >
+                                <a>{element.title}</a>
+                            </Link>
+                        </li>
                     ))}
                 </ul>
             </nav>
@@ -91,7 +93,7 @@ const NavigationMobile = ({ menu }) => {
         } else {
             setLogoColor("text-black");
         }
-    });
+    },[windowWidth, pathname]);
 
     function resizeHandler(){
         let ww = getWindowWidth()
