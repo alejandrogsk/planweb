@@ -106,12 +106,6 @@
             "height":"70"
         },
         {
-            "src": "/assets/payment/ShopPay.png", 
-            "alt": "ShopPay",
-            "width": "208",
-            "height":"70"
-        },
-        {
             "src": "/assets/payment/PayU.png", 
             "alt": "PayU",
             "width": "140",

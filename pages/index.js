@@ -16,11 +16,21 @@ const Home = ({ data }) => {
                 bg-primary bg-[url('/assets/test-hero-mobile.avif')] md:bg-white bg-cover md:bg-none
                 ">
                     <div className="px-4 md:px-0 md:pl-12  py-24 lg:py-36 relative col-start-1 col-end-8">
-                        <h1 className="text-white md:text-black text-3xl md:text-4xl lg:text-5xl	font-bold uppercase ">
+                        {/* <h1 className="md:hidden text-white md:text-black text-3xl md:text-4xl lg:text-5xl	font-bold uppercase ">
                             {heroContent.title.first}
                             <br />
                             {heroContent.title.second}
-                        </h1>
+                        </h1> */}
+
+                        <h1 className="text-white md:text-black text-3xl md:text-4xl lg:text-5xl font-bold uppercase 
+                        grid grid-cols-[min-content_min-content_1fr] gap-x-[1rem]
+                        ">
+                        <div>SOLUCIONES</div> 
+                        <div className="relative"><span className="relative z-10">DIGITALES</span><span className="bg-primary hidden md:block h-3 lg:h-4 absolute  left-0 bottom-[2px] w-full "></span></div>
+                        {/* <br /> */}
+                        <div className="col-start-1 col-end-4">AL ALCANCE DE TU EMPRESA</div></h1>
+
+
                         <p className="text-white md:text-black text-xl md:text-2xl pt-6 pb-12">
                             {heroContent.subtitle}
                         </p>

@@ -47,7 +47,7 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                                         />
                                     </div>
 
-                                <h3 className=" capitalize text-xl md:text-2xl lg:text-3xl font-semibold">
+                                <h3 className=" capitalize text-2xl lg:text-3xl font-semibold">
                                     {element.title}
                                 </h3>
                                 <p className="mt-5 mb-6 text-center	 text-lg lg:text-xl">
@@ -66,7 +66,7 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                                   }
                                 </ul>
                                </div>
-                                <span className="group text-black bg-primary hover:bg-custom-black w-full flex py-3 justify-center py-2 group z-10 mt-8 shadow hover:shadow-lg transition-all duration-200">
+                                <span className="group text-black bg-primary hover:bg-custom-black w-full flex py-3 justify-center items-center	 py-2 group z-10 mt-8 shadow hover:shadow-lg transition-all duration-200">
                                     <Link href={contact.url}>
                                         <a className="transition-all duration-200 group-hover:text-white text-lg  md:text-xl text-2xl text-inherit uppercase font-regular">
                                             {contact.title}
