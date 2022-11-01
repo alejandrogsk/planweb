@@ -141,11 +141,11 @@ bg-white
     </div>
     <div className="relative md:grid justify-center	 items-center 
     col-start-1 md:col-start-2 col-end-2 md:col-end-3
-    pt-24 md:pt-auto px-8 md:px-auto
+    pt-24 md:pt-auto pl-4 md:pl-0 pr-2 md:pr-4  md:px-auto
     ">
         <Image src="/assets/h-h-d.png" layout="intrinsic"
-            width="588" 
-            height="524" 
+            width="550" 
+            height="462.67" 
             alt="Agencia especializada en ecommerce crespo"
         />
     </div>
