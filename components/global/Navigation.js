@@ -3,28 +3,16 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
-// function getWindowWidth() {
-//     const { innerWidth } = window;
-//     return innerWidth;
-// }
+function getWindowWidth() {
+    const { innerWidth } = window;
+    return innerWidth;
+}
 // function getDistanceTop() {
 //     const { screenY } = window;
 //     return screenY;
 // }
 
-const Logo = ({logoColor="text-black"}) => {
-    
-    return (
-        <Link href="/">
-            <a
-                className={`
-            ${logoColor}
-            cursor-pointer font-poppins font-semibold text-xl md:text-2xl lg:text-3xl text-center`}
-            >
-                PlanWeb
-            </a>
-        </Link>
-    );
+const Logo = () => {
     // return (
     //     <Link href="/">
     //         <a
@@ -32,14 +20,64 @@ const Logo = ({logoColor="text-black"}) => {
     //         ${logoColor}
     //         cursor-pointer font-poppins font-semibold text-xl md:text-2xl lg:text-3xl text-center`}
     //         >
-    //             <Image
-    //                 alt="Planweb logo"
-    //                 src="/assets/planweb-logo-yb.svg"
-    //                 height={34} width={156}
-    //             />
+    //             PlanWeb
     //         </a>
     //     </Link>
     // );
+
+    //Color of the logo on mobile home
+    const { pathname } = useRouter();
+    const [ logoSrc, setLogoSrc ] = useState("/assets/planweb-logo-yb.svg");
+    const [windowWidth, setWindoWidth] = useState();
+
+    
+   
+    useEffect( () => {
+        setWindoWidth(window.innerWidth);
+        if((pathname==="/publicidad-digital") || ( pathname === "/contacto" && windowWidth <= 400 )  ){
+            setLogoSrc("/assets/planweb-logo-bw.svg");
+        } else {
+            setLogoSrc("/assets/planweb-logo-yb.svg")
+        }
+
+        return() => setLogoSrc("/assets/planweb-logo-yb.svg")
+    },[ windowWidth, pathname ]);
+
+    function resizeHandler(){
+        let ww = getWindowWidth()
+        //console.log(ww)
+        //setWindoWidth(ww)
+        if(ww <= 550 && pathname==="/contacto" ){
+            setLogoSrc("/assets/planweb-logo-bw.svg");
+        } else if(ww > 400 &&pathname==="/contacto") {
+            setLogoSrc("/assets/planweb-logo-yb.svg")
+        } else {
+            return
+        }
+    }
+
+    useEffect(()=>{
+        window.addEventListener("resize", resizeHandler);
+        return()=>{
+            window.removeEventListener("resize",resizeHandler);
+        }
+    })
+
+
+    return (
+        <Link href="/">
+            <a
+                className={`
+            cursor-pointer font-poppins font-semibold text-xl md:text-2xl lg:text-3xl text-center`}
+            >
+                <Image
+                    alt="Planweb logo"
+                    src={logoSrc}
+                    height={34} width={156}
+                />
+            </a>
+        </Link>
+    );
 };
 
 const NavigationDesktop = ({ menu }) => {
@@ -86,6 +124,9 @@ const NavigationDesktop = ({ menu }) => {
 };
 
 const NavigationMobile = ({ menu }) => {
+
+   
+
     //Naviggation open/close
     const navigationCheck = useRef(null);
     const handleNav = () => {
@@ -93,68 +134,10 @@ const NavigationMobile = ({ menu }) => {
             navigationCheck.current.checked = false;
         }
     };
-
-    // const { pathname } = useRouter();
-
-    // //Color of the logo on mobile home
-    // const [ logoColor, setLogoColor ] = useState("text-black");
-    // const [windowWidth, setWindoWidth] = useState();
-    
-    // useEffect(() => {
-    //     setWindoWidth(window.innerWidth);
-    //     //console.log(`window.innerWidth: ${window.innerWidth}`);
-    //     //console.log(`windowWidth initial is: ${windowWidth}`);
-    //     if (windowWidth < 768 && pathname==="/") {
-    //         setLogoColor("text-white");
-    //     } else {
-    //         setLogoColor("text-black");
-    //     }
-    // },[windowWidth, pathname]);
-
-    // function resizeHandler(){
-    //     let ww = getWindowWidth()
-    //     //console.log(ww)
-    //     if(windowWidth < 768 && ww > 768 && pathname==="/"){
-    //         setWindoWidth(ww);
-    //     } else if(windowWidth > 768 && ww < 768 && pathname==="/") {
-    //         setWindoWidth(ww);
-    //     } else {
-    //         return
-    //     }
-    // }
-
-    // useEffect(()=>{
-    //     window.addEventListener("resize", resizeHandler);
-    //     return()=>{
-    //         window.removeEventListener("resize",resizeHandler);
-    //     }
-    // })
-
-
-    // //If the user is in the home, the mobile menu should be white the firts 650px on VH so the menu can be visible
-    // // white-mobile-menu
-    // const [ menuWhite, setMenuWhite ] = useState('')
-
-    // function mobileMenuColorInHome() {
-    //     if (window !== undefined && pathname==="/") {
-    //       let windowHeight = window.scrollY;
-    //       windowHeight < 650 ? setMenuWhite('white-mobile-menu') : setMenuWhite('');
-    //     }
-    // };
-
-    // useEffect( ()=> {
-    //     window.addEventListener("scroll", 
-    //         mobileMenuColorInHome
-    //     )
-    //     return () => {
-    //         window.removeEventListener('scroll', mobileMenuColorInHome())
-    //     }
-    // })
-
+    //End Navigation open/close
     
 
-
-
+    
     return (
         <>
             <div className="logo-mobile">
