@@ -9,36 +9,35 @@
             "Las empresas cada vez más se ven en la obligación de utilizar medios digitales para comunicar su propuesta de valor a sus potenciales clientes, esto se debe a que las personas pasan cada vez más tiempo en redes sociales e internet.",
             "Cada red social tiene su plataforma publicitaria para que empresas como la tuya puedan promocionarse, además, cada una de estas redes tiene su particularidad, sus formatos, su perfil de usuarios y su forma de cobrar a los anunciantes.",
             "Los anuncios digitales son útiles para empresas de todos los sectores, tecnológico, agrícola, inmobiliario, ecommerce, y un largo etc.",
-            "Nosotros sabemos como poner estos canales a disposición de tu empresa, a través de diferentes estrategias de publicidad digital, para concretar así más ventas en tu tienda."
+            "Nosotros sabemos como poner estos canales a disposición de tu empresa, a través de diferentes estrategias de publicidad digital, para concretar así más ventas."
         ]
     },
     "banner": {
         "src": "/assets/marketing-banner.jpg",
         "alt":"Agencia de marketing digital Crespo",
         "width": "1412",
-            "height": "795"
+        "height": "795"
     },
     "platforms": [
         {
-            "src": "/assets/meta.png",
+            "src": "/assets/marketing/meta.svg",
             "alt":"Logo agencia meta ads",
-            "width": "198.59",
+            "width": "178",
             "height": "40"
         },
         {
-            "src": "/assets/analytics.png",
+            "src": "/assets/marketing/sendinblue.svg",
             "alt":"Agencia google analytics",
-            "width": "312.3",
+            "width": "257",
             "height": "50"
         },
         {
-            "src": "/assets/active-campaing.png",
+            "src": "/assets/marketing/google.svg",
             "alt":"Logo Email Marketing",
-            "width": "392.15",
+            "width": "121.92",
             "height": "40"
         }
     ],
-
     "google_ads": {
         "title": "Servicios de PPC",
         "subtitle": "Utilizamos Google Ads, la plataforma de publicidad de Google para realizar campañas de pago por click",
@@ -98,65 +97,33 @@
             "link":"/contacto"
         }
     },
-    "ppc": {
-        "title": "Servicios de PPC",
-        "subtitle": "Utilizamos Google Ads, la plataforma de publicidad de Google para realizar campañas de pago por click",
-        "list1": [
-            {
-                "image": "/assets/marketing-logo-1.svg",
-                "title": "01. Search Ads",
-                "content": "Este es uno de los formatos de publicidad en google más utilizados, consiste en que cuando un usuario realiza una búsqueda en google,relacionada a tu producto o servicio, este le muestre entre los primeros resultados un anuncio enlazado a tu sitio web."
-            },
-            {
-                "title": "02. Shopping Search",
-                "content": "Esta es la opción por excelencia para tiendas online, ya que te permitirá mostrar tus productos en los resultados, mostrando nombre, precio y foto, con un link al producto dentro de tu tienda, es ideal para cuando tenes una amplio stock."
-            },
-            {
-                "title": "03. Display Ads",
-                "content": "Los sitios de la red de Google Display llegan a más del 90% de los usuarios de Internet en todo el mundo. Utilizando la red de anunciantes de google podemos captar clientes mostrando anuncios gráficos. Este formato también sirve para acciones de remarketing o retargeting."
-            }
-        ],
-        "image": {
-            "src":"/assets/google-ads.png",
-            "alt": "Servicios de publicidad en google",
-            "width": "637",
-            "height": "614"
-        },
-        "list2": [
-            {
-                "title": "04. Youtube Ads",
-                "content": "Los anuncios de youtube que ves todos los días antes de reproducir un video son de los anuncios más efectivos para llevar clientes a tu tienda, hablamos de una red con más de 300 millones de usuarios."
-            },
-            {
-                "title": "05. Local Search Ads",
-                "content": "Con Local Search Ads podes mostrar anuncios en google maps, para aparecer primero en tu zona geográfica, esto es útil si tu negocio provee una solución física en un solo lugar, por ejemplo un hotel o restaurante."
-            },
-            {
-                "title": "06. Android Ads",
-                "content": "Google es la empresa detrás de Android, esto significa que podemos mostrar anuncios en las aplicaciones de estos dispositivos, esto es ideal para empresas que promocionan la descarga de una app."
-            }
-        ],
-        "under": "Google es el buscador más grande del mundo y tus clientes lo utilizan a diario, nosotros nos ocupamos de diseñar y gestionar tu estrategia  para que tu negocio adquiera nuevos clientes.",
-        "cta": {
-            "title":"",
-            "link":"/contacto"
-        }
-    },
     "redes": {
         "title": "Servicio de publicidad en redes sociales",
         "subtitle":"4000 millones de personas utilizan redes sociales, promocioná tus productos en las principales redes sociales apuntando a las personas más se ajustan al perfil de tu cliente",
         "list": [
             {
-                "title": "01. Muestra anuncios específicos a tus potenciales clientes",
-                "content": "De todos los usuarios de redes sociales, apuntamos a los que mejor encajan con tu producto."
+                "image": {
+                    "src": "/assets/marketing/fa-1.svg",
+                    "alt": "icono de publicidad segmentada"
+                },
+                "title": "Publicidad segmentada",
+                "content": "De todos los usuarios de redes sociales, apuntamos a tus potenciales clientes llevándolos a tu tienda o web."
             },
             {
-                "title": "02. Diseño de anuncios efectivos",
-                "content": "Diseñamos múltiples piezas gráficas de tus anuncios y realizamos test A/B para aumentar el retorno de tu inversión."
+                "image": {
+                    "src": "/assets/marketing/fa-2.svg",
+                    "alt": "icono de diseño publicitario"
+                },
+                "title": "Diseño de anuncios",
+                "content": "Diseñamos múltiples piezas gráficas de tus anuncios y realizamos test de rendimiento para sacarle mayor provecho a tu presupuesto publicitario."
             },
             {
-                "title": "03. Retargeting",
-                "content": "Mostramos anuncios a personas que ya han ingresado en tu tienda o sitio web ofreciendo el producto o servicio que más le interesa."
+                "image": {
+                    "src": "/assets/marketing/fa-3.svg",
+                    "alt": "icono de analisis y optimización de campañas"
+                },
+                "title": "Optimización de campañas",
+                "content": "Contamos con las herramientas para analizar tus resultados y optimizarlos, buscando siempre el mayor retorno de tu inversión publicitaria."
             }
         ],
         "image": {
@@ -175,16 +142,28 @@
         "subtitle":"El email marketing es una de las tácticas de marketing digital más rentables, ya que podemos comunicarnos de una forma segmentada, personalizada y a escala",
         "list": [
             {
-                "title": "01. Ofertas personalizadas",
-                "content": "Con una plataforma de email marketing podemos segmentar a nuestros clientes y enviarles ofertas que son de su interés, de esta forma le ahorramos la molestia de contactarlos para ofrecerles productos que no se ajustan a sus necesidades."
+                "image": {
+                    "src": "/assets/marketing/em-1.svg",
+                    "alt": "icono de ofertas personalizadas con email marketing"
+                },
+                "title": "Ofertas personalizadas",
+                "content": "Enviamos correos de Upselling o Cross-Selling, dos de las tácticas más utilizadas en ventas, pero de forma escalable."
             },
             {
-                "title": "02. Retargeting",
-                "content": "Quien no recibió nunca un email de una tienda diciendo “Olvidaste tu carrito”, con un enlace a la página para concretar la compra."
+                "image": {
+                    "src": "/assets/marketing/em-2.svg",
+                    "alt": "icono de carrito abandonado"
+                },
+                "title": "¿Carrito abandonado?",
+                "content": "Muchas veces recibimos un correo de “¡Hola [tu nombre] olvidaste tu carrito!” con un link para finalizar la compra, es una estrategia muy frecuente en las tiendas online."
             },
             {
-                "title": "03. Correos de UpSelling",
-                "content": "Luego de que tu cliente compre un producto, enviale un correo con un producto complementario."
+                "image": {
+                    "src": "/assets/marketing/em-3.svg",
+                    "alt": "icono de comunicación masiva"
+                },
+                "title": "Comunicación masiva",
+                "content": "Envía correos a todos tus clientes puede ser muy útil para enviarles las ofertas de la semana, invitarlos a un evento o informarles de un nuevo producto que estamos lanzando."
             }
         ],
         "image": {
@@ -193,10 +172,10 @@
             "width": "524",
             "height": "520"
         },
-        "under": "Estas son solo algunas de las estrategias de email marketing más utilizadas por las empresas, pero cada una debe adaptarse al tipo de producto y al tipo de cliente.",
-        "cta": {
-            "title":"Estas son solo algunas de las estrategias de email marketing más utilizadas por las empresas, pero cada una debe adaptarse al tipo de producto y al tipo de cliente.",
-            "link":"/contacto"
+        "under": "Estas son solo algunas de las estrategias de email marketing que las empresas utilizan, pero cada una debe adaptarse al tipo de cliente y al tipo de producto que tu negocio vende.",
+        "contact": {
+            "url": "/contacto",
+            "title": "Solicitar Ahora"
         }
     },
     "contact": {

@@ -34,8 +34,8 @@ const ecommerces = ({data}) => {
                     layout="intrinsic"
                 />
             </section>
-            
-            <section className="ecommerce_platforms bg-white px-6 md:px-12 lg:px-16 py-36 grid grid-cols-1 justify-items-center">
+          
+            <section className="ecommerce_platforms bg-white px-6 md:px-12 lg:px-16 py-20 grid grid-cols-1 justify-items-center">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl	font-bold uppercase  text-center mb-16 text-black w-full md:w-10/12 lg:w-8/12">{platforms.title}</h2>
                 <div className="grid gap-8 grid-cols-1 md:grid-cols-3 justify-center align-center">
                 {
@@ -57,7 +57,7 @@ const ecommerces = ({data}) => {
 
 
 
-            <section className="ecommerce_services px-6 md:px-12 lg:px-16 py-16 md:py-26 lg:py-36">
+            <section className="ecommerce_services px-6 md:px-12 lg:px-16 py-20">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl	font-bold uppercase  text-center mb-16">{services.title}</h2>
                 <div className="ecommerce_services-section grid grid-cols-1 gap-16">
                     {services.content.map((serviceList, i) => (
@@ -77,7 +77,7 @@ const ecommerces = ({data}) => {
                                 ))}
                                 <CtaRegular url={contact.url} title={contact.title}/>
                             </div>
-                            <div >
+                            <div className="image">
                                 <Image
                                     alt={serviceList.image.alt}
                                     src={serviceList.image.src}
