@@ -37,7 +37,7 @@ const publicidadDigital = ({data}) => {
                     {
                         google_ads.list.map((service, i) => (
                             <div key={i} className="grid grid-cols-[auto,1fr] items-center gap-2">
-                                <div className="">
+                                <div >
                                     <Image 
                                         src={service.image.src} 
                                         alt={service.image.alt} 
@@ -72,7 +72,7 @@ const publicidadDigital = ({data}) => {
                             redes.list.map((element, i) => (
                     
                                 <div key={i} className="grid grid-cols-[auto,1fr] items-center gap-2">
-                                <div className="">
+                                <div>
                                     <Image 
                                         src={element.image.src} 
                                         alt={element.image.alt} 
@@ -121,7 +121,7 @@ const publicidadDigital = ({data}) => {
                         {
                             email.list.map((element, i) => (
                                 <div key={i} className="grid grid-cols-[auto,1fr] items-center gap-2">
-                                <div className="mb-8 md:mb-0">
+                                <div >
                                     <Image 
                                         src={element.image.src} 
                                         alt={element.image.alt} 
