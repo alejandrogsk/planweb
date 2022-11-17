@@ -81,26 +81,9 @@ bg-white
             </Link>
         </div>
 
-        {/* <svg className="hidden absolute md:block top-12 right-0" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clipPath="url(#clip0_372_37)">
-<rect width="3" height="3" rx="1.5" fill="#FFF507"/>
-<rect y="24" width="3" height="3" rx="1.5" fill="#FFF507"/>
-<rect y="47" width="3" height="3" rx="1.5" fill="#FFF507"/>
-<rect x="23" width="3" height="3" rx="1.5" fill="#FFF507"/>
-<rect x="23" y="24" width="3" height="3" rx="1.5" fill="#FFF507"/>
-<rect x="23" y="47" width="3" height="3" rx="1.5" fill="#FFF507"/>
-<rect x="47" width="3" height="3" rx="1.5" fill="#FFF507"/>
-<rect x="47" y="24" width="3" height="3" rx="1.5" fill="#FFF507"/>
-<rect x="47" y="47" width="3" height="3" rx="1.5" fill="#FFF507"/>
-</g>
-<defs>
-<clipPath id="clip0_372_37">
-<rect width="50" height="50" fill="white"/>
-</clipPath>
-</defs>
-</svg> */}
+     
 <svg className="hidden absolute md:block top-24 -right-32"  width="126" height="74" viewBox="0 0 126 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_531_95)">
+<g clipPath="url(#clip0_531_95)">
 <rect x="126" width="5" height="5" rx="2.5" transform="rotate(90 126 0)" fill="#323232"/>
 <rect x="45" width="5" height="5" rx="2.5" transform="rotate(90 45 0)" fill="#323232"/>
 <rect x="5" width="5" height="5" rx="2.5" transform="rotate(90 5 0)" fill="#323232"/>
