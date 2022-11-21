@@ -63,3 +63,22 @@
         color: $co-m;
     }
 }
+
+
+.current-link {
+    position: relative;
+    z-index:2;
+    &::after {
+        position: absolute;
+        content: '';
+        background-color: black;
+        //display: block;
+        width: 104%;
+        height: 3px;
+        bottom: -5%;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        transform: translateX(-2%);
+    }
+}

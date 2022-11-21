@@ -1,13 +1,15 @@
 {
     "head": {
-        "title": "Planweb: Web, E-commerce y Marketing Digital en Entre Ríos.",
-        "description": "Somos una agencia digital ubicada en Crespo, Entre Ríos. Nos dedicamos al diseño y desarrollo de sitios Web y Ecommerce, como así también al Marketing Digital."
+        "title": "Agencia web en Entre Ríos.",
+        "description": "Somos una agencia digital ubicada en Crespo, Entre Ríos. Nos dedicamos al diseño y desarrollo de sitios Web, Ecommerce y Publicidad Digital."
     },
     "heroContent":{
         "title": {
-            "first":"Soluciones digitales",
-            "second": "al alcance de tu empresa"
+            "start":"Soluciones",
+            "special": "digitales",
+            "end": "al alcance de tu empresa"
         },
+        
         "subtitle":"Somos la agencia que ayudará a tu negocio a conectar con más clientes utilizando medios digitales. Somos especialistas en ecommerce y publicidad digital.",
         "cta1":{
             "title":"Ecommerce",

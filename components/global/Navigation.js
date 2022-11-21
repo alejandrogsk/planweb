@@ -101,7 +101,11 @@ const NavigationDesktop = ({ menu }) => {
 
     //Should put ${stickyClass} in Header tag
     //End Sticky navigation
-
+    const {pathname} = useRouter()
+    const [currentUrl, setCurrentUrl] = useState();
+    useEffect(()=> {
+        setCurrentUrl(pathname);
+    })
     return (
         <header className={`desktop__header `}>
             <div className="desktop__logo">
@@ -113,7 +117,7 @@ const NavigationDesktop = ({ menu }) => {
                     {menu.map((element, i) => (
                         <li key={i}>
                             <Link href={element.link} >
-                                <a>{element.title}</a>
+                                <a className={`${(currentUrl === element.link)&& 'current-link' }`}>{element.title}</a>
                             </Link>
                         </li>
                     ))}

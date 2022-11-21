@@ -3,20 +3,21 @@ import Link from 'next/link'
 import React from 'react'
 
 const HeroHome = ({heroContent}) => {
+    /*"title": { "start":"Soluciones", "special": "digitales", "end": "al alcance de tu empresa" },*/
   return (
     <>
     <section className="
-    overflow-x-hidden
-    grid md:hidden grid-col-1 
-    items-center
-    px-4
-    py-32
+        overflow-x-hidden
+        grid md:hidden grid-col-1 
+        items-center
+        px-4
+        py-32
     ">
         <h1 className="inline-block text-black text-4xl font-bold uppercase text-center">
-        SOLUCIONES 
-        <div className="relative inline-block mx-2"><span className="relative z-10">DIGITALES</span><span className="bg-primary  h-3 lg:h-4 absolute  left-0 bottom-[2px] w-full "></span></div>
+        {heroContent.title.start} 
+        <div className="relative inline-block mx-2"><span className="relative z-10">{heroContent.title.special} </span><span className="bg-primary  h-3 lg:h-4 absolute  left-0 bottom-[2px] w-full "></span></div>
         
-        AL ALCANCE DE TU EMPRESA</h1>
+        {heroContent.title.end}</h1>
         <div className="relative grid justify-center	 items-center 
     
       
@@ -39,12 +40,13 @@ const HeroHome = ({heroContent}) => {
                 </a>
             </Link>
             <Link href={heroContent.cta2.url}>
-                <a className="transition-all duration-200 shadow text-lg md:text-xl block  px-6 py-3 bg-black text-white uppercase text-center ml-0 md:ml-4 mt-4 md:mt-0 hover:bg-primary hover:text-black">
+                <a className="transition-all duration-200 shadow text-lg md:text-xl block  px-6 py-3 bg-black text-white uppercase text-center ml-0 md:ml-4 mt-4 md:mt-0 hover:bg-white hover:text-black">
                     {heroContent.cta2.title}
                 </a>
             </Link>
         </div>
     </section>
+    
     <section className="home_hero overflow-x-hidden hidden md:grid items-center grid-cols-1 md:grid-cols-2 gap-12 relative overflow-hidden min-h-screen 
 bg-white 
 ">
@@ -53,16 +55,25 @@ bg-white
     ">
 
 
-        <h1 className="text-black text-3xl md:text-4xl lg:text-5xl font-bold uppercase 
+        {/* <h1 className="text-black text-3xl md:text-4xl lg:text-5xl font-bold uppercase 
         grid grid-cols-[min-content_min-content_1fr] gap-x-[1rem]
         ">
-        <div>SOLUCIONES</div> 
-        <div className="relative"><span className="relative z-10">DIGITALES</span><span className="bg-primary  h-3 lg:h-4 absolute  left-0 bottom-[2px] w-full "></span></div>
+        <div>{heroContent.title.start} </div> 
+        <div className="relative"><span className="relative z-10">{heroContent.title.special} </span><span className="bg-primary  h-3 lg:h-4 absolute  left-0 bottom-[2px] w-full "></span></div>
         <br /> 
-        <div className="col-start-1 col-end-4">AL ALCANCE DE TU EMPRESA</div></h1>
+        <div className="col-start-1 col-end-4">{heroContent.title.end} </div></h1> */}
+<h1 className="inline-block text-black text-5xl font-bold uppercase">
+        {heroContent.title.start} 
+        <div className="relative inline-block mx-2"><span className="relative z-10">{heroContent.title.special} </span><span className="bg-primary  h-3 lg:h-4 absolute  left-0 bottom-[2px] w-full "></span></div>
+        
+        {heroContent.title.end}</h1>
+        <div className="relative grid justify-center	 items-center 
+    
+      
+    "></div>
 
 
-        <p className="text-black text-xl md:text-2xl pt-6 pb-12">
+        <p className="text-black text-2xl pt-6 pb-12">
             {heroContent.subtitle}
         </p>
 
@@ -70,12 +81,12 @@ bg-white
 
         <div className="flex flex-col md:flex-row">
             <Link href={heroContent.cta1.url}>
-                <a className="transition-all duration-200 shadow text-lg md:text-xl block px-6 py-3 bg-primary text-black hover:bg-white hover:md:bg-white uppercase text-center">
+                <a className="transition-all duration-200 shadow text-lg md:text-xl  block px-6 py-3 bg-primary text-black hover:bg-white hover:md:bg-white uppercase text-center">
                     {heroContent.cta1.title}
                 </a>
             </Link>
             <Link href={heroContent.cta2.url}>
-                <a className="transition-all duration-200 shadow text-lg md:text-xl block  px-6 py-3 bg-black text-white uppercase text-center ml-0 md:ml-4 mt-4 md:mt-0 hover:bg-primary hover:text-black">
+                <a className="transition-all duration-200 shadow text-lg md:text-xl  block  px-6 py-3 bg-black text-white uppercase text-center ml-0 md:ml-4 mt-4 md:mt-0 hover:bg-white hover:text-black">
                     {heroContent.cta2.title}
                 </a>
             </Link>
