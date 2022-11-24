@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const HomeLargeWithMethodology = ({how_we_work}) => {
@@ -11,7 +12,9 @@ const HomeLargeWithMethodology = ({how_we_work}) => {
         <p className="text-black pt-6 pb-12 text-center md:text-start text-xl md:text-2xl">Somos una agencia digital ubicada en Crespo, Entre Ríos. <br className="hidden md:block" /> Nos dedicamos al diseño y desarrollo de sitios Web, Ecommerce y Publicidad Digital.</p>
 
         <div className="w-full flex flex-col md:flex-row flex-col-reverse">
-            <a className="inline-block bg-primary px-6 py-4 uppercase text-lg md:text-xl hover:bg-[#181818] text-black hover:text-white text-center">Contactanos Ahora</a>
+           <Link href="/contacto">
+           <a className="inline-block bg-primary px-6 py-4 uppercase text-lg md:text-xl hover:bg-[#181818] text-black hover:text-white text-center">Contactanos Ahora</a>
+           </Link>
             <ul className="ml-0 md:ml-12 lg:ml-32 flex items-start items-center flex-col md:flex-row gap-4 mb-12 md:mb-0">
                 <li className="text-xl md:text-3xl flex font-poppins items-center mr-0 md:mr-2 lg:mr-4">
                     <svg className="h-5 md:h-6 h-5 md:w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 2v9h9v2h-9v9h-2v-9h-9v-2h9v-9h2zm2-2h-6v9h-9v6h9v9h6v-9h9v-6h-9v-9z"/></svg>
