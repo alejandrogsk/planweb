@@ -6,6 +6,7 @@ const HeroHome = ({heroContent}) => {
     /*"title": { "start":"Soluciones", "special": "digitales", "end": "al alcance de tu empresa" },*/
   return (
     <>
+    {/**Mobile */}
     <section className="
         overflow-x-hidden
         grid md:hidden grid-col-1 
@@ -46,22 +47,13 @@ const HeroHome = ({heroContent}) => {
             </Link>
         </div>
     </section>
-    
+    {/**Desktop */}
     <section className="home_hero overflow-x-hidden hidden md:grid items-center grid-cols-1 md:grid-cols-2 gap-12 relative overflow-hidden min-h-screen 
 bg-white 
 ">
     <div className="px-4 md:px-0 md:pl-12  pt-8 pb-12  md:py-24 lg:py-36 relative col-start-1 col-end-2
     row-start-2 row-end-3 md:row-start-1 md:row-end-2
     ">
-
-
-        {/* <h1 className="text-black text-3xl md:text-4xl lg:text-5xl font-bold uppercase 
-        grid grid-cols-[min-content_min-content_1fr] gap-x-[1rem]
-        ">
-        <div>{heroContent.title.start} </div> 
-        <div className="relative"><span className="relative z-10">{heroContent.title.special} </span><span className="bg-primary  h-3 lg:h-4 absolute  left-0 bottom-[2px] w-full "></span></div>
-        <br /> 
-        <div className="col-start-1 col-end-4">{heroContent.title.end} </div></h1> */}
 <h1 className="inline-block text-black text-5xl font-bold uppercase">
         {heroContent.title.start} 
         <div className="relative inline-block mx-2"><span className="relative z-10">{heroContent.title.special} </span><span className="bg-primary  h-3 lg:h-4 absolute  left-0 bottom-[2px] w-full "></span></div>
@@ -120,7 +112,7 @@ bg-white
     
     pt-24 md:pt-auto px-auto
     ">
-        <Image src="/assets/hero-image-woman@4x.png" 
+        <Image src="/assets/hero-home-women@4x.png" 
             layout="intrinsic"
             width="590.61" 
             height="500" 

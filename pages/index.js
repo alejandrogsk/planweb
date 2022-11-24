@@ -5,17 +5,20 @@ import Layout from "../components/global/Layout";
 import HeadComponent from "../components/global/HeadComponent";
 import CtaRegular from "../components/Services/CtaRegular";
 import HeroHome from "../components/home/HeroHome";
+import HomeLargeWithMethodology from "../components/home/HomeLargeWithMethodology";
 
 const Home = ({ data }) => {
-    const { heroContent, home_services, head } = data;
+    const { heroContent, how_we_work, home_services, head } = data;
     return (
         <div>
             <HeadComponent title={head.title} description={head.description} />
             <Layout>
-            <HeroHome  heroContent={heroContent}/>
-           
 
-    
+            {/**Este es el correcto */} 
+            {/* <HeroHome  heroContent={heroContent}/> */}
+           
+            {/**Este es un hero section de prueba */}
+            <HomeLargeWithMethodology how_we_work={how_we_work} />
                 
                 <section className="home_service grid grid-cols-1 relative">
                     {home_services.map((service, i) => (

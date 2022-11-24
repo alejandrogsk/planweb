@@ -20,6 +20,41 @@
             "url": "/publicidad-digital"
         }
     },
+    "how_we_work": {
+        "title": "Nuestra metodología de trabajo",
+        "list": [
+            {
+                "number": "01",
+                "title": "Análisis",
+                "content":"Analizamos las necesidades de tu negocio, tus productos, servicios, tu competencia, para poder brindarte mejores soluciones."
+            },
+            {
+                "number": "02",
+                "title": "Diseño",
+                "content":"Trabajamos la comunicación de tu propuesta de valor en tu plataforma a través de diferentes dispositivos, desde smartphones hasta pantallas de escritorios."
+            },
+            {
+                "number": "03",
+                "title": "Desarrollo",
+                "content":"Nos apoyamos en las tecnología más utilizadas de la industria y cuando el proyecto lo requiere, realizamos desarrollo a medida."
+            }
+            ,{
+                "number": "04",
+                "title": "Promoción",
+                "content":"Mediante publicidad digital en múltiples redes dirigimos a tus potenciales clientes a tu sitio donde buscamos realizar una conversión, ya sea compra, registro, reserva, contacto."
+            },
+            {
+                "number": "05",
+                "title": "Medición",
+                "content":"Utilizamos herramientas de analítica digital para analizar diferentes parámetros desde el rendimiento de su sitio, el retorno de la inversión publicitaria, entre otros."
+            },
+            {
+                "number": "06",
+                "title": "Optimización",
+                "content":"La ventaja de utilizar canales digitales es que se pueden tomar decisiones con los datos en mano, esto es importante tanto en tiendas online como en publicidad online."
+            }
+        ]
+    },
     "home_services": [
         {
             "hover_title":"Ecommerce",

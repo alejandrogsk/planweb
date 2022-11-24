@@ -94,3 +94,22 @@
         }
     }
 }
+
+
+.home-hero-large {
+    & > h1 > .underline-custom{
+        position: relative;
+        z-index: 10;
+        &::after {
+            content:'';
+            display: block;
+            position: absolute;
+            height: 18%;
+            width: 100%;
+            bottom: 15%;
+            left: 0;
+            background-color: $cy-m;
+            z-index: -1;
+        }
+    }
+}
