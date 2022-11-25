@@ -13,7 +13,7 @@ const ecommerces = ({data}) => {
       <HeadComponent title={head.title} description={head.description} />
       <Layout>
             <section className="min-h-screen px-8 md:px-26 lg:px-48 relative ">
-                <h1 className="pt-32 lg:pt-36 mb-12 text-3xl md:text-4xl lg:text-5xl	font-bold uppercase">
+                <h1 className="pt-32 lg:pt-36 mb-12 text-3xl md:text-4xl lg:text-5xl	font-semibold uppercase">
                     {hero.title}
                 </h1>
                 {hero.content.map((paragraph, i) => (

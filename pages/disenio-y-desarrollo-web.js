@@ -20,10 +20,10 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                 <Logos logos={platforms} />
 
                 <section className="services-marketing px-6 md:px-12 lg:px-16 py-16 md:py-28">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl	font-bold uppercase  text-center mb-16">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl	font-semibold uppercase  text-center mb-16">
                         {services.title}
                     </h2>
-                    <p className="max-w-full md:max-w-3xl	mx-auto text-lg md:text-xl lg:text-2xl font-oswald font-bold uppercase text-center">
+                    <p className="max-w-full md:max-w-3xl	mx-auto text-lg md:text-xl lg:text-2xl font-oswald font-semibold uppercase text-center">
                         {services.subtitle}
                     </p>
 
@@ -47,14 +47,14 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                                         />
                                     </div>
 
-                                <h3 className=" capitalize text-2xl lg:text-3xl font-semibold">
+                                <h3 className=" uppercase text-2xl lg:text-3xl font-semibold">
                                     {element.title}
                                 </h3>
                                 <p className="mt-5 mb-6 text-center	 text-lg lg:text-xl">
                                     {element.subtitle}
                                 </p>
 
-                                <ul className="flex flex-col items-center w-full">
+                                <ul className="flex flex-col items-center w-auto">
                                   {
                                     element.examples.map((example, i) =>(
                                       <li key={i} className="text-center text-base lg:text-lg mt-3 font-poppins border-b-2 last:border-b-0 py-2 w-full" >

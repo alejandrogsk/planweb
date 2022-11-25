@@ -53,7 +53,7 @@ const publicidadDigital = ({data}) => {
                 </div>
 
     
-                <h4 className="my-4 md:my-6 lg:my-8 max-w-full md:max-w-5xl	mx-auto text-lg md:text-xl lg:text-2xl font-oswald font-bold uppercase text-center">{google_ads.under}</h4>
+                <h4 className="my-4 md:my-6 lg:my-8 max-w-full md:max-w-5xl	mx-auto text-lg md:text-xl lg:text-2xl font-oswald font-semibold uppercase text-center">{google_ads.under}</h4>
 
                 <Link href={contact.url}>
                     <a className="mt-8 text-xl text-center block px-6 py-3 bg-primary hover:bg-black text-black hover:text-white transition-all duration-200 uppercase">{contact.title}</a>
@@ -63,8 +63,8 @@ const publicidadDigital = ({data}) => {
            
             {/**Social */}
             <section className="services-marketing px-6 md:px-12 lg:px-16 py-20 bg-gray-50 ">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl	font-bold uppercase  text-center mb-8 mt-12 md:mb-16 md:mt-16">{redes.title}</h2>
-                <p className="max-w-full md:max-w-3xl	mx-auto text-lg md:text-xl lg:text-2xl font-oswald font-bold uppercase text-center">{redes.subtitle}</p>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl	font-semibold uppercase  text-center mb-8 mt-12 md:mb-16 md:mt-16">{redes.title}</h2>
+                <p className="max-w-full md:max-w-3xl	mx-auto text-lg md:text-xl lg:text-2xl font-oswald font-semibold uppercase text-center">{redes.subtitle}</p>
 
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center justify-items-center py-16">
                     <div className="grid items-start grid-cols-1 gap-12 my-16">
@@ -103,8 +103,8 @@ const publicidadDigital = ({data}) => {
 
             {/**Email */}
             <section className="services-marketing px-6 md:px-12 lg:px-16 py-20">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl	font-bold uppercase  text-center mb-8 mt-12 md:mb-16 md:mt-16">{email.title}</h2>
-                <p className="max-w-full md:max-w-3xl	mx-auto text-lg md:text-xl lg:text-2xl font-oswald font-bold uppercase text-center">{email.subtitle}</p>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl	font-semibold uppercase  text-center mb-8 mt-12 md:mb-16 md:mt-16">{email.title}</h2>
+                <p className="max-w-full md:max-w-3xl	mx-auto text-lg md:text-xl lg:text-2xl font-oswald font-semibold uppercase text-center">{email.subtitle}</p>
 
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center justify-items-center py-16">
                    
