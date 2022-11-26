@@ -6,7 +6,6 @@ import Layout from '../components/global/Layout'
 import Banner from '../components/Services/Banner';
 import Hero from '../components/Services/Hero'
 import Logos from '../components/Services/Logos';
-import RequestNow from '../components/Services/RequestNow';
 import PublicidadDigitalEs from '../content/es/publicidad-digital.json';
 
 function ContactButton({contactData}){

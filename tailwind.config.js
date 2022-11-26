@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'smph': '370px',
+      },
       fontFamily: {
         'oswald': ['Oswald', "sans-serif"],
         'poppins': ['Poppins', 'sans-serif']
