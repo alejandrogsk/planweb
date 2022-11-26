@@ -11,7 +11,7 @@ const Footer = ({menu}) => {
         <ul className="flex flex-col items-center md:flex-row col-start-1 col-end-2 md:col-start-2 md:col-end-3 row-start-2 row-end-3 md:row-start-1 row-end-2 justify-self-center md:justify-self-end	flex">
             {
                 menu.map((element, index)=> (
-                    <Link key={index} href={element.link} >
+                    <Link key={index} href={element.link} legacyBehavior >
                         <a className="text-white text-base uppercase font-normal first:ml-0 ml-0 md:ml-4 first:mt-0 mt-4 md:mt-0">{element.title}</a>
                     </Link>
                 ))

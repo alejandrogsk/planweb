@@ -30,7 +30,7 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                     <div className=" mt-16 col-start-1 col-end-2 lg:col-end-3 grid grid-cols-1 lg:grid-cols-3 gap-12 content-center ">
                         {
                         services.list.map((element, i) => (
-                            <Link key={i} href="/contacto">
+                            <Link key={i} href="/contacto" legacyBehavior>
                             <div className="
                             flex flex-col justify-between rounded-xl  shadow-md hover:shadow-2xl  py-8 px-4 
                             transition-all duration-300
@@ -67,11 +67,11 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                                 </ul>
                                </div>
                                 <span className="group text-black bg-primary hover:bg-custom-black w-full flex py-3 justify-center items-center	 py-2 group z-10 mt-8 shadow hover:shadow-lg transition-all duration-200">
-                                    <Link href={contact.url}>
+                                    <Link href={contact.url} legacyBehavior>
                                         <a className="transition-all duration-200 group-hover:text-white text-lg  md:text-xl text-2xl text-inherit uppercase font-regular">
                                             {contact.title}
                                         </a>
-                                    </Link>
+                                    </Link >
                                     <svg className="transition-all duration-200 group-hover:translate-x-2 duration-300	fill-custom-black group-hover:fill-white	 h-6 w-6 fill-inherit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="inherit" transform="translate(0, 0) scale(1, 1) ">
                                             <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"/>

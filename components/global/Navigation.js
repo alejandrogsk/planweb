@@ -65,7 +65,7 @@ const Logo = () => {
 
 
     return (
-        <Link href="/">
+        <Link href="/" legacyBehavior>
             <a
                 className={`
             cursor-pointer font-poppins font-semibold text-xl md:text-2xl lg:text-3xl text-center`}
@@ -116,7 +116,7 @@ const NavigationDesktop = ({ menu }) => {
                 <ul>
                     {menu.map((element, i) => (
                         <li key={i}>
-                            <Link href={element.link} >
+                            <Link href={element.link} legacyBehavior>
                                 <a className={`${(currentUrl === element.link)&& 'current-link' }`}>{element.title}</a>
                             </Link>
                         </li>
@@ -169,7 +169,7 @@ const NavigationMobile = ({ menu }) => {
                     <ul className="navbar__responsive--list">
                         {menu.map((element, i) => (
                             <li key={i} className="navbar__responsive--item">
-                                <Link href={element.link}>
+                                <Link href={element.link} legacyBehavior>
                                     <a
                                         onClick={handleNav}
                                         className="navbar__responsive--link"

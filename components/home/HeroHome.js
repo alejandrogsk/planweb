@@ -35,12 +35,12 @@ const HeroHome = ({heroContent}) => {
         </p>
 
         <div className="flex flex-col md:flex-row">
-            <Link href={heroContent.cta1.url}>
+            <Link href={heroContent.cta1.url} legacyBehavior>
                 <a className="transition-all duration-200 shadow text-lg md:text-xl block px-6 py-3 bg-primary text-black hover:bg-white hover:md:bg-white uppercase text-center">
                     {heroContent.cta1.title}
                 </a>
             </Link>
-            <Link href={heroContent.cta2.url}>
+            <Link href={heroContent.cta2.url} legacyBehavior>
                 <a className="transition-all duration-200 shadow text-lg md:text-xl block  px-6 py-3 bg-black text-white uppercase text-center ml-0 md:ml-4 mt-4 md:mt-0 hover:bg-white hover:text-black">
                     {heroContent.cta2.title}
                 </a>

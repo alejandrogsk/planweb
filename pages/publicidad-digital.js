@@ -12,7 +12,7 @@ function ContactButton({contactData}){
     const {url, title} = contactData;
     return(
         <div className="w-full flex justify-center md:justify-start align-center mt-8">
-                            <Link href={url}>
+                            <Link href={url} legacyBehavior>
                                 <a className="text-xl text-center inline-block px-6 py-3 bg-primary hover:bg-black text-black hover:text-white transition-all duration-200  uppercase">{title}</a>
                             </Link>
                         </div>
@@ -54,7 +54,7 @@ const publicidadDigital = ({data}) => {
     
                 <h4 className="my-4 md:my-6 lg:my-8 max-w-full md:max-w-5xl	mx-auto text-lg md:text-xl lg:text-2xl font-oswald font-semibold uppercase text-center">{google_ads.under}</h4>
 
-                <Link href={contact.url}>
+                <Link href={contact.url} legacyBehavior>
                     <a className="mt-8 text-xl text-center block px-6 py-3 bg-primary hover:bg-black text-black hover:text-white transition-all duration-200 uppercase">{contact.title}</a>
                 </Link>
 

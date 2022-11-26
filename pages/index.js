@@ -69,7 +69,7 @@ const Home = ({ data }) => {
                 <section className="grid grid-cols-1 content-center	justify-items-center bg-primary px-6 md:px-12 lg:px-16  py-16 md:py-24 lg:py-36">
                     <h2 className="text-center md:text-start text-3xl md:text-4xl lg:text-5xl	font-bold uppercase ">¡Queremos conocer tu proyecto!</h2>
                     <p className="text-center text-xl md:text-2xl pt-6 pb-10 max-w-100 md:max-w-[80%] lg:max-w-[70%]">No dudes en contactarnos con cualquier pregunta o inquietud que puedas tener. Nos encantaría hablar sobre tu proyecto con más detalle.</p>
-                    <Link href="/contacto">
+                    <Link href="/contacto" legacyBehavior>
                         <a className="text-xl text-center block px-12 md:px-8 py-3 bg-white hover:bg-black text-black hover:text-white transition-all duration-200  uppercase">Consulta Gratuitá</a>
                     </Link>
                 </section>

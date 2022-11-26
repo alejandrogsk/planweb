@@ -22,20 +22,20 @@
             "src": "/assets/wordpress.png",
             "alt":"Especialistas en desarrollo wordpress",
             
-            "width": "262.58",
+            "width": "263",
             "height": "60"
         },
         {
             "src": "/assets/nextjs.png",
             "alt":"Especialistas en desarrollo de nextjs",
             
-            "width": "146.08",
+            "width": "146",
             "height": "88"
         },
         {
             "src": "/assets/gatsby.png",
             "alt":"Especialistas en desarrollo gatsbyjs",
-            "width": "227.14",
+            "width": "227",
             "height": "60"
             
         }

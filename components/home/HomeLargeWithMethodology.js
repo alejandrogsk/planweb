@@ -20,7 +20,7 @@ const HomeLargeWithMethodology = ({how_we_work}) => {
         <p className="text-black pt-6 pb-12 text-center md:text-start text-xl md:text-2xl w-full md:max-w-[80%] lg:max-w-[75%]">Somos una agencia digital ubicada en Crespo, Entre Ríos. Nuestras soluciones incluyen diseño y desarrollo de sitios web, tiendas online y campañas de publicidad digital.</p>
 
         <div className="w-full flex flex-col md:flex-row flex-col-reverse">
-           <Link href="/contacto">
+           <Link href="/contacto" legacyBehavior>
                 <a className="inline-block bg-primary px-6 py-4 uppercase text-lg md:text-xl hover:bg-[#181818] text-black hover:text-white text-center">Contactanos Ahora</a>
            </Link>
             
