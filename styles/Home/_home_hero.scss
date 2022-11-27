@@ -96,8 +96,7 @@
 }
 
 
-.home-hero-large {
-    & > h1 > .underline-custom{
+.underline-custom{
         position: relative;
         z-index: 10;
         &::after {
@@ -112,4 +111,3 @@
             z-index: -1;
         }
     }
-}
