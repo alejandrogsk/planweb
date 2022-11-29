@@ -107,7 +107,7 @@ const NavigationDesktop = ({ menu }) => {
         setCurrentUrl(pathname);
     })
     return (
-        <header className={`desktop__header `}>
+        <header className={`desktop__header max-w-[1400px] mx-auto`}>
             <div className="desktop__logo">
                 <Logo />
             </div>

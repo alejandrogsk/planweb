@@ -12,7 +12,7 @@ const Contacto = ({ data }) => {
             <HeadComponent title={head.title} description={head.description} />
             <Layout>
                 <section className="common-service__hero min-h-screen px-8 md:px-26 lg:px-48 relative ">
-                    <h1 className="text-center pt-32 lg:pt-40 mb-12 text-3xl md:text-4xl lg:text-5xl	font-bold uppercase">
+                    <h1 className="text-center pt-32 lg:pt-40 mb-12 text-2xl md:text-4xl lg:text-5xl	font-semibold uppercase">
                         {title}
                     </h1>
 
@@ -23,7 +23,7 @@ const Contacto = ({ data }) => {
                     <ContactForm form_fields={form_fields} />
 
                     <span className="contact-square-1 bg-yellow-900"></span>
-                    <span className="contact-square-2 bg-yellow-700"></span>
+                    {/*<span className="contact-square-2 bg-yellow-700"></span> */}
                 </section>
             </Layout>
         </div>

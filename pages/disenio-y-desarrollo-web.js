@@ -66,9 +66,9 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                                   }
                                 </ul>
                                </div>
-                                <span className="group text-black bg-primary hover:bg-custom-black w-full flex py-3 justify-center items-center	 py-2 group z-10 mt-8 shadow hover:shadow-lg transition-all duration-200">
+                                <span className="group text-black bg-primary hover:bg-custom-black w-[80%] flex py-3 justify-center items-center	 py-2 group z-10 mt-8 mx-auto shadow hover:shadow-lg transition-all duration-200">
                                     <Link href={contact.url} legacyBehavior>
-                                        <a className="transition-all duration-200 group-hover:text-white text-lg  md:text-xl text-2xl text-inherit uppercase font-regular">
+                                        <a className="transition-all duration-200 group-hover:text-white text-base  md:text-lg text-xl text-inherit uppercase font-normal">
                                             {contact.title}
                                         </a>
                                     </Link >

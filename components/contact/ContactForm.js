@@ -78,6 +78,7 @@ const ContactForm = ({form_fields}) => {
                                 id="userName"
                                 required
                                 placeholder={`${form_fields.name}`}
+                                className="font-poppins"
                             />
                         </div>
 
@@ -91,6 +92,7 @@ const ContactForm = ({form_fields}) => {
                                 required
                                 onChange={handleImputChange}
                                 value={userLastName}
+                                className="font-poppins"
                             />
                         </div>
 
@@ -104,6 +106,7 @@ const ContactForm = ({form_fields}) => {
                                 required
                                 onChange={handleImputChange}
                                 value={userEmail}
+                                className="font-poppins"
                             />
                         </div>
 
@@ -117,6 +120,7 @@ const ContactForm = ({form_fields}) => {
                                 required
                                 onChange={handleImputChange}
                                 value={userPhone}
+                                className="font-poppins"
                             />
                         </div>
 
@@ -130,6 +134,7 @@ const ContactForm = ({form_fields}) => {
                                 required
                                 onChange={handleImputChange}
                                 value={userCompany}
+                                className="font-poppins"
                             />
                         </div>
 
@@ -143,11 +148,12 @@ const ContactForm = ({form_fields}) => {
                                 required
                                 onChange={handleImputChange}
                                 value={userLocation}
+                                className="font-poppins"
                             />
                         </div>
 
                         <div className="contact__form-box">
-                            <span>{form_fields.services.title}</span>
+                            <span className="font-poppins">{form_fields.services.title}</span>
 
                             <div className="contact__form-box--list">
                                 {form_fields.services.options.map(
@@ -160,7 +166,7 @@ const ContactForm = ({form_fields}) => {
                                                 id={service.id}
                                                 onChange={handleChecks}
                                             />
-                                            <label htmlFor={service.id}>
+                                            <label htmlFor={service.id} className="font-poppins">
                                                 {service.placeholder}
                                             </label>
                                         </div>
@@ -187,6 +193,7 @@ const ContactForm = ({form_fields}) => {
                                 placeholder="mensaje"
                                 onChange={handleImputChange}
                                 value={userMessage}
+                                className="font-poppins"
                             />
                         </div>
 
