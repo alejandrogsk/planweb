@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Navigation menu={menu.menu} cta={menu.cta} />
-            <main className="max-w-[1440px] mx-auto">
+            <main className="max-w-[1540px] mx-auto">
             {children}
             </main>
             <Footer menu={menu.menu} />
