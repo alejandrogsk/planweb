@@ -35,17 +35,21 @@ const Home = ({ data }) => {
                         >
                             <div className="flex flex-col items-center md:items-start justify-center row-start-2 row-end-3 md:row-start-1 row-end-2	">
                                 <span className="font-poppins uppercase mb-2">{service.hover_title}</span>
-                                <h2 className="text-center md:text-start text-3xl md:text-4xl lg:text-5xl	font-bold uppercase ">
+                                <h2 className="text-center md:text-start text-3xl md:text-4xl lg:text-5xl	font-medium ">
                                     {service.title}
                                 </h2>
                                 <p className="text-center md:text-start text-xl md:text-2xl pt-4 pb-6">
                                     {service.subtitle}
                                 </p>
-
-                                <CtaRegular
-                                    url={service.cta.url}
-                                    title={service.cta.title}
-                                />
+                                <Link href={service.cta.url} legacyBehavior>
+                                <a class="flex justify-center items-center m-auto md:m-0 custom-btn-cta font-medium">
+  <span>{service.cta.title}</span>
+  <svg width="13px" height="10px" viewBox="0 0 13 10">
+    <path d="M1,5 L11,5"></path>
+    <polyline points="8 1 12 5 8 9"></polyline>
+  </svg>
+</a>
+</Link>
                             </div>
 
                             <div>
@@ -67,11 +71,19 @@ const Home = ({ data }) => {
 
                 {/**CTA */}
                 <section className="grid grid-cols-1 content-center	justify-items-center bg-primary px-6 md:px-12 lg:px-16  py-16 md:py-24 lg:py-36">
-                    <h2 className="text-center md:text-start text-3xl md:text-4xl lg:text-5xl	font-bold uppercase ">¡Queremos conocer tu proyecto!</h2>
+                    <h2 className="text-center md:text-start text-3xl md:text-4xl lg:text-5xl	font-medium ">¡Queremos conocer tu proyecto!</h2>
                     <p className="text-center text-xl md:text-2xl pt-6 pb-10 max-w-100 md:max-w-[80%] lg:max-w-[70%]">No dudes en contactarnos con cualquier pregunta o inquietud que puedas tener. Nos encantaría hablar sobre tu proyecto con más detalle.</p>
                     <Link href="/contacto" legacyBehavior>
-                        <a className="text-xl text-center block px-12 md:px-8 py-3 bg-white hover:bg-black text-black hover:text-white transition-all duration-200  uppercase">Consulta Gratuitá</a>
+                        <a class="flex justify-center items-center m-auto md:m-0 custom-btn-cta-white font-medium">
+  <span>Consulta Gratuitá</span>
+  <svg width="13px" height="10px" viewBox="0 0 13 10">
+    <path d="M1,5 L11,5"></path>
+    <polyline points="8 1 12 5 8 9"></polyline>
+  </svg>
+</a>
+                   
                     </Link>
+                    
                 </section>
             </Layout>
         </div>

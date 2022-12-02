@@ -10,7 +10,7 @@ module.exports = {
         'smph': '370px',
       },
       fontFamily: {
-        'oswald': ['Oswald', "sans-serif"],
+        'oswald': ['Poppins', "sans-serif"],
         'poppins': ['Poppins', 'sans-serif']
       },
       colors: {

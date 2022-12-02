@@ -7,6 +7,8 @@ import Banner from '../components/Services/Banner';
 import Hero from '../components/Services/Hero'
 import Logos from '../components/Services/Logos';
 import PublicidadDigitalEs from '../content/es/publicidad-digital.json';
+import BtnYellow from '../components/Buttons/BtnYellow';
+
 
 function ContactButton({contactData}){
     const {url, title} = contactData;
@@ -29,8 +31,8 @@ const publicidadDigital = ({data}) => {
             <Banner banner={banner} />
             <Logos  logos={platforms}/>
             <section className="services-marketing px-6 md:px-12 lg:px-16 py-20 flex flex-col items-center	justify-center">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl	font-bold uppercase  text-center mb-8 mt-12 md:mb-16 md:mt-16">{google_ads.title}</h2>
-                <p className="max-w-full md:max-w-3xl	mx-auto text-lg md:text-xl lg:text-2xl font-oswald font-semibold md:font-bold uppercase text-center">{google_ads.subtitle}</p>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl	font-medium  text-center mb-8 mt-12 md:mb-16 md:mt-16">{google_ads.title}</h2>
+                <p className="max-w-full md:max-w-3xl	mx-auto text-lg md:text-xl lg:text-2xl  font-normal  text-center">{google_ads.subtitle}</p>
                 
                 <div className="grid items-start grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 my-16">
                     {
@@ -44,7 +46,7 @@ const publicidadDigital = ({data}) => {
                                         layout="intrinsic"
                                     />
                                 </div>
-                                <h3 className="uppercase text-xl md:text-2xl font-semibold ">{service.title}</h3>
+                                <h3 className="text-xl md:text-2xl font-medium ">{service.title}</h3>
                                 <p className="text-lg lg:text-xl col-start-1 lg:col-start-2 col-end-3">{service.content}</p>
                             </div>
                         ))
@@ -52,25 +54,26 @@ const publicidadDigital = ({data}) => {
                 </div>
 
     
-                <h4 className="my-4 md:my-6 lg:my-8 max-w-full md:max-w-5xl	mx-auto text-lg md:text-xl lg:text-2xl font-oswald font-semibold uppercase text-center">{google_ads.under}</h4>
+                <h4 className="my-4 md:my-6 lg:my-8 max-w-full md:max-w-5xl	mx-auto text-lg md:text-xl lg:text-2xl font-normal text-center">{google_ads.under}</h4>
 
-                <Link href={contact.url} legacyBehavior>
-                    <a className="mt-8 text-xl text-center block px-6 py-3 bg-primary hover:bg-black text-black hover:text-white transition-all duration-200 uppercase">{contact.title}</a>
-                </Link>
-
+<BtnYellow url={contact.url} title={contact.title} />
             </section>
            
             {/**Social */}
             <section className="services-marketing px-6 md:px-12 lg:px-16 py-20 bg-gray-50 ">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl	font-semibold uppercase  text-center mb-8 mt-12 md:mb-16 md:mt-16">{redes.title}</h2>
-                <p className="max-w-full md:max-w-3xl	mx-auto text-lg md:text-xl lg:text-2xl font-oswald font-semibold uppercase text-center">{redes.subtitle}</p>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl	font-medium text-center mb-8 mt-12 md:mb-16 md:mt-16">{redes.title}</h2>
+                <p className="max-w-full md:max-w-3xl mx-auto text-lg md:text-xl lg:text-2xl font-medium text-center">{redes.subtitle}</p>
 
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center justify-items-center py-16">
-                    <div className="grid items-start grid-cols-1 gap-12 my-16">
+                    <div className="
+                    flex flex-col justify-center items-center md:items-start
+                    ">
                         {
                             redes.list.map((element, i) => (
                     
-                                <div key={i} className="grid grid-cols-[auto,1fr] items-center gap-2">
+                                <div key={i} className="grid grid-cols-[auto,1fr] items-center gap-2
+                                first:mt-0 mt-6
+                                ">
                                 <div>
                                     <Image 
                                         src={element.image.src} 
@@ -79,12 +82,12 @@ const publicidadDigital = ({data}) => {
                                         layout="intrinsic"
                                     />
                                 </div>
-                                <h3 className="uppercase text-xl md:text-2xl font-semibold ">{element.title}</h3>
+                                <h3 className="text-xl md:text-2xl font-medium ">{element.title}</h3>
                                 <p className="text-lg lg:text-xl col-start-1 lg:col-start-2 col-end-3">{element.content}</p>
                             </div>
                             ))
                         }
-                        <ContactButton contactData={contact} />
+                        <BtnYellow url={contact.url} title={contact.title} />
                     </div>
                     <div className="p-0 pl-0 md:p-2 md:pl-3 lg:p-4 lg:pl-5">
                         <Image
@@ -102,8 +105,8 @@ const publicidadDigital = ({data}) => {
 
             {/**Email */}
             <section className="services-marketing px-6 md:px-12 lg:px-16 py-20">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl	font-semibold uppercase  text-center mb-8 mt-12 md:mb-16 md:mt-16">{email.title}</h2>
-                <p className="max-w-full md:max-w-3xl	mx-auto text-lg md:text-xl lg:text-2xl font-oswald font-semibold uppercase text-center">{email.subtitle}</p>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl	font-medium  text-center mb-8 mt-12 md:mb-16 md:mt-16">{email.title}</h2>
+                <p className="max-w-full md:max-w-3xl	mx-auto text-lg md:text-xl lg:text-2xl font-oswald font-medium text-center">{email.subtitle}</p>
 
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center justify-items-center py-16">
                    
@@ -116,10 +119,12 @@ const publicidadDigital = ({data}) => {
                         layout="intrinsic"
                         />
                     </div>
-                    <div className="grid items-start grid-cols-1 gap-12 my-16">
+                    <div className="
+                    flex flex-col justify-center items-center md:items-start
+                    ">
                         {
                             email.list.map((element, i) => (
-                                <div key={i} className="grid grid-cols-[auto,1fr] items-center gap-2">
+                                <div key={i} className="grid grid-cols-[auto,1fr] items-center gap-2  first:mt-0 mt-6">
                                 <div >
                                     <Image 
                                         src={element.image.src} 
@@ -128,12 +133,12 @@ const publicidadDigital = ({data}) => {
                                         layout="intrinsic"
                                     />
                                 </div>
-                                <h3 className="uppercase text-xl md:text-2xl font-semibold ">{element.title}</h3>
+                                <h3 className="text-xl md:text-2xl font-medium ">{element.title}</h3>
                                 <p className="text-lg lg:text-xl col-start-1 lg:col-start-2 col-end-3">{element.content}</p>
                             </div>
                             ))
                         }
-                        <ContactButton contactData={contact} />
+                        <BtnYellow url={contact.url} title={contact.title} />
                     
                     </div>
                    

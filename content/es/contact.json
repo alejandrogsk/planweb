@@ -15,9 +15,12 @@
         "services":{
             "title": "¿Qué servicios necesitas?",
             "options": [
-                
                 {
-                    "placeholder": "Ecommerce",
+                    "placeholder": "Consultoría",
+                    "id": "checkConsulting"
+                },
+                {
+                    "placeholder": "Tienda Online",
                     "id": "checkEcommerce"
                 },
                 {
@@ -33,9 +36,10 @@
                     "id": "checkSocial"
                 },
                 {
-                    "placeholder": "Consultoría",
-                    "id": "checkConsulting"
+                    "placeholder": "Email marketing",
+                    "id": "checkEmailMarketing"
                 }
+                
             ]
         },
         "message":"Mensaje",

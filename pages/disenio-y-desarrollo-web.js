@@ -7,7 +7,7 @@ import Banner from "../components/Services/Banner";
 import Hero from "../components/Services/Hero";
 import Logos from "../components/Services/Logos";
 import WebEs from "../content/es/web.json";
-
+import BtnYellow from "../components/Buttons/BtnYellow";
 const DiseñoYDesarrolloWeb = ({ data }) => {
     const { head, hero, banner, platforms, services, contact } = data;
 
@@ -20,10 +20,10 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                 <Logos logos={platforms} />
 
                 <section className="services-marketing px-6 md:px-12 lg:px-16 py-16 md:py-28">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl	font-semibold uppercase  text-center mb-16">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl	font-medium  text-center mb-16">
                         {services.title}
                     </h2>
-                    <p className="max-w-full md:max-w-3xl	mx-auto text-lg md:text-xl lg:text-2xl font-oswald font-semibold uppercase text-center">
+                    <p className="max-w-full md:max-w-3xl	mx-auto text-lg md:text-xl lg:text-2xl font-medium text-center">
                         {services.subtitle}
                     </p>
 
@@ -33,7 +33,7 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                             <Link key={i} href="/contacto" legacyBehavior>
                             <div className="
                             flex flex-col justify-between rounded-xl  shadow-md hover:shadow-2xl  py-8 px-4 
-                            transition-all duration-300
+                            transition-all	duration-300	ease-in-out
                             bg-white
                             text-black
                             cursor-pointer
@@ -47,7 +47,7 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                                         />
                                     </div>
 
-                                <h3 className=" uppercase text-2xl lg:text-3xl font-semibold">
+                                <h3 className="text-2xl lg:text-3xl font-medium">
                                     {element.title}
                                 </h3>
                                 <p className="mt-5 mb-6 text-center	 text-lg lg:text-xl">
@@ -66,18 +66,13 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                                   }
                                 </ul>
                                </div>
-                                <span className="group text-black bg-primary hover:bg-custom-black w-[80%] flex py-3 justify-center items-center	 py-2 group z-10 mt-8 mx-auto shadow hover:shadow-lg transition-all duration-200">
-                                    <Link href={contact.url} legacyBehavior>
-                                        <a className="transition-all duration-200 group-hover:text-white text-base  md:text-lg text-xl text-inherit uppercase font-normal">
-                                            {contact.title}
-                                        </a>
-                                    </Link >
-                                    <svg className="transition-all duration-200 group-hover:translate-x-2 duration-300	fill-custom-black group-hover:fill-white	 h-6 w-6 fill-inherit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <g fill="inherit" transform="translate(0, 0) scale(1, 1) ">
-                                            <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"/>
-                                        </g>
-                                    </svg>
-                                </span>
+                                <Link href={contact.url} legacyBehavior>
+                                    <a className="text-center font-normal text-lg lg:text-xl bg-primary text-custom-black hover:text-white hover:bg-custom-black py-4 rounded-full
+                                    transition-all	duration-300	ease-in-out	mt-8
+                                    ">
+                                    {contact.title}
+                                    </a>
+                                </Link>
                             </div>
                             </Link>
                         ))
