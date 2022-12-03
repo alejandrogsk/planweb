@@ -27,7 +27,7 @@ const Logo = () => {
 
     //Color of the logo on mobile home
     const { pathname } = useRouter();
-    const [ logoSrc, setLogoSrc ] = useState("/assets/planweb-logo-yb.svg");
+    const [ logoSrc, setLogoSrc ] = useState("/logo.svg");
     const [windowWidth, setWindoWidth] = useState();
 
     
@@ -35,12 +35,12 @@ const Logo = () => {
     useEffect( () => {
         setWindoWidth(window.innerWidth);
         if((pathname==="/publicidad-digital") || ( pathname === "/contacto" && windowWidth <= 400 )  ){
-            setLogoSrc("/assets/planweb-logo-bw.svg");
+            setLogoSrc("/logo-white.svg");
         } else {
-            setLogoSrc("/assets/planweb-logo-yb.svg")
+            setLogoSrc("/logo.svg")
         }
 
-        return() => setLogoSrc("/assets/planweb-logo-yb.svg")
+        return() => setLogoSrc("/logo.svg")
     },[ windowWidth, pathname ]);
 
     function resizeHandler(){
@@ -48,9 +48,9 @@ const Logo = () => {
         //console.log(ww)
         //setWindoWidth(ww)
         if(ww <= 550 && pathname==="/contacto" ){
-            setLogoSrc("/assets/planweb-logo-bw.svg");
+            setLogoSrc("/logo-white.svg");
         } else if(ww > 400 &&pathname==="/contacto") {
-            setLogoSrc("/assets/planweb-logo-yb.svg")
+            setLogoSrc("/logo.svg")
         } else {
             return
         }
