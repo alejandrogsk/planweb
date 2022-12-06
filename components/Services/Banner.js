@@ -1,27 +1,20 @@
 import Image from "next/image";
 import React from "react";
 
-const Banner = ({ banner, card = null }) => {
+const Banner = ({ banner }) => { 
+    let { src } = banner;
+    console.log(`SRC: ${src}`)
     return (
-        <section className="common-service__banner my-28 px-2 md:px-8 lg:px-12 flex flex-col items-center align-center justify-center relative">
-            <Image
-                alt={banner.alt}
-                src={banner.src}
-                width={banner.width}
-                height={banner.height}
-                layout="intrinsic"
-            />
-            {card && (
-                <div className="ecommerce_banner-card">
-                    <Image
-                        alt={card.alt}
-                        src={card.src}
-                        width={card.width}
-                        height={card.height}
-                        layout="intrinsic"
-                    />
-                </div>
-            )}
+        <section style={{backgroundImage:`url(${src})`}} className={`
+        my-28 px-2 md:px-8 lg:px-12
+        h-[50vh] md:h-[70vh] 
+        w-full
+        bg-cover
+        bg-no-repeat
+        bg-local md:bg-fixed
+        bg-center
+        `}>
+           
         </section>
     );
 };

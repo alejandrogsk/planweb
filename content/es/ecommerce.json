@@ -11,18 +11,11 @@
         ]
     },    
     "banner": {
-        "image1": {
-            "src": "/assets/ecommerce-banner.png",
+            "src": "/assets/ecommerce-banner.avif",
             "alt": "Agencia de ecommerce Entre Ríos",
             "width": "1412",
             "height": "795"
-        },
-        "image2": {
-            "src": "/assets/ecommerce-card.png",
-            "alt": "Agencia especialista en ecommerce Crespo",
-            "width": "431",
-            "height": "211"
-        }
+    
     },
     
     "services": {

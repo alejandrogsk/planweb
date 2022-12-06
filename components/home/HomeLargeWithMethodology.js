@@ -6,7 +6,7 @@ const HomeLargeWithMethodology = ({how_we_work}) => {
     <>
     <section className="home-hero-large grid grid-cols-1 pt-32 pb-32 md:pb-60 px-6 md:px-12 lg:px-16 overflow-x-hidden">
 
-        <h1 className="text-2xl md:text-4xl lg:text-6xl font-medium	 relative text-center md:text-start">
+        <h1 className="text-3xl md:text-4xl lg:text-6xl font-medium	 relative text-center md:text-start">
             Aumentá las <span className="underline-custom">ventas</span> de tu negocio <br className="hidden lg:inline"/>a travéz de <span className="underline-custom  hidden smph:inline">canales digitales</span>
             <span className="underline-custom inline smph:hidden ">canales</span> <span className="underline-custom  inline smph:hidden ">digitales</span>
         </h1>
@@ -32,7 +32,7 @@ const HomeLargeWithMethodology = ({how_we_work}) => {
             <Image
                 height={463} width={1425}
                 layout="intrinsic"
-                alt="Nuestro Equipo"
+                alt="Estudio digital crespo entre ríos"
                 src={'/assets/team.png'}
             />
         </div>

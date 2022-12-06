@@ -24,7 +24,7 @@ const ecommerces = ({data}) => {
                 <span className="ecommerce_hero-span--1 bg-primary"></span>
             </section>
 
-            <Banner banner={banner.image1} />
+            <Banner banner={banner} />
           
             <section className="ecommerce_platforms bg-white px-6 md:px-12 lg:px-16 py-20 grid grid-cols-1 justify-items-center">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl	font-medium  text-center mb-16 text-black w-full md:w-10/12 lg:w-8/12">{platforms.title}</h2>

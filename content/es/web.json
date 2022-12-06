@@ -12,10 +12,10 @@
         ]
     },
     "banner": {
-        "src": "/assets/websites-banner.jpg",
+        "src": "/assets/websites-banner.avif",
         "alt":"Desarrollo web Crespo Entre Ríos",
         "width": "1412",
-            "height": "795"
+        "height": "795"
     },
     "platforms": [
         {
@@ -95,6 +95,6 @@
     },
     "contact": {
         "url": "/contacto",
-        "title": "Solicitar Ahora"
+        "title": "Más Información"
     }
 }

@@ -13,7 +13,7 @@
         ]
     },
     "banner": {
-        "src": "/assets/marketing-banner.jpg",
+        "src": "/assets/marketing-banner.avif",
         "alt":"Agencia de marketing digital Crespo",
         "width": "1412",
         "height": "795"

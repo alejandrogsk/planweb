@@ -47,7 +47,7 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                                         />
                                     </div>
 
-                                <h3 className="text-2xl lg:text-3xl font-medium">
+                                <h3 className="text-2xl lg:text-3xl font-medium text-center">
                                     {element.title}
                                 </h3>
                                 <p className="mt-5 mb-6 text-center	 text-lg lg:text-xl">
@@ -67,8 +67,10 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                                 </ul>
                                </div>
                                 <Link href={contact.url} legacyBehavior>
-                                    <a className="text-center font-normal text-lg lg:text-xl bg-primary text-custom-black hover:text-white hover:bg-custom-black py-4 rounded-full
+                                    <a className="text-center font-normal text-base lg:text-lg bg-primary text-custom-black hover:text-white hover:bg-custom-black py-4 rounded-full
                                     transition-all	duration-300	ease-in-out	mt-8
+                                    w-[80%]
+                                    ml-auto mr-auto
                                     ">
                                     {contact.title}
                                     </a>
