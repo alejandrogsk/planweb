@@ -106,6 +106,18 @@ const NavigationDesktop = ({ menu }) => {
     useEffect(()=> {
         setCurrentUrl(pathname);
     })
+
+
+
+    const [subMenuVisible, setSubMenuVisible] = useState(true);
+
+    const showSubMenu = () => {
+        setSubMenuVisible(true);
+    }
+    const hideSubMenu = () => {
+        setSubMenuVisible(false)
+    }
+
     return (
         <header className={`desktop__header max-w-[1540px] mx-auto`}>
             <div className="desktop__logo">
@@ -114,12 +126,39 @@ const NavigationDesktop = ({ menu }) => {
 
             <nav className="desktop__nav">
                 <ul>
+                    
                     {menu.map((element, i) => (
+                        <>
+                        {
+                            element.child ?
+                            <li className="relative"
+                                                onMouseEnter={showSubMenu} 
+                                                onMouseLeave={()=> setSubMenuVisible(false)} 
+                                                >
+                                                    <a href="#">{element.title}</a>
+                                                    <ul 
+                                                    style={{boxShadow:'0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);'}}  
+                                                    onMouseEnter={showSubMenu} 
+                                                    onMouseLeave={()=> setSubMenuVisible(false)} 
+                                                    className={`${!subMenuVisible && 'hidden opacity-0	'} rounded absolute top-[120%] left-0 w-[250%] opacity-100 flex flex-col bg-white py-2 px-4 duration-300	`}>
+                                                        {
+                                                            element.childrens.map((childLink, i ) => (
+                                                                <li key={i} className=" block first:pt-0 pt-4"><Link legacyBehavior href={childLink.link}><a className={`text-base ${(currentUrl === element.link)&& 'current-link' }`}>{childLink.title}</a></Link></li>
+                                                            ))
+                                                        }
+                                                    </ul>
+                                                </li>
+                            :
                         <li key={i}>
                             <Link href={element.link} legacyBehavior>
-                                <a className={`${(currentUrl === element.link)&& 'current-link' }`}>{element.title}</a>
+                               
+                                {
+                                    <a className={`${(currentUrl === element.link)&& 'current-link' }`}>{element.title}</a>
+                                }
                             </Link>
                         </li>
+                        }
+                        </>
                     ))}
                 </ul>
             </nav>
@@ -168,7 +207,23 @@ const NavigationMobile = ({ menu }) => {
                 <div className="navbar__responsive--nav">
                     <ul className="navbar__responsive--list">
                         {menu.map((element, i) => (
-                            <li key={i} className="navbar__responsive--item">
+                            <>
+                            {
+                                element.child ? 
+                                element.childrens.map((childEl, index2) =>(
+                                    <li key={index2} className="navbar__responsive--item">
+                                <Link href={childEl.link} legacyBehavior>
+                                    <a
+                                        onClick={handleNav}
+                                        className="navbar__responsive--link"
+                                    >
+                                        {childEl.title}
+                                    </a>
+                                </Link>
+                            </li>
+                                ))
+                                :
+                                <li key={i} className="navbar__responsive--item">
                                 <Link href={element.link} legacyBehavior>
                                     <a
                                         onClick={handleNav}
@@ -178,6 +233,8 @@ const NavigationMobile = ({ menu }) => {
                                     </a>
                                 </Link>
                             </li>
+                            }
+                            </>
                         ))}
                     </ul>
                 </div>

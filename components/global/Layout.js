@@ -9,11 +9,16 @@ const menues = {
             link: "/contacto",
         },
         menu: [
-            { title: "Inicio", link: "/" },
-            { title: "Ecommerce", link: "/ecommerce" },
-            { title: "Publicidad Digital", link: "/publicidad-digital" },
-            { title: "Sitios Web", link: "/disenio-y-desarrollo-web" },
-            { title: "Contacto", link: "/contacto" },
+            { title: "Inicio", link: "/", child: false },
+            { title: "Ecommerce", link: "/ecommerce", child: false },
+            { title: "Marketing", link: "/publicidad-digital", child: true, childrens: [
+                { title: "Publicidad En Redes", link: "/publicidad-en-redes-sociales" },
+                { title: "Google Ads", link: "/publicidad-en-google" },
+                { title: "Email Marketing", link: "/email-marketing" }
+                ]
+            },
+            { title: "Sitios Web", link: "/disenio-y-desarrollo-web", child: false },
+            { title: "Contacto", link: "/contacto", child: false },
         ],
     },
     en: {
@@ -22,11 +27,11 @@ const menues = {
             link: "/contact",
         },
         menu: [
-            { title: "Home", link: "/" },
+            { title: "Home", link: "/", child:false },
             //{ title: "Design", link: "/identidad-visual" },
-            { title: "Ecommerce", link: "/ecommerce" },
-            { title: "Websites", link: "/websites" },
-            { title: "Marketing", link: "/marketing" },
+            { title: "Ecommerce", link: "/ecommerce", child:false },
+            { title: "Websites", link: "/websites", child:false },
+            { title: "Marketing", link: "/marketing", child:false },
         ],
     },
 };

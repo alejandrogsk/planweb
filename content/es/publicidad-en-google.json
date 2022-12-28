@@ -1,0 +1,118 @@
+{
+    "head": {
+        "title": "Agencia especialista en publicidad en Google - Google Ads.",
+        "description": "Somos una agencia que diseña, implementa y gestiona campañas de publicidad en redes Google."
+    },
+    "hero": {
+        "title": {
+            "start":"Ponemos a tu disposición servicios de ",
+            "end":"publicidad en google"
+        },
+        "content": [
+            "¿Queres aumentar tus ventas y llegar a tus clientes de manera efectiva en 2023? Entonces debes considerar promocionarte a través de Google Ads.",
+            "En la actualidad, cada vez más personas utilizan buscadores como Google para encontrar productos y servicios, por lo que los anuncios en Google Ads se han vuelto una forma fundamental de llegar a ellas, en el momento adecuado, cuando estan buscando información de tu producto o servicio en internet.",
+            "Independientemente del sector en el que te desempeñas, es seguro que tus clientes utilizan Google para buscar lo que necesitan. Por lo que este formato publicitario no puede faltar en tu presupuesto de marketing este año.",
+            "Esta plataforma de publicidad te permite realizar campañas de pago por click o PPC o “Pago Por Click”, lo que significa que pagarás solo si un usuario ingresa a tu sitio web o tienda online."
+        ]
+    },
+    "middle": {
+        "image": {
+            "alt":"Imagen de publicidad en google",
+            "src":"/assets/google-ads/mobile-phone.png",
+            "width": "474",
+            "height":"667"
+        },
+        "text1": "Siguen habiendo muchas empresas que no utilizan publicidad digital para llegar a sus clientes, esto significa un menor competencia, ergo, menores costos para tu negocio.",
+        "text2": "Nuestra prioridad es obtener el mayor retorno de tu inversión publicitaria",
+        "cta": {
+            "title": "Contactanos ahora",
+            "url":"/contacto"
+        }
+    },
+    "bottom": {
+        "title": "Nuestros servicios de publicidad en google",
+        "subtitle":"Descubrí los diferentes formatos de publicidad que podes utilizar con google ads.",
+        "services": [
+            {
+                "image": {
+                    "alt":"Ejemplo de publicidad en google adwords",
+                    "src":"/assets/google-ads/google-ads-example.png",
+                    "width": "550",
+                    "height":"329"
+                },
+                "icon": {
+                    "src": "/assets/marketing/google-search.svg",
+                    "alt": "icono de publicidad en buscadores",
+                    "height": 40,
+                    "width": 40
+                },
+                "title": "Google Search",
+                "content": "Este es uno de los formatos de publicidad en google más utilizados, consiste en que cuando un usuario realiza una búsqueda en google,relacionada a tu producto o servicio, este le muestre entre los primeros resultados un anuncio enlazado a tu sitio web."
+            },
+            {
+                "image": {
+                    "alt":"Ejemplo de publicidad en google shopping",
+                    "src":"/assets/google-ads/google-shopping-example.png",
+                    "width": "582",
+                    "height":"387"
+                },
+                "icon": {
+                    "src": "/assets/marketing/shopping-ads.svg",
+                    "alt": "icono de publicidad en google shopping",
+                    "height": 40,
+                    "width": 40
+                },
+                "title": "Google Shopping",
+                "content": "Esta es la opción por excelencia para tiendas online, ya que te permitirá mostrar tus productos en los resultados, mostrando nombre, precio y foto, con un link al producto dentro de tu tienda, es ideal para cuando tenes una amplio stock."
+            },
+            {
+                "image": {
+                    "alt":"Ejemplo de publicidad en google Maps",
+                    "src":"/assets/google-ads/google-maps-example.png",
+                    "width": "550",
+                    "height":"341"
+                },
+                "icon":{
+                    "src": "/assets/marketing/local-ads.svg",
+                    "alt": "icono de publicidad en buscadores",
+                    "height": 40,
+                    "width": 40
+                },
+                "title": "Local Ads",
+                "content": "Este es uno de los formatos de publicidad en google más utilizados, consiste en que cuando un usuario realiza una búsqueda en google,relacionada a tu producto o servicio, este le muestre entre los primeros resultados un anuncio enlazado a tu sitio web."
+            },
+            {
+                "image": {
+                    "alt":"Ejemplo de publicidad en google display",
+                    "src":"/assets/google-ads/google-display-example.png",
+                    "width": "550",
+                    "height":"332"
+                },
+                "icon":{
+                    "src": "/assets/marketing/google-display.svg",
+                    "alt": "icono de publicidad en google display",
+                    "height": 40,
+                    "width": 40
+                },
+                "title": "Display Ads",
+                "content": "Promociona tus productos y servicios en sitios web de terceros, como blogs especializados o sitios de noticias, en diferentes plataformas, ya sean teléfonos, tablets o computadoras, esto lo logramos utilizando banners publicitarios  y los sitios web que pertenecen a la red de google."
+            },
+            {
+                "image": {
+                    "alt":"Ejemplo de publicidad en youtube ads",
+                    "src":"/assets/google-ads/youtube-ads-example.png",
+                    "width": "374",
+                    "height":"400"
+                },
+                "icon": {
+                    "src": "/assets/marketing/youtube-ads.svg",
+                    "alt": "icono de publicidad en buscadores",
+                    "height": 40,
+                    "width": 40
+                },
+                "title": "Youtube Ads",
+                "content": "Creamos un video publicitario y lo promocionamos en Youtube, esta es una de las plataformas publicitarias más utilizadas ya que cuenta con 2562M de usuarios activos."
+            }
+        ]
+    }
+}

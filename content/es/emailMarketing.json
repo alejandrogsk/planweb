@@ -1,0 +1,61 @@
+{
+    "head": {
+        "title":"Agencia especializada en email marketing automatizado, Entre Ríos",
+        "description": "Creamos campañas automatizadas de email marketing para ecommerce y web."
+    },
+    "hero": {
+        "title":{
+            "start": "Aumentá tus ventas y fideliza a tus clientes con ",
+            "end":"email marketing"
+        },
+    "content": [
+        "El email marketing es una herramienta esencial para cualquier empresa que desee promocionar sus productos o servicios de manera efectiva.",
+        "Según un estudio realizado por Statista, el correo electrónico es el método de comunicación preferido por el consumidor para recibir mensajes de marketing.",
+        "Además, el email marketing tiene una tasa de apertura del 20-30%, lo que significa que el 20-30% de las personas que reciben un correo electrónico lo abren y lo leen. Esto es mucho más alto que el promedio de apertura de las redes sociales, que es del 6%.",
+        "Como si esto fuera poco, el email marketing es uno de los canales de publicidad digital con el retorno de la inversión más alto, esto es gracias a que podemos llegar a clientes de forma masiva, personalizada, segmentada y automatizada."
+    ]
+    },
+    "middle": {
+        "image1": {
+            "alt":"Publicidad mediante email",
+            "src":"/assets/email-mkt/woman-email.png",
+            "width": "520",
+            "height":"688"
+        }, 
+        "logo": {
+            "alt":"Sendingblue logo",
+            "src":"/assets/email-mkt/sendinblue.svg",
+            "width": "224",
+            "height":"35"
+        }, 
+        
+        "title":"Automatizamos tus campañas de marketing",
+
+        "image2": {
+            "alt":"Automatización de email",
+            "src":"/assets/email-mkt/automation.png",
+            "width": "673",
+            "height":"514"
+        }
+    },
+    "bottom": {
+        "services": [
+            {
+                "title": "Sincronización con tu tienda",
+                "content": "Llevá tu tienda online al siguiente nivel utilizando una estrategia de email marketing con tus clientes registrados en tu tienda online."
+            },
+            {
+                "title": "Segmentación de clientes",
+                "content": "Definimos diferentes campañas dirigidas a grupos específicos de clientes, maximizando el impacto de nuestras campañas."
+            },
+            {
+                "title": "Automatización",
+                "content": "Ejecutamos acciones de marketing y ventas automatizadas que se adaptan al progreso de la campaña y proceso de compra del cliente."
+            }
+        ],
+        "cta": {
+            "title": "Contactanos ahora",
+            "url":"/contacto"
+        }
+    }
+}

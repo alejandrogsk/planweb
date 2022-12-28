@@ -208,3 +208,103 @@
       }
     }
   }
+
+  .custom-btn-cta-black {
+    position: relative;
+    padding: 19px 22px;
+    transition: all .2s ease;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      border-radius: 28px;
+      background: #3a3a3a;
+      width: 56px;
+      height: 56px;
+      transition: all .3s ease;
+    }
+    & > span{
+      position: relative;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 500;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      vertical-align: middle;
+      font-family: 'Poppins', sans-serif;
+      color:white;
+      }
+    & > svg{
+      position: relative;
+      top: 0;
+      margin-left: 10px;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: white;
+      stroke-width: 2;
+      transform: translateX(-5px);
+      transition: all .3s ease;
+    }
+    &:hover{
+      &:before {
+        width: 100%;
+        background: rgba($cy-m,1);
+      }
+
+      & > span {color: $cb-l;}
+      & > svg{
+          transform: translateX(0);
+          fill:$cb-l;
+          stroke:$cb-l;
+      }
+  
+      &:active{
+          transform: scale(.96);
+      }
+    }
+  }
+
+
+
+
+  
+.custom_google_list {
+
+  & > div:nth-child(2),
+  & > div:nth-child(4) {
+    & > div:first-child {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      @include respond(phone-tab){
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+    }
+    & > div:last-child {
+      grid-column: 1/2;
+      grid-row: 1/2;
+
+      
+    }
+  }
+
+  & > div:nth-child(1),
+  & > div:nth-child(3), 
+  & > div:nth-child(5) {
+    & > div:first-child {
+      @include respond(phone-tab){
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+    }
+    & > div:last-child {
+      @include respond(phone-tab){
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+    }
+  }
+}

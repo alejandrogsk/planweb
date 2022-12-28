@@ -21,39 +21,29 @@
         }
     },
     "how_we_work": {
-        "title": "Nuestra metodología de trabajo",
+        "title": "¿Cómo podemos ayudarte?",
         "list": [
             {
                 "number": "01",
-                "title": "Análisis",
-                "content":"Analizamos las necesidades de tu negocio, tus productos, servicios, tu competencia, para poder brindarte mejores soluciones."
+                "title": "Diseñamos y desarrollamos tu plataforma online",
+                "content":"Dependiendo de las necesidades de tu negocio diseñamos y desarrollamos la plataforma online que te sea de mayor utilidad."
             },
             {
                 "number": "02",
-                "title": "Diseño",
-                "content":"Trabajamos la comunicación de tu propuesta de valor en tu plataforma a través de diferentes dispositivos, desde smartphones hasta pantallas de escritorios."
+                "title": "Llevamos a tus clientes a tu sitio",
+                "content":"Mediante publicidad online segmentada llevamos a tus clientes a tu plataforma donde buscamos que realicen una compra, completen un formulario de contacto, etc."
             },
             {
                 "number": "03",
-                "title": "Desarrollo",
-                "content":"Nos apoyamos en las tecnología más utilizadas de la industria y cuando el proyecto lo requiere, realizamos desarrollo a medida."
+                "title": "Analizamos sus datos y optimizamos su estrategia",
+                "content":"Utilizamos herramientas de analítica para poder extraer datos de su sitio y sus campañas publicitarias para poder optimizarlas y obtener mejores resultados."
             }
-            ,{
-                "number": "04",
-                "title": "Promoción",
-                "content":"Mediante publicidad digital en múltiples redes dirigimos a tus potenciales clientes a tu sitio donde buscamos realizar una conversión, ya sea compra, registro, reserva, contacto."
-            },
-            {
-                "number": "05",
-                "title": "Medición",
-                "content":"Utilizamos herramientas de analítica digital para analizar diferentes parámetros desde el rendimiento de su sitio, el retorno de la inversión publicitaria, entre otros."
-            },
-            {
-                "number": "06",
-                "title": "Optimización",
-                "content":"La ventaja de utilizar canales digitales es que se pueden tomar decisiones con los datos en mano, esto es importante tanto en tiendas online como en publicidad online."
-            }
-        ]
+        ],
+        "cta": {
+            "content": "¿Te queda alguna duda? Realiza una consulta gratuita para poder desarrollar juntos una solución acorde a las necesidades de tu empresa.",
+            "src": "/contacto",
+            "text": "Contactanos Ahora"
+        }
     },
     "home_services": [
         {
@@ -63,15 +53,26 @@
             "cta": {"title": "Ver más", "url": "/ecommerce"},
             "img": {
                 "alt":"Ecommerce Crespo Entre Ríos",
-                "src":"/assets/home-ecommerce.png",
-                "width": "484",
-                "height":"430"
+                "src":"/assets/home/whiskey-mobile-mock.png",
+                "width": "222",
+                "height":"450"
+            },
+            "img2": {
+                "alt":"Ecommerce Crespo Entre Ríos",
+                "src":"/assets/home/whiskey-mobile-mock-2.png",
+                "width": "222",
+                "height":"450"
             }
         },
         {
             "hover_title":"Publicidad Online",
             "title":"Llegá a más y mejores clientes",
             "subtitle": "Ponemos múltiples servicios de publicidad digital al alcance de tu negocio para ayudarte aumentar tus ventas.",
+            "services": [
+                {"title": "Publicidad en redes", "url": "/publicidad-en-redes-sociales"},
+                {"title": "Publicidad en google", "url": "/publicidad-en-redes-google"},
+                {"title": "Email Marketing", "url": "/email-marketing"}
+            ],
             "cta": {"title": "Ver más", "url": "/publicidad-digital"}    ,   
             "img": {
                 "alt":"Publicidad digital Crespo Entre Ríos",

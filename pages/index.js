@@ -5,8 +5,9 @@ import Layout from "../components/global/Layout";
 import HeadComponent from "../components/global/HeadComponent";
 import CtaRegular from "../components/Services/CtaRegular";
 import HeroHome from "../components/home/HeroHome";
-import HomeLargeWithMethodology from "../components/home/HomeLargeWithMethodology";
 import Link from "next/link";
+import HomeProcess from "../components/home/HomeProcess";
+import HomeServices from "../components/home/HomeServices";
 
 const Home = ({ data }) => {
     const { heroContent, how_we_work, home_services, head } = data;
@@ -14,60 +15,10 @@ const Home = ({ data }) => {
         <div>
             <HeadComponent title={head.title} description={head.description} />
             <Layout>
+<HeroHome />
+<HomeProcess how_we_work={how_we_work} />
+<HomeServices home_services={home_services} />
 
-            {/**Este es el correcto */} 
-            {/* <HeroHome  heroContent={heroContent}/> */}
-           
-            {/**Este es un hero section de prueba */}
-            <HomeLargeWithMethodology how_we_work={how_we_work} />
-                
-                <section className="home_service grid grid-cols-1 relative">
-                    {home_services.map((service, i) => (
-                        <div
-                            key={i}
-                            className={`home_service--${i} grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center justify-center
-                                first:bg-custom-grey
-                                last:bg-custom-grey
-                                bg-white
-                                px-6 md:px-12 lg:px-16
-                                py-16 md:py-24 lg:py-36
-                            `}
-                        >
-                            <div className="flex flex-col items-center md:items-start justify-center row-start-2 row-end-3 md:row-start-1 row-end-2	">
-                                <span className="font-poppins uppercase mb-2">{service.hover_title}</span>
-                                <h2 className="text-center md:text-start text-3xl md:text-4xl lg:text-5xl	font-medium ">
-                                    {service.title}
-                                </h2>
-                                <p className="text-center md:text-start text-xl md:text-2xl pt-4 pb-6">
-                                    {service.subtitle}
-                                </p>
-                                <Link href={service.cta.url} legacyBehavior>
-                                <a class="flex justify-center items-center m-auto md:m-0 custom-btn-cta font-medium">
-  <span>{service.cta.title}</span>
-  <svg width="13px" height="10px" viewBox="0 0 13 10">
-    <path d="M1,5 L11,5"></path>
-    <polyline points="8 1 12 5 8 9"></polyline>
-  </svg>
-</a>
-</Link>
-                            </div>
-
-                            <div>
-                                <Image
-                                    alt={service.img.alt}
-                                    src={service.img.src}
-                                    width={service.img.width}
-                                    height={service.img.height}
-                                    layout="intrinsic"
-                                />
-                            </div>
-
-                            <span
-                                className={`home_service--${i}-span bg-yellow-500`}
-                            ></span>
-                        </div>
-                    ))}
-                </section>
 
                 {/**CTA */}
                 <section className="grid grid-cols-1 content-center	justify-items-center bg-primary px-6 md:px-12 lg:px-16  py-16 md:py-24 lg:py-36">

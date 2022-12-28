@@ -1,0 +1,82 @@
+{
+    "head": {
+        "title":"Agencia especializada en publicidad en redes sociales, Entre Ríos",
+        "description": "Promociona tu negocio en redes como instagram, facebook, tiktok y youtube."
+    },
+    "hero": {
+        "title":{
+            "start": "Promocionamos tu negocio en ",
+            "end":"redes sociales"
+        },
+    "content": [
+        "¿Estás buscando la mejor manera  de llegar a tus clientes en 2023? Entonces debes considerar promocionarte en redes sociales como Instagram, TikTok, YouTube o Facebook. Estas plataformas ofrecen herramientas que te permiten realizar campañas publicitarias que apuntan directamente al público objetivo de tu negocio.",
+        "En la actualidad, cada vez más personas pasan más tiempo en redes sociales, por lo que la publicidad en estas plataformas se ha vuelto un requisito fundamental para llegar a donde están tus clientes.",
+        "Independientemente del sector en el que te desempeñas, es seguro que tus clientes están presentes en alguna red social y gracias a los anuncios, puedes llegar a ellos de manera precisa y eficiente, aprovechando al máximo tu presupuesto de publicidad."
+    ]
+    },
+    "middle": {
+        "image1": {
+            "alt":"Agencia de publicidad en tiktok Entre Ríos",
+            "src":"/assets/social-ads/tik-tok-ad.png",
+            "width": "270",
+            "height":"546"
+        },
+        "image2": {
+            "alt":"Agencia de publicidad en instragram tiktok Entre Ríos",
+            "src":"/assets/social-ads/ig-ads.png",
+            "width": "270",
+            "height":"546"
+        },
+        "logos":  [
+            {
+                "alt":"Publicidad en tiktok",
+            "src":"/assets/social-ads/logo-tiktok.png",
+            "width": "119",
+            "height":"35"
+            },
+            {
+                "alt":"Publicidad en instagram",
+            "src":"/assets/social-ads/logo-ig.png",
+            "width": "163",
+            "height":"39"
+            },
+            {
+                "alt":"Publicidad en meta",
+            "src":"/assets/social-ads/logo-meta.png",
+            "width": "148",
+            "height":"30"
+            }
+        ],
+        "title":"Servicio de publicidad en redes sociales",
+        "services": [
+            {
+                "title": "Publicidad segmentada",
+                "content": "Dirigimos tus anuncios a las personas que mejor encajan con el perfil de tu cliente, llevándolos a tu tienda o sitio web."
+            },
+            {
+                "title": "Diseño de anuncios",
+                "content": "Diseñamos los contenidos gráficos de tus anuncios en diferentes formatos y estilos, dependiendo de la red social en la que te promocionemos."
+            },
+            {
+                "title": "Optimización de campañas",
+                "content": "Llevamos un control seguimiento diario de tu campaña para poder optimizarla tan pronto como tengamos los datos necesarios, buscando siempre el mejor retorno de tu inversión."
+            }
+        ]
+    },
+    "bottom": {
+        "image": {
+            "alt":"Agencia especialistas en publicidad digital, crespo, Entre Ríos",
+        "src":"/assets/social-ads/bottom.png",
+        "width": "700",
+        "height":"484"
+        },
+
+        "text1": "4000 millones de personas utilizan redes sociales, tus clientes forman parte de este grupo de personas, ¿Necesitas más motivos para comenzar a promocionar tu negocio en redes?",
+        "text2": "No esperes más y comienza a promocionar tu producto o servicio en redes sociales hoy mismo para aumentar tus ventas y lograr el éxito en tu negocio.",
+        "cta": {
+            "title": "Contactanos ahora",
+            "url":"/contacto"
+        }
+    }
+
+}

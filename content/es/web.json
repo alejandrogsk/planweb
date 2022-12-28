@@ -46,7 +46,22 @@
         "list": [
             {
                 "image": {
-                    "src": "/assets/web1.png",
+                    "src": "/assets/web3.png",
+                    "alt":"Icono landing page",
+                    "width": "35",
+                    "height": "35"
+                },
+                "title": "Landing page",
+                "subtitle": "Es lo que estás buscando si lo que necesitas es promocionar un número limitado de productos o servicios.",
+                "examples": [
+                   "Promoción de productos o servicios",
+                    "Promoción de eventos",
+                    "Captación de leads"
+                ]
+            },
+            {
+                "image": {
+                    "src": "/assets/web2.png",
                     "alt":"Icono web corporativo",
                     "width": "35",
                     "height": "35"
@@ -61,7 +76,7 @@
             },
             {
                 "image": {
-                    "src": "/assets/web2.png",
+                    "src": "/assets/web3.png",
                     "alt":"Icono cms website",
                     "width": "35",
                     "height": "35"
@@ -75,22 +90,8 @@
                     "Agencias Automotrices"
                     
                 ]
-            },
-            {
-                "image": {
-                    "src": "/assets/web3.png",
-                    "alt":"Icono landing page",
-                    "width": "35",
-                    "height": "35"
-                },
-                "title": "Landing page",
-                "subtitle": "Es lo que estás buscando si lo que necesitas es promocionar un número limitado de productos o servicios.",
-                "examples": [
-                   "Promoción de productos o servicios",
-                    "Promoción de eventos",
-                    "Captación de leads"
-                ]
             }
+            
         ]
     },
     "contact": {
