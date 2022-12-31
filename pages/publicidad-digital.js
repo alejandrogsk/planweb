@@ -71,7 +71,7 @@ const publicidadDigital = ({ data }) => {
                     overflow-x-hidden
                     "
                     >
-                        <div className="translate-x-[-5px]  md:translate-x-[-35px] translate-y-[-80px] md:translate-y-[-175px]">
+                        <div className="min-h-screen translate-x-[-5px]  md:translate-x-[-35px] translate-y-[-10px] md:translate-y-[-80px] lg:translate-y-[-175px]">
                             <Image
                                 height={607}
                                 width={300}
@@ -97,7 +97,7 @@ const publicidadDigital = ({ data }) => {
                     >
                         <div className=" w-full flex justify-between">
                             {redes.logos.map((logo, i) => (
-                                <div key={i} className="m-1 md:m-0">
+                                <div key={i} className="mx-2 md:mx-0">
                                     <Image
                                         height={logo.height}
                                         width={logo.width}
