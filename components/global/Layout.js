@@ -11,12 +11,7 @@ const menues = {
         menu: [
             { title: "Inicio", link: "/", child: false },
             { title: "Ecommerce", link: "/ecommerce", child: false },
-            { title: "Marketing", link: "/publicidad-digital", child: true, childrens: [
-                { title: "Publicidad En Redes", link: "/publicidad-en-redes-sociales" },
-                { title: "Google Ads", link: "/publicidad-en-google" },
-                { title: "Email Marketing", link: "/email-marketing" }
-                ]
-            },
+            { title: "Publicidad Digital", link: "/publicidad-digital"},
             { title: "Sitios Web", link: "/disenio-y-desarrollo-web", child: false },
             { title: "Contacto", link: "/contacto", child: false },
         ],

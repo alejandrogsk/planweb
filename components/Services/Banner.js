@@ -3,7 +3,6 @@ import React from "react";
 
 const Banner = ({ banner }) => { 
     let { src } = banner;
-    console.log(`SRC: ${src}`)
     return (
         <section style={{backgroundImage:`url(${src})`}} className={`
         my-28 px-2 md:px-8 lg:px-12

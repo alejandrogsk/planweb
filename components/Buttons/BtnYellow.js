@@ -6,7 +6,7 @@ const BtnYellow = ({url, title, customStyles=""}) => {
 
   return (
     <Link href={url} legacyBehavior>
-                                <a class={` inline-flex justify-start items-center m-auto md:m-0  mt-8 md:mt-12 custom-btn-cta font-medium
+                                <a className={` inline-flex justify-start items-center m-auto md:m-0  mt-8 md:mt-12 custom-btn-cta font-medium
                                 ${customStyles}
                                 `}>
   <span>{title}</span>

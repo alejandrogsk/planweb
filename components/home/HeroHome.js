@@ -27,7 +27,7 @@ const HeroHome = ({heroContent}) => {
 
                 <div className="w-full flex flex-col md:flex-row flex-col-reverse">
                     <Link href="/contacto" legacyBehavior>
-                        <a class="flex justify-center items-center m-auto md:m-0 custom-btn-cta font-medium">
+                        <a className="flex justify-center items-center m-auto md:m-0 custom-btn-cta font-medium">
                             <span>Contactanos Ahora</span>
                             <svg width="13px" height="10px" viewBox="0 0 13 10">
                                 <path d="M1,5 L11,5"></path>

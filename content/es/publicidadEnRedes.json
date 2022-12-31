@@ -50,14 +50,27 @@
         "title":"Servicio de publicidad en redes sociales",
         "services": [
             {
-                "title": "Publicidad segmentada",
-                "content": "Dirigimos tus anuncios a las personas que mejor encajan con el perfil de tu cliente, llevándolos a tu tienda o sitio web."
-            },
-            {
+                "icon": {
+                    "src": "/assets/marketing/fa-1.svg",
+                    "alt": "icono de publicidad segmentada"
+                },
                 "title": "Diseño de anuncios",
                 "content": "Diseñamos los contenidos gráficos de tus anuncios en diferentes formatos y estilos, dependiendo de la red social en la que te promocionemos."
             },
             {
+                "icon": {
+                    "src": "/assets/marketing/fa-2.svg",
+                    "alt": "icono de publicidad segmentada"
+                },
+                "title": "Publicidad segmentada",
+                "content": "Dirigimos tus anuncios a las personas que mejor encajan con el perfil de tu cliente, llevándolos a tu tienda o sitio web."
+            },
+            
+            {
+                "icon": {
+                    "src": "/assets/marketing/fa-3.svg",
+                    "alt": "icono de publicidad segmentada"
+                },
                 "title": "Optimización de campañas",
                 "content": "Llevamos un control seguimiento diario de tu campaña para poder optimizarla tan pronto como tengamos los datos necesarios, buscando siempre el mejor retorno de tu inversión."
             }

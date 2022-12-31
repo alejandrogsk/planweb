@@ -25,7 +25,7 @@ const Home = ({ data }) => {
                     <h2 className="text-center md:text-start text-3xl md:text-4xl lg:text-5xl	font-medium ">¡Queremos conocer tu proyecto!</h2>
                     <p className="text-center text-xl md:text-2xl pt-6 pb-10 max-w-100 md:max-w-[80%] lg:max-w-[70%]">No dudes en contactarnos con cualquier pregunta o inquietud que puedas tener. Nos encantaría hablar sobre tu proyecto con más detalle.</p>
                     <Link href="/contacto" legacyBehavior>
-                        <a class="flex justify-center items-center m-auto md:m-0 custom-btn-cta-white font-medium">
+                        <a className="flex justify-center items-center m-auto md:m-0 custom-btn-cta-white font-medium">
   <span>Consulta Gratuitá</span>
   <svg width="13px" height="10px" viewBox="0 0 13 10">
     <path d="M1,5 L11,5"></path>

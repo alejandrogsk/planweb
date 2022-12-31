@@ -13,7 +13,7 @@
         ]
     },
     "banner": {
-        "src": "/assets/marketing-banner.avif",
+        "src": "/assets/marketing/woman-cafe.png",
         "alt":"Agencia de marketing digital Crespo",
         "width": "1412",
         "height": "795"
@@ -39,8 +39,8 @@
         }
     ],
     "google_ads": {
-        "title": "Servicios de PPC",
-        "subtitle": "Utilizamos Google Ads, la plataforma de publicidad de Google para realizar campañas de pago por click",
+        "title": "Servicios de publicidad de Google",
+        "subtitle": "Utilizamos Google Ads, la plataforma de publicidad de Google para realizar campañas de PPC o 'pago por click'",
         "list": [
             {
                 "image": {
@@ -98,32 +98,65 @@
         }
     },
     "redes": {
+        "image1": {
+            "alt":"Agencia de publicidad en tiktok Entre Ríos",
+            "src":"/assets/social-ads/tik-tok-ad.png",
+            "width": "270",
+            "height":"546"
+        },
+        "image2": {
+            "alt":"Agencia de publicidad en instragram tiktok Entre Ríos",
+            "src":"/assets/social-ads/ig-ads.png",
+            "width": "270",
+            "height":"546"
+        },
+        "logos":  [
+            {
+                "alt":"Publicidad en tiktok",
+            "src":"/assets/social-ads/logo-tiktok.png",
+            "width": "119",
+            "height":"35"
+            },
+            {
+                "alt":"Publicidad en instagram",
+            "src":"/assets/social-ads/logo-ig.png",
+            "width": "163",
+            "height":"39"
+            },
+            {
+                "alt":"Publicidad en meta",
+            "src":"/assets/social-ads/logo-meta.png",
+            "width": "148",
+            "height":"30"
+            }
+        ],
         "title": "Servicio de publicidad en redes sociales",
         "subtitle":"4000 millones de personas utilizan redes sociales, promocioná tus productos en las principales redes sociales apuntando a las personas más se ajustan al perfil de tu cliente",
-        "list": [
+        "services": [
             {
-                "image": {
+                "icon": {
                     "src": "/assets/marketing/fa-1.svg",
                     "alt": "icono de publicidad segmentada"
                 },
-                "title": "Publicidad segmentada",
-                "content": "De todos los usuarios de redes sociales, apuntamos a tus potenciales clientes llevándolos a tu tienda o web."
-            },
-            {
-                "image": {
-                    "src": "/assets/marketing/fa-2.svg",
-                    "alt": "icono de diseño publicitario"
-                },
                 "title": "Diseño de anuncios",
-                "content": "Diseñamos múltiples piezas gráficas de tus anuncios y realizamos test de rendimiento para sacarle mayor provecho a tu presupuesto publicitario."
+                "content": "Diseñamos los contenidos gráficos de tus anuncios en diferentes formatos y estilos, dependiendo de la red social en la que te promocionemos."
             },
             {
-                "image": {
+                "icon": {
+                    "src": "/assets/marketing/fa-2.svg",
+                    "alt": "icono de publicidad segmentada"
+                },
+                "title": "Publicidad segmentada",
+                "content": "Dirigimos tus anuncios a las personas que mejor encajan con el perfil de tu cliente, llevándolos a tu tienda o sitio web."
+            },
+            
+            {
+                "icon": {
                     "src": "/assets/marketing/fa-3.svg",
-                    "alt": "icono de analisis y optimización de campañas"
+                    "alt": "icono de publicidad segmentada"
                 },
                 "title": "Optimización de campañas",
-                "content": "Contamos con las herramientas para analizar tus resultados y optimizarlos, buscando siempre el mayor retorno de tu inversión publicitaria."
+                "content": "Llevamos un control seguimiento diario de tu campaña para poder optimizarla tan pronto como tengamos los datos necesarios, buscando siempre el mejor retorno de tu inversión."
             }
         ],
         "image": {
@@ -138,32 +171,33 @@
         }
     },
     "email": {
-        "title": "Servicio de email marketing",
-        "subtitle":"El email marketing es una de las tácticas de marketing digital más rentables, ya que podemos comunicarnos de una forma segmentada, personalizada y a escala",
+        "title": "Desarrollamos tu estrategia de email marketing automatizado para vender más a tus actuales clientes",
+        "subtitle1":"El email tiene una tasa de apertura de hasta un 30%, eso es más atención de la que se puede esperar en cualquier anuncio publicitario, por eso una estrategia de email marketing bien pensada no puede faltar dentro de tu presupuesto publicitario.",
+        "subtitle2": "Nosotros te ayudamos a integrar y gestionar tus campañas de email marketing para que tu negocio pueda sacarle todo el provecho que se merece.",
         "list": [
             {
                 "image": {
                     "src": "/assets/marketing/em-1.svg",
                     "alt": "icono de ofertas personalizadas con email marketing"
                 },
-                "title": "Ofertas personalizadas",
-                "content": "Enviamos correos de Upselling o Cross-Selling, dos de las tácticas más utilizadas en ventas, pero de forma escalable."
+                "title": "Sincronización con tu tienda",
+                "content": "Agregamos tus nuevos clientes a tu lista de contactos cada vez que se registran en tu tienda online, para poder dar seguimiento a sus compras."
             },
             {
                 "image": {
                     "src": "/assets/marketing/em-2.svg",
                     "alt": "icono de carrito abandonado"
                 },
-                "title": "¿Carrito abandonado?",
-                "content": "Muchas veces recibimos un correo de “¡Hola [tu nombre] olvidaste tu carrito!” con un link para finalizar la compra, es una estrategia muy frecuente en las tiendas online."
+                "title": "Segmentación de contactos automática",
+                "content": "Podemos dividir tu lista de clientes dependiendo de la cantidad de compras, el valor medio y el tipo de producto que le interese, para poder dirigirnos de forma personalizada con información relevante."
             },
             {
                 "image": {
                     "src": "/assets/marketing/em-3.svg",
                     "alt": "icono de comunicación masiva"
                 },
-                "title": "Comunicación masiva",
-                "content": "Envía correos a todos tus clientes puede ser muy útil para enviarles las ofertas de la semana, invitarlos a un evento o informarles de un nuevo producto que estamos lanzando."
+                "title": "Automatización de marketing",
+                "content": "Ejecutamos acciones de marketing y ventas automatizadas para poder ofrecer a sus clientes lo que necesitan en el momento justo."
             }
         ],
         "image": {

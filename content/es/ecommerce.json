@@ -5,9 +5,10 @@
     "hero": {
         "title": "Somos una agencia especializada en Ecommerce",
         "content": [
-            "El comercio electrónico no ha parado de crecer desde su aparición, pero en la última década su crecimiento se ha disparado y a raíz de la pandemia muchos consumidores que nunca habían comprado por internet, se vieron en la obligación de hacerlo, hoy en día muchos de estos clientes ven las tiendas en línea como una primera opción para ver productos, comparar precios y realizar compras.",
-            "Tener tu propia plataforma ecommerce no es solo una oportunidad de crecimiento, sino que es un requisito indispensable para que tu negocio sea competitivo en 2022 y en los próximos años.",
-            "Ya sea que te dediques al comercio B2B, B2C, minorista o mayorista, o si contás con un punto de venta físico, tener un canal de ventas online te ayudará a facilitar y mejorar la experiencia de compra de tus clientes y conseguir nuevos, las 24hs del día, los 365 días del año."
+            "El comercio electrónico ha experimentado un crecimiento constante desde su aparición, pero en los últimos diez años este crecimiento se ha acelerado aún más. Muchos consumidores ven a las tiendas en línea como su primera opción para ver productos, comparar precios y realizar compras.",
+            "¿Queres aumentar tu presencia en línea y mejorar la experiencia de compra de tus clientes? Entonces debes considerar la creación de tu propia plataforma de comercio electrónico.",
+            "Ya sea que te dediques al comercio B2B, B2C, al retail o al mayorista, o si tenes una tienda física, un canal de ventas en línea te ayudará a facilitar y mejorar la experiencia de compra de tus clientes las 24 horas del día, los 365 días del año. Además, contar con una plataforma de comercio electrónico te permitirá llegar a un público más amplio y aumentar tu base de clientes.",
+            "Sabes que tarde o temprano vas a necesitar tu propia tienda online, no te quedes atrás y ponete en contacto con nosotros para que te ayudemos a empezar a vender por internet este 2023."
         ]
     },    
     "banner": {
@@ -19,7 +20,7 @@
     },
     
     "services": {
-        "title":"Servicios de Ecommerce",
+        "title":"Contamos con todos los servicios de ecommerce que tu negocio necesitará",
         "content": [
             {
                 "list": [
@@ -81,6 +82,12 @@
             "height":"70"
         },
         {
+            "src": "/assets/payment/ShopPay.png", 
+            "alt": "ShopPay",
+            "width": "208",
+            "height":"70"
+        },
+        {
             "src": "/assets/payment/Stripe.png", 
             "alt": "Stripe",
             "width": "134",
@@ -107,16 +114,12 @@
     ],
     "platforms": {
         "title":"Trabajamos con las plataformas más utilizadas en la industria",
+        "subtitle": "Ponete en contacto con nosotros y te ayudaremos a seleccionar la plataforma que mejor se adapte a tus necesidades",
+        "cta": {
+            "url": "/contacto",
+            "title": "Solicitar Asesoría"
+        },
         "list": [
-            {
-                "image": {
-                    "src":"/assets/ecommerce/tienda-nube.svg",
-                    "alt":"Agencia especializada en tienda nube",
-                    "width": "309",
-                    "height":"60"
-                },
-                "content": "Tienda nube es nuestra opción más rápida y  accesible. Se enfoca principalmente en clientes que están dando sus primeros pasos en ecommerce."
-            },
             {
                 "image": {
                     "src":"/assets/ecommerce/woocommerce.svg",
@@ -124,16 +127,27 @@
                     "width": "260",
                     "height":"60"
                 },
-                "content": "Woocommerce es una alternativa un poco más compleja, permite un diseño más avanzado y a diferencia de tienda nube, no cobra comisiones por ventas."
+                "content": "Woocommerce es una opción un poco más compleja, es una alternativa para empresas que necesitan una página web y una tienda online en un solo sitio, permite un mayor grado de personalización en cuanto al diseño y a diferencia de Tienda Nube o Shopify, no cobra comisiones por venta."
             },
+
             {
                 "image": {
-                    "src":"/assets/ecommerce/bigcommerce.svg",
-                    "alt":"Agencia especializada en bigcommerce",
-                    "width": "266",
+                    "src":"/assets/ecommerce/tienda-nube.svg",
+                    "alt":"Agencia especializada en tienda nube",
+                    "width": "309",
                     "height":"60"
                 },
-                "content": "Bigcommerce es una plataforma más avanzada, es ideal para proyectos de Headless Ecommerce, la arquitectura más moderna para el desarrollo de tiendas online."
+                "content": "Tienda nube es nuestra opción más rápida y accesible, además es la plataforma de ecommerce más utilizada en Argentina. Se enfoca principalmente en clientes que están dando sus primeros pasos en ecommerce. Es posible ampliar sus funcionalidades básicas por medio de aplicaciones."
+            },
+            
+            {
+                "image": {
+                    "src":"/assets/ecommerce/shopify.svg",
+                    "alt":"Agencia especializada en shopify",
+                    "width": "210",
+                    "height":"60"
+                },
+                "content": "Shopify es la plataforma más utilizada a nivel mundial, permite un diseño muy personalizado y posee una tienda de aplicaciones para extender sus funcionalidades. Es una opción para empresas que venden en norte América o europa, ya que posee integraciones con proveedores de pagos y envíos."
             }
         ]
     },

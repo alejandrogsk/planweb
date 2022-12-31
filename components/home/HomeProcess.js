@@ -18,7 +18,7 @@ const HomeProcess = ({how_we_work}) => {
                         {how_we_work.title}
                     </h2>
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center mt-8 md:mt-12">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center mt-8 md:mt-12">
                         {
                             how_we_work.list.map((method,i) =>(
                                 <div key={i}>
@@ -36,14 +36,14 @@ const HomeProcess = ({how_we_work}) => {
                
                     <hr className="bg-white my-16 h-[2px]" />
 
-                    <div class="pb-64 flex flex-col items-start">
+                    <div className="pb-64 flex flex-col items-start">
                         {
                         <p className="text-white text-lg md:text-xl max-w-full md:max-w-[50%] font-normal	">
                             {how_we_work.cta.content}
                         </p>
                         }
                         <Link href={how_we_work.cta.src} legacyBehavior>
-                        <a class="flex items-center	 mt-12 md:mt-16 custom-btn-cta-black font-medium">
+                        <a className="flex items-center	 mt-12 md:mt-16 custom-btn-cta-black font-medium">
                             <span>{how_we_work.cta.text}</span>
                             <svg width="13px" height="10px" viewBox="0 0 13 10">
                                 <path d="M1,5 L11,5"></path>
