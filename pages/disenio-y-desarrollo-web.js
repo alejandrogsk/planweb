@@ -23,7 +23,7 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                     <h2 className="text-3xl md:text-4xl lg:text-5xl	font-medium  text-center mb-16">
                         {services.title}
                     </h2>
-                    <p className="max-w-full md:max-w-3xl	mx-auto text-lg md:text-xl lg:text-2xl font-medium text-center">
+                    <p className="max-w-full md:max-w-3xl	mx-auto text-xl lg:text-2xl font-medium text-center">
                         {services.subtitle}
                     </p>
 
