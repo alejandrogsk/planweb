@@ -134,7 +134,7 @@ const ecommerces = ({ data }) => {
 
 
                 <section className="py-8 md:py-12 lg:py-16 px-auto flex flex-wrap justify-around	mt-16 md:mt-36">
-                <h2 className="mb-12 md:mb-16 text-3xl md:text-4xl lg:text-5xl	font-medium  text-center mb-16 text-black w-full md:w-10/12 lg:w-8/12">
+                <h2 className="mb-12 md:mb-16 text-3xl md:text-4xl lg:text-5xl	font-medium  text-center px-6 mb-16 text-black w-full md:w-10/12 lg:w-8/12">
                         Recibí pagos de forma segura a travez de los metodos más populares
                     </h2>
                     <InfiniteCarouselSliderAutoplay elements={payments} />
