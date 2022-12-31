@@ -71,7 +71,7 @@ const publicidadDigital = ({ data }) => {
                     overflow-x-hidden
                     "
                     >
-                        <div className="min-h-screen translate-x-[-5px]  md:translate-x-[-35px] translate-y-[-10px] md:translate-y-[-80px] lg:translate-y-[-175px]">
+                        <div className="min-h-[400px] translate-x-[-5px]  md:translate-x-[-35px] translate-y-[-10px] md:translate-y-[-80px] lg:translate-y-[-175px]">
                             <Image
                                 height={607}
                                 width={300}
@@ -194,8 +194,7 @@ const publicidadDigital = ({ data }) => {
                     flex flex-col justify-center items-center md:items-start
                     "
                         >
-                            <h2 className="text-xl md:text-2xl lg:text-3xl	font-medium  
-                            ">
+                            <h2 className="text-2xl lg:text-3xl	font-medium  mt-8 lg:mt-0">
                                 ¿Como te ayudamos?
                             </h2>
                             {email.list.map((element, i) => (
