@@ -7,7 +7,9 @@ import React from "react";
 // the page prop only changes the postition of the background square
 const Hero = ({title, content, page=1}) => {
     return (
-        <section className="common-service__hero min-h-screen px-8 md:px-26 lg:px-48 relative ">
+        <section className="common-service__hero min-h-screen px-8 md:px-26 lg:px-48 relative flex flex-col justify-center
+                
+        max-w-[1540px] xxl:px-0 xxl:mx-auto ">
             <h1 className="pt-32 lg:pt-40 mb-12 text-3xl md:text-4xl lg:text-5xl	font-medium">
                 {title}
             </h1>

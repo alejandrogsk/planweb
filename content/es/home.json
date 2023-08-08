@@ -53,13 +53,13 @@
             "cta": {"title": "Ver más", "url": "/ecommerce"},
             "img": {
                 "alt":"Ecommerce Crespo Entre Ríos",
-                "src":"/assets/home/whiskey-mobile-mock.png",
+                "src":"/assets/home/wine-1.png",
                 "width": "222",
                 "height":"450"
             },
             "img2": {
                 "alt":"Ecommerce Crespo Entre Ríos",
-                "src":"/assets/home/whiskey-mobile-mock-2.png",
+                "src":"/assets/home/wine-2.png",
                 "width": "222",
                 "height":"450"
             }

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import HeadComponent from "../components/global/HeadComponent";
 import Layout from "../components/global/Layout";
@@ -21,7 +20,7 @@ const publicidadDigital = ({ data }) => {
                 <Hero title={hero.title} content={hero.content} page={2} />
                 <Banner banner={banner} />
                 <Logos logos={platforms} />
-                <section className="services-marketing px-6 md:px-12 lg:px-16 py-20 flex flex-col items-center	justify-center">
+                <section className="services-marketing px-6 md:px-12 lg:px-16 py-20 flex flex-col items-center	justify-center  max-w-[1540px] xxl:px-0 xxl:mx-auto ">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl	font-medium  text-center mb-8 mt-12 md:mb-16 md:mt-16">
                         {google_ads.title}
                     </h2>
@@ -64,11 +63,13 @@ const publicidadDigital = ({ data }) => {
                 {/**Social */}
 
                 <section className="min-h-screen grid grid-cols-1 lg:grid-cols-2">
+                    <div className="bg-primary">
                     <div
-                        className="bg-primary flex items-center	justify-center	 h-full
+                        className="flex items-center	justify-center	 h-full
                     py-16 md:py-24 lg:py-36
                     px-6 md:px-12 lg:px-16
                     overflow-x-hidden
+                    xxl:ml-auto xxl:pl-0
                     "
                     >
                         <div className="min-h-[400px] translate-x-[-5px]  md:translate-x-[-35px] translate-y-[-10px] md:translate-y-[-80px] lg:translate-y-[-175px]">
@@ -88,11 +89,16 @@ const publicidadDigital = ({ data }) => {
                             />
                         </div>
                     </div>
+                    </div>
 
+                    <div className="bg-custom-black">
+
+                   
                     <div
-                        className="bg-custom-black
+                        className="
                     py-16 md:py-24 lg:py-36
                     px-6 md:px-12 lg:px-16
+                    xxl:max-w-[770px] xxl:mr-auto
                     "
                     >
                         <div className=" w-full flex justify-between">
@@ -143,11 +149,12 @@ const publicidadDigital = ({ data }) => {
 
                         <BtnBlack url={contact.url} title={contact.title} />
                     </div>
+                    </div>
                 </section>
 
 
 
-                <section className="services-marketing px-6 md:px-12 lg:px-16 py-20">
+                <section className="services-marketing px-6 md:px-12 lg:px-16 py-20  max-w-[1540px] xxl:px-0 xxl:mx-auto ">
                     <div className="grid content-center justify-items-center 
                     grid-cols-1 lg:grid-cols-2 grid-rows-[max-content_max-content_max-content] lg:grid-rows-2
                     gap-16 lg:gap-4

@@ -4,8 +4,8 @@ import React from 'react'
 
 const HomeProcess = ({how_we_work}) => {
   return (
-    <section className="px-[2.5%] md:px-[5%] grid grid-cols-1 bg-custom-black pb-12 md:pb-0">
-                <div className="relative w-full -translate-y-[20px] md:-translate-y-[75px]">
+    <section className="px-[2.5%] md:px-[5%] grid grid-cols-1 bg-custom-black pb-12 md:pb-0 ">
+                <div className="relative w-full -translate-y-[20px] md:-translate-y-[75px] xxl:mx-auto max-w-[1540px]">
                     <Image
                         height={463}
                         width={1425}
@@ -13,12 +13,12 @@ const HomeProcess = ({how_we_work}) => {
                         src={"/assets/team.png"}
                     />
                 </div>
-                <div className="grid items-center ">
+                <div className="grid items-center  xxl:mx-auto max-w-[1540px]">
                     <h2 className="mt-16 d:text-start text-3xl md:text-4xl lg:text-5xl	font-medium text-white">
                         {how_we_work.title}
                     </h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center mt-8 md:mt-12">
+                    <div className="grid grid-cols-1 md:grid-cols-3 items-start		 gap-6 mt-8 md:mt-12">
                         {
                             how_we_work.list.map((method,i) =>(
                                 <div key={i}>

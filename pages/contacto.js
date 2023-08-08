@@ -11,7 +11,7 @@ const Contacto = ({ data }) => {
         <div>
             <HeadComponent title={head.title} description={head.description} />
             <Layout>
-                <section className="common-service__hero min-h-screen px-8 md:px-26 lg:px-48 relative ">
+                <section className="common-service__hero min-h-screen px-8 md:px-26 lg:px-48 relative max-w-[1540px] xxl:px-0 xxl:mx-auto">
                     <h1 className="text-center pt-32 lg:pt-40 mb-12 text-2xl md:text-4xl lg:text-5xl	font-medium">
                         {title}
                     </h1>

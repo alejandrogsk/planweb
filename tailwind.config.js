@@ -41,7 +41,10 @@ module.exports = {
         // },
 
         "custom-black": "#181818"
-      }
+      },
+      screens: {
+      'xxl': '1540px',
+    }
     },
   },
   plugins: [],

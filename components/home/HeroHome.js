@@ -4,7 +4,7 @@ import React from 'react'
 
 const HeroHome = ({heroContent}) => {
   return (
-<section className="home-hero-large grid grid-cols-1 pt-32 pb-32 md:pb-60 px-6 md:px-12 lg:px-16 overflow-x-hidden">
+<section className="home-hero-large grid grid-cols-1 pt-32 pb-32 md:pb-60 px-6 md:px-12 lg:px-16 overflow-x-hidden xxl:mx-auto max-w-[1540px]">
                 <h1 className="text-3xl md:text-4xl lg:text-6xl font-medium	 relative text-center md:text-start">
                     Aumentá las <span className="underline-custom">ventas</span>{" "}
                     de tu negocio <br className="hidden lg:inline" />a travéz de{" "}

@@ -7,10 +7,7 @@ function getWindowWidth() {
     const { innerWidth } = window;
     return innerWidth;
 }
-// function getDistanceTop() {
-//     const { screenY } = window;
-//     return screenY;
-// }
+
 
 const Logo = () => {
     // return (
@@ -81,35 +78,8 @@ const Logo = () => {
 };
 
 const NavigationDesktop = ({ menu }) => {
-    //Sticky Navigation
-    // const [stickyClass, setStickyClass] = useState('relative');
-
-    // useEffect(() => {
-    //   window.addEventListener('scroll', stickNavbar);
-
-    //   return () => {
-    //     window.removeEventListener('scroll', stickNavbar);
-    //   };
-    // }, []);
-
-    // const stickNavbar = () => {
-    //   if (window !== undefined) {
-    //     let windowHeight = window.scrollY;
-    //     windowHeight > 500 ? setStickyClass('sticky') : setStickyClass('relative');
-    //   }
-    // };
-
-    //Should put ${stickyClass} in Header tag
-    //End Sticky navigation
-    const {pathname} = useRouter()
-    const [currentUrl, setCurrentUrl] = useState();
-    useEffect(()=> {
-        setCurrentUrl(pathname);
-    })
-
-
     return (
-        <header className={`desktop__header max-w-[1540px] mx-auto`}>
+        <header className={`desktop__header max-w-[1540px] xxl:px-0 mx-auto`}>
             <div className="desktop__logo">
                 <Logo />
             </div>
@@ -122,7 +92,7 @@ const NavigationDesktop = ({ menu }) => {
                         <Link href={element.link} legacyBehavior>
                            
                             {
-                                <a className={`${(currentUrl === element.link)&& 'current-link' }`}>{element.title}</a>
+                                <a >{element.title}</a>
                             }
                         </Link>
                     </li>
@@ -135,9 +105,6 @@ const NavigationDesktop = ({ menu }) => {
 };
 
 const NavigationMobile = ({ menu }) => {
-
-   
-
     //Naviggation open/close
     const navigationCheck = useRef(null);
     const handleNav = () => {
@@ -146,9 +113,6 @@ const NavigationMobile = ({ menu }) => {
         }
     };
     //End Navigation open/close
-    
-
-    
     return (
         <>
             <div className="logo-mobile">

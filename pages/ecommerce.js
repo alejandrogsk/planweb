@@ -13,7 +13,11 @@ const ecommerces = ({ data }) => {
         <div>
             <HeadComponent title={head.title} description={head.description} />
             <Layout>
-                <section className="min-h-screen px-8 md:px-26 lg:px-48 relative ">
+                <section className="min-h-screen px-8 md:px-26 lg:px-48 relative 
+                
+                flex flex-col justify-center
+                
+                max-w-[1540px] xxl:px-0 xxl:mx-auto">
                     <h1 className="pt-32 lg:pt-36 mb-12 text-3xl md:text-4xl lg:text-5xl	font-medium">
                         {hero.title}
                     </h1>
@@ -32,7 +36,7 @@ const ecommerces = ({ data }) => {
 
                 
 
-                <section className="ecommerce_services grid grid-cols-1 justify-items-center	 px-6 md:px-12 lg:px-16 py-20">
+                <section className="ecommerce_services grid grid-cols-1 justify-items-center	 px-6 md:px-12 lg:px-16 py-20 max-w-[1540px] xxl:px-0  xxl:mx-auto">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl	font-medium  text-center mb-16 w-full md:w-10/12 lg:w-8/12">
                         {services.title}
                     </h2>
@@ -99,7 +103,7 @@ const ecommerces = ({ data }) => {
 
 
 
-                <section className="ecommerce_platforms bg-white px-6 md:px-12 lg:px-16 py-20 grid grid-cols-1 justify-items-center">
+                <section className="ecommerce_platforms bg-white px-6 md:px-12 lg:px-16 py-20 grid grid-cols-1 justify-items-center max-w-[1540px] xxl:px-0  xxl:mx-auto">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl	font-medium  text-center mb-16 text-black w-full md:w-10/12 lg:w-8/12">
                         {platforms.title}
                     </h2>
@@ -133,7 +137,7 @@ const ecommerces = ({ data }) => {
 
 
 
-                <section className="py-8 md:py-12 lg:py-16 px-auto flex flex-wrap justify-around	mt-16 md:mt-36">
+                <section className="py-8 md:py-12 lg:py-16 px-auto flex flex-wrap justify-around	mt-16 md:mt-36 max-w-[1540px] xxl:px-0  xxl:mx-auto">
                 <h2 className="mb-12 md:mb-16 text-3xl md:text-4xl lg:text-5xl	font-medium  text-center px-6 mb-16 text-black w-full md:w-10/12 lg:w-8/12">
                         Recibí pagos de forma segura a travez de los metodos más populares
                     </h2>

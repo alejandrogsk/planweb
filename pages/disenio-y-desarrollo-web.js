@@ -19,7 +19,7 @@ const DiseñoYDesarrolloWeb = ({ data }) => {
                 <Banner banner={banner} />
                 <Logos logos={platforms} />
 
-                <section className="services-marketing px-6 md:px-12 lg:px-16 py-16 md:py-28">
+                <section className="services-marketing px-6 md:px-12 lg:px-16 py-16 md:py-28 max-w-[1540px] xxl:px-0 xxl:mx-auto ">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl	font-medium  text-center mb-16">
                         {services.title}
                     </h2>

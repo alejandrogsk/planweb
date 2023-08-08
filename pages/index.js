@@ -1,9 +1,7 @@
-import Image from "next/image";
 import React from "react";
 import HomeEs from "../content/es/home.json";
 import Layout from "../components/global/Layout";
 import HeadComponent from "../components/global/HeadComponent";
-import CtaRegular from "../components/Services/CtaRegular";
 import HeroHome from "../components/home/HeroHome";
 import Link from "next/link";
 import HomeProcess from "../components/home/HomeProcess";
@@ -21,7 +19,10 @@ const Home = ({ data }) => {
 
 
                 {/**CTA */}
-                <section className="grid grid-cols-1 content-center	justify-items-center bg-primary px-6 md:px-12 lg:px-16  py-16 md:py-24 lg:py-36">
+                <div className=" bg-primary">
+
+                
+                <section className="grid grid-cols-1 content-center	justify-items-center px-6 md:px-12 lg:px-16  py-16 md:py-24 lg:py-36 xxl:mx-auto max-w-[1540px] xxl:px-0">
                     <h2 className="text-center md:text-start text-3xl md:text-4xl lg:text-5xl	font-medium ">¡Queremos conocer tu proyecto!</h2>
                     <p className="text-center text-xl md:text-2xl pt-6 pb-10 max-w-100 md:max-w-[80%] lg:max-w-[70%]">No dudes en contactarnos con cualquier pregunta o inquietud que puedas tener. Nos encantaría hablar sobre tu proyecto con más detalle.</p>
                     <Link href="/contacto" legacyBehavior>
@@ -36,6 +37,7 @@ const Home = ({ data }) => {
                     </Link>
                     
                 </section>
+                </div>
             </Layout>
         </div>
     );

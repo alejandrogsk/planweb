@@ -9,13 +9,20 @@ const HomeServices = ({ home_services }) => {
     return (
         <>
             {/* Ecommerce Service Section */}
+            <div className="bg-custom-grey w-full">
+
+           
             <section
-                className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center justify-center bg-custom-grey
+                className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center justify-center 
+                
         px-6 md:px-12 lg:px-16
         py-16 md:py-24 lg:py-36
+        xxl:mx-auto max-w-[1540px] xxl:px-0
         "
             >
-                <div className="flex flex-col items-center lg:items-start justify-center row-start-2 row-end-3 lg:row-start-1 row-end-2	">
+                <div className="flex flex-col items-center lg:items-start justify-center row-start-2 row-end-3 lg:row-start-1 row-end-2
+                
+                ">
                     <span
                         className="uppercase mb-2
                     pt-[100px] md:pt-0
@@ -60,12 +67,13 @@ const HomeServices = ({ home_services }) => {
                     </div>
                 </div>
             </section>
-
+            </div>
             {/* Marketing Service Section */}
             <section
-                className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center justify-center bg-custom-grey
+                className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center justify-center 
         px-6 md:px-12 lg:px-16
         py-16 md:py-24 lg:py-36
+        xxl:mx-auto max-w-[1540px] xxl:px-0
         "
             >
                 <div className="p-0  md:p-8 lg:p-16">
@@ -106,10 +114,12 @@ const HomeServices = ({ home_services }) => {
             </section>
 
             {/* Web Dev Service Section */}
+            <div className="bg-custom-grey w-full">
             <section
                 className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center justify-center bg-custom-grey
         px-6 md:px-12 lg:px-16
         py-16 md:py-24 lg:py-36
+        xxl:mx-auto max-w-[1540px] xxl:px-0
         "
             >
                 <div className="flex flex-col items-center lg:items-start justify-center row-start-2 row-end-3 lg:row-start-1 row-end-2	">
@@ -145,6 +155,7 @@ const HomeServices = ({ home_services }) => {
                     />
                 </div>
             </section>
+            </div>
         </>
     );
 };
