@@ -11,6 +11,15 @@ const HomeProcess = ({how_we_work}) => {
                         width={1425}
                         alt="Estudio digital crespo entre ríos"
                         src={"/assets/team.png"}
+                        className="hidden sm:block"
+                    />
+
+<Image
+                        height={195}
+                        width={600}
+                        alt="Estudio digital crespo entre ríos"
+                        src={"/assets/home/home-banner-mobile.webp"}
+                        className="block sm:hidden"
                     />
                 </div>
                 <div className="grid items-center  xxl:mx-auto max-w-[1540px]">
