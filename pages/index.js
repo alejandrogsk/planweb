@@ -4,7 +4,7 @@ import Layout from "../components/global/Layout";
 import HeadComponent from "../components/global/HeadComponent";
 import HeroHome from "../components/home/HeroHome";
 import dynamic from "next/dynamic";
-const LazyProcess = dynamic(() => import("../components/home/HomeProcess"));
+import HomeProcess from "../components/home/HomeProcess";
 const LazyServices = dynamic(() => import("../components/home/HomeServices"));
 const LazyCta = dynamic(() => import("../components/home/HomeCta"));
 const Home = ({ data }) => {
@@ -14,7 +14,7 @@ const Home = ({ data }) => {
             <HeadComponent title={head.title} description={head.description} />
             <Layout>
                 <HeroHome />
-                <LazyProcess how_we_work={how_we_work} />
+                <HomeProcess how_we_work={how_we_work}/>
                 <LazyServices home_services={home_services} />
                 <LazyCta />
             </Layout>
